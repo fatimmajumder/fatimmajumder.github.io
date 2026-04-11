@@ -1,0 +1,103 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 2 /Kids [ 3 0 R 4 0 R ] >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 7 0 R /F2 8 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 7 0 R /F2 8 0 R >> >> /Contents 6 0 R >>
+endobj
+5 0 obj
+<< /Length 4461 >>
+stream
+BT /F2 24 Tf 54 744 Td (Fatim Majumder) Tj ET
+BT /F2 12 Tf 54 714 Td (Machine Learning Research Engineer) Tj ET
+BT /F1 10 Tf 54 696 Td (New York, NY | fatim.majumder@emory.edu | github.com/fatimmajumder | linkedin.com/in/fatim-majumder) Tj ET
+BT /F2 11 Tf 54 672 Td (EDUCATION) Tj ET
+BT /F1 10 Tf 54 654 Td (Emory University - B.S. in Computer Science and Mathematics, Expected May 2026) Tj ET
+BT /F1 10 Tf 54 641 Td (- GPA: 3.96 / 4.00) Tj ET
+BT /F1 10 Tf 54 628 Td (- Coursework: algorithms, systems programming, machine learning, optimization, numerical) Tj ET
+BT /F1 10 Tf 54 615 Td (  analysis, mathematical statistics, real analysis, computer architecture) Tj ET
+BT /F2 11 Tf 54 594 Td (EXPERIENCE) Tj ET
+BT /F1 10 Tf 54 576 Td (Arthur AI - Machine Learning Research Engineering Intern, May 2025 to Aug 2025) Tj ET
+BT /F1 10 Tf 54 563 Td (- Built a production-grade LLM evaluation and model analysis platform across Python,) Tj ET
+BT /F1 10 Tf 54 550 Td (  PyTorch, Ray, FastAPI, PostgreSQL, Redis, Docker, Kubernetes, and AWS.) Tj ET
+BT /F1 10 Tf 54 537 Td (- Designed deterministic lineage across datasets, prompts, tokenizers, model artifacts,) Tj ET
+BT /F1 10 Tf 54 524 Td (  judges, and scoring logic; exact rerun reproducibility improved from 74.1% to 99.96%.) Tj ET
+BT /F1 10 Tf 54 511 Td (- Built scheduling, caching, retry semantics, and run-diff tooling; median experiment) Tj ET
+BT /F1 10 Tf 54 498 Td (  turnaround improved by 84% while reducing wasted GPU-hours by 51%.) Tj ET
+BT /F1 10 Tf 54 485 Td (Fullstory - Software Engineering Intern, May 2024 to Aug 2024) Tj ET
+BT /F1 10 Tf 54 472 Td (- Built backend observability and validation systems for analytics pipelines processing) Tj ET
+BT /F1 10 Tf 54 459 Td (  4B+ weekly events using Python, SQL, Kafka, Airflow, dbt, and Docker.) Tj ET
+BT /F1 10 Tf 54 446 Td (- Developed validators for schema drift, freshness lag, replay mismatches, null spikes,) Tj ET
+BT /F1 10 Tf 54 433 Td (  cardinality explosions, and anomaly bursts.) Tj ET
+BT /F1 10 Tf 54 420 Td (- Improved alert precision from 63% to 96% and reduced median detection time from 3.4) Tj ET
+BT /F1 10 Tf 54 407 Td (  hours to 7 minutes.) Tj ET
+BT /F1 10 Tf 54 394 Td (Algory Capital / Emory University - Head of Research, Sep 2023 to Present) Tj ET
+BT /F1 10 Tf 54 381 Td (- Built the research stack for a 30+ member student-run investment organization across) Tj ET
+BT /F1 10 Tf 54 368 Td (  ingestion, factor modeling, walk-forward backtesting, portfolio construction, and) Tj ET
+BT /F1 10 Tf 54 355 Td (  diagnostics.) Tj ET
+BT /F1 10 Tf 54 342 Td (- Engineered a shared platform in Python, SQL, PostgreSQL, Streamlit, Docker, and GitHub) Tj ET
+BT /F1 10 Tf 54 329 Td (  Actions; strategy research throughput increased 6.8x and analyst ramp time fell from) Tj ET
+BT /F1 10 Tf 54 316 Td (  about 6 weeks to 8 days.) Tj ET
+BT /F1 10 Tf 54 303 Td (Georgia Tech / Emory University - Research Assistant, Sep 2022 to Dec 2023) Tj ET
+BT /F1 10 Tf 54 290 Td (- Built reproducible multimodal ML pipelines for clinical and imaging datasets; improved) Tj ET
+BT /F1 10 Tf 54 277 Td (  held-out AUROC from 0.71 to 0.88 after eliminating leakage and cohort contamination.) Tj ET
+BT /F2 11 Tf 54 256 Td (PROJECTS) Tj ET
+BT /F1 10 Tf 54 238 Td (RE-AMP: Generative Audio Robustness Evaluation - Full-stack benchmarking platform with) Tj ET
+BT /F1 10 Tf 54 225 Td (  asynchronous orchestration, artifact storage, reproducible replay, and comparative) Tj ET
+BT /F1 10 Tf 54 212 Td (  analysis workflows.) Tj ET
+BT /F1 10 Tf 54 199 Td (Traffic Collision Risk Modeling - Graph-learning pipeline over large-scale collision and) Tj ET
+BT /F1 10 Tf 54 186 Td (  road-network data with spatial, temporal, and structural features.) Tj ET
+BT /F1 10 Tf 54 173 Td (Robust Kalman Filtering for Vehicle Localization - Simulation framework with sensor) Tj ET
+BT /F1 10 Tf 54 160 Td (  dropout, burst noise, outliers, covariance misspecification, and asynchronous) Tj ET
+BT /F1 10 Tf 54 147 Td (  measurements.) Tj ET
+BT /F1 10 Tf 54 134 Td (Quant Research Lab - Public-facing factor research and walk-forward backtesting demo with) Tj ET
+BT /F1 10 Tf 54 121 Td (  dashboard-first analysis.) Tj ET
+BT /F1 10 Tf 54 108 Td (- Research archive includes diffusion models, derivative-aware Gaussian processes,) Tj ET
+BT /F1 10 Tf 54 95 Td (  stochastic control, mirror descent, momentum methods, and optimizer analysis.) Tj ET
+BT /F2 11 Tf 54 74 Td (SKILLS) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Length 929 >>
+stream
+BT /F1 10 Tf 54 744 Td (- Languages: Python, SQL, TypeScript, JavaScript, Java, C++, C, Bash, MATLAB) Tj ET
+BT /F1 10 Tf 54 731 Td (- ML / data: PyTorch, PyTorch Geometric, scikit-learn, XGBoost, Ray, LLM evaluation, graph) Tj ET
+BT /F1 10 Tf 54 718 Td (  ML, multimodal modeling, retrieval pipelines) Tj ET
+BT /F1 10 Tf 54 705 Td (- Systems: FastAPI, PostgreSQL, MySQL, Redis, Docker, Kubernetes, Linux, CI/CD, Airflow,) Tj ET
+BT /F1 10 Tf 54 692 Td (  dbt, Kafka, ETL, observability, distributed execution, caching) Tj ET
+BT /F2 11 Tf 54 671 Td (HONORS AND LEADERSHIP) Tj ET
+BT /F1 10 Tf 54 653 Td (- QuestBridge National Match Scholar; Dean's List; Undergraduate Research Distinction;) Tj ET
+BT /F1 10 Tf 54 640 Td (  HackDuke finalist) Tj ET
+BT /F1 10 Tf 54 627 Td (- Head of Research at Algory Capital; leadership and community work across rowing,) Tj ET
+BT /F1 10 Tf 54 614 Td (  robotics, and WGRE radio programming) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+8 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000129 00000 n 
+0000000265 00000 n 
+0000000401 00000 n 
+0000004914 00000 n 
+0000005894 00000 n 
+0000005964 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+6039
+%%EOF
