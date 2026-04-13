@@ -54,6 +54,7 @@
           <a class="nav-link" href="#impact">Impact</a>
           <a class="nav-link" href="#experience">Experience</a>
           <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#case-studies">Case Studies</a>
           <a class="nav-link" href="#research">Research</a>
           <a class="nav-link" href="#contact">Contact</a>
         </nav>
@@ -455,6 +456,67 @@
                 <li>Connects mathematical depth to practical ML intuition</li>
               </ul>
             </a>
+          </div>
+        </section>
+
+        <section class="section" id="case-studies">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Public-Safe Case Studies</p>
+            <h2>Resume-level systems work translated into inspectable engineering stories.</h2>
+            <p class="section-intro">
+              Some of the strongest work on my resume lives inside internal or
+              research environments. These case studies turn that work into
+              public-safe architecture, metrics, and engineering narratives
+              without exposing private code, data, or employer IP.
+            </p>
+          </div>
+
+          <div class="case-study-grid">
+            <article class="case-study-card glass-card reveal">
+              <p class="project-stack">
+                Python · SQL · Kafka · Airflow · dbt · Validation · Incident Tooling
+              </p>
+              <h3>Analytics Observability Systems</h3>
+              <p>
+                A public-safe walkthrough of the backend reliability systems I
+                built for analytics pipelines at Fullstory, focused on schema
+                validation, freshness monitoring, replay checks, and
+                high-precision alerting.
+              </p>
+              <ul class="bullet-list compact-list">
+                <li>4B+ weekly analytics events under monitoring</li>
+                <li>Alert precision improved from 63% to 96%</li>
+                <li>Median time-to-detection dropped from 3.4 hours to 7 minutes</li>
+              </ul>
+              <div class="case-study-actions">
+                <a class="button button-secondary" href="./case-studies/analytics-observability-systems.html">
+                  Open case study
+                </a>
+              </div>
+            </article>
+
+            <article class="case-study-card glass-card reveal">
+              <p class="project-stack">
+                Python · PyTorch · scikit-learn · SQL · Streamlit · Reproducibility
+              </p>
+              <h3>Biomedical ML Research Systems</h3>
+              <p>
+                A public-safe case study of the reproducible multimodal ML
+                workflows I built across clinical and imaging datasets, with an
+                emphasis on cohort construction, leakage prevention, calibration,
+                and subgroup evaluation.
+              </p>
+              <ul class="bullet-list compact-list">
+                <li>1,000+ controlled multimodal experiments supported</li>
+                <li>Held-out AUROC improved from 0.71 to 0.88 after methodology fixes</li>
+                <li>Patient overlap, contamination, and leakage designed out of the pipeline</li>
+              </ul>
+              <div class="case-study-actions">
+                <a class="button button-secondary" href="./case-studies/biomedical-ml-research-systems.html">
+                  Open case study
+                </a>
+              </div>
+            </article>
           </div>
         </section>
 

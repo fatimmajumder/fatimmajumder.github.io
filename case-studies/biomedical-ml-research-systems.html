@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Public-safe case study of biomedical ML research systems and reproducible multimodal pipelines built by Fatim Majumder."
+    />
+    <title>Biomedical ML Research Systems | Fatim Majumder</title>
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="page-orb page-orb-left" aria-hidden="true"></div>
+    <div class="page-orb page-orb-right" aria-hidden="true"></div>
+
+    <div class="site-shell case-study-shell">
+      <header class="site-header">
+        <a class="brand-lockup" href="../index.html" aria-label="Back to portfolio home">
+          <span class="brand-mark">FM</span>
+          <span class="brand-copy">
+            <strong>Fatim Majumder</strong>
+            <span>Public-safe systems case study</span>
+          </span>
+        </a>
+
+        <nav class="site-nav" aria-label="Case study navigation">
+          <a class="nav-link" href="../index.html#experience">Experience</a>
+          <a class="nav-link" href="../index.html#projects">Projects</a>
+          <a class="nav-link is-active" href="../index.html#case-studies">Case Studies</a>
+          <a class="nav-link" href="../index.html#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <a class="button button-secondary" href="../index.html">Portfolio Home</a>
+          <a class="button button-secondary" href="../assets/Fatim-Majumder-Resume.pdf" download>
+            Resume PDF
+          </a>
+          <a class="button button-primary" href="mailto:fatim.majumder@emory.edu">
+            Email
+          </a>
+        </div>
+      </header>
+
+      <main id="top">
+        <section class="section case-study-hero">
+          <article class="glass-card callout-card reveal">
+            <a class="back-link" href="../index.html#case-studies">Back to case studies</a>
+            <p class="eyebrow">Georgia Tech / Emory University · 2022 to 2023</p>
+            <p class="hero-kicker">Python · PyTorch · scikit-learn · SQL · Streamlit</p>
+            <h1>Biomedical ML research systems built for rigor, reproducibility, and clean evaluation.</h1>
+            <p class="lede">
+              This case study translates my biomedical ML research work into a
+              public-safe systems narrative. The emphasis is on building
+              repeatable multimodal workflows, fixing cohort and evaluation
+              methodology, and making controlled experimentation practical for
+              clinical and imaging settings.
+            </p>
+
+            <div class="case-study-links">
+              <a class="button button-primary" href="../index.html#experience">See resume context</a>
+              <a class="button button-secondary" href="https://github.com/fatimmajumder/quant-research-lab" target="_blank" rel="noreferrer">
+                Related public lab
+              </a>
+            </div>
+          </article>
+
+          <div class="metric-strip reveal">
+            <article class="metric-card glass-card">
+              <p class="detail-label">Experimentation</p>
+              <h2>1,000+</h2>
+              <p>controlled runs across preprocessing, fusion, and evaluation settings</p>
+            </article>
+            <article class="metric-card glass-card">
+              <p class="detail-label">Model Quality</p>
+              <h2>0.88</h2>
+              <p>held-out AUROC after cohort and methodology fixes</p>
+            </article>
+            <article class="metric-card glass-card">
+              <p class="detail-label">Baseline</p>
+              <h2>0.71</h2>
+              <p>earlier held-out AUROC before contamination and leakage fixes</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="story-grid">
+            <article class="glass-card callout-card reveal">
+              <p class="detail-label">System Surface</p>
+              <h2>Multimodal pipelines with enough structure to trust the result.</h2>
+              <ul class="bullet-list">
+                <li>Built reproducible workflows for clinical variables, imaging features, and multimodal fusion experiments</li>
+                <li>Tracked preprocessing variants, feature sets, training settings, calibration, thresholds, and evaluation outputs</li>
+                <li>Used Python, PyTorch, scikit-learn, SQL, and Streamlit to make the pipeline both rigorous and usable</li>
+              </ul>
+            </article>
+
+            <article class="glass-card callout-card reveal">
+              <p class="detail-label">Methodology Fixes</p>
+              <h2>Most of the gain came from better science, not just a different model.</h2>
+              <ul class="bullet-list">
+                <li>Reworked cohort construction to eliminate patient overlap across splits</li>
+                <li>Removed temporal contamination that was leaking future information into evaluation</li>
+                <li>Standardized held-out evaluation so calibration, subgroup performance, and threshold behavior were visible</li>
+                <li>Treated leakage prevention as infrastructure, not a one-time cleanup</li>
+              </ul>
+            </article>
+
+            <article class="glass-card callout-card reveal">
+              <p class="detail-label">Research Operations</p>
+              <h2>What it took to support 1,000+ controlled experiments.</h2>
+              <ul class="bullet-list">
+                <li>Built repeatable experiment organization so runs could be compared by preprocessing, fusion strategy, or evaluation slice</li>
+                <li>Added interfaces that made it easier for collaborators to inspect metrics and artifacts without re-running everything manually</li>
+                <li>Made subgroup evaluation and threshold analysis part of the default workflow instead of a last-mile extra</li>
+              </ul>
+            </article>
+
+            <article class="glass-card callout-card reveal">
+              <p class="detail-label">Public-Safe Translation</p>
+              <h2>How this strengthens the GitHub portfolio.</h2>
+              <ul class="bullet-list">
+                <li>It makes the biomedical ML and reproducibility work on my resume legible even though the original datasets cannot be published</li>
+                <li>It reinforces the same core engineering pattern visible across my public repos: strong experimental controls, clear lineage, and high-signal diagnostics</li>
+                <li>It shows I can work where domain correctness matters as much as model performance</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <article class="glass-card callout-card reveal note-banner">
+            <p class="detail-label">Confidentiality Boundary</p>
+            <h2>Scientific workflow and engineering choices are documented here. Private data and internal artifacts are not.</h2>
+            <p>
+              This page is designed to preserve the substance of the research
+              engineering work while respecting dataset access restrictions and
+              collaborator confidentiality.
+            </p>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

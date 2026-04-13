@@ -237,6 +237,7 @@ a {
 }
 
 .lede,
+.section-intro,
 .impact-card p:not(.detail-label),
 .focus-panel p:not(.detail-label),
 .project-card p:not(.project-stack),
@@ -252,6 +253,11 @@ a {
   max-width: 58ch;
   margin: 24px 0 0;
   font-size: 1.08rem;
+}
+
+.section-intro {
+  max-width: 62ch;
+  margin: 14px 0 0;
 }
 
 .hero-actions {
@@ -545,6 +551,22 @@ a {
   gap: 18px;
 }
 
+.case-study-grid,
+.story-grid,
+.metric-strip {
+  display: grid;
+  gap: 18px;
+}
+
+.case-study-grid,
+.story-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.metric-strip {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .experience-card {
   display: grid;
   grid-template-columns: 220px minmax(0, 1fr);
@@ -597,6 +619,107 @@ a {
   display: block;
   text-decoration: none;
   transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.case-study-card,
+.callout-card,
+.metric-card {
+  padding: 28px;
+}
+
+.case-study-card {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+  background:
+    radial-gradient(circle at top right, rgba(219, 228, 244, 0.48), transparent 30%),
+    linear-gradient(180deg, rgba(255, 252, 248, 0.92), rgba(248, 243, 236, 0.82));
+}
+
+.case-study-card:nth-child(2) {
+  background:
+    radial-gradient(circle at top right, rgba(217, 239, 233, 0.48), transparent 30%),
+    linear-gradient(180deg, rgba(255, 252, 248, 0.92), rgba(248, 243, 236, 0.82));
+}
+
+.case-study-card h3,
+.metric-card h2,
+.callout-card h2 {
+  margin: 0;
+  font-family: var(--display);
+  font-weight: 600;
+  letter-spacing: -0.04em;
+}
+
+.case-study-card h3,
+.callout-card h2 {
+  font-size: clamp(1.5rem, 3vw, 2.3rem);
+  line-height: 1.04;
+}
+
+.metric-card h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1;
+}
+
+.case-study-actions,
+.case-study-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.case-study-shell {
+  width: min(1100px, calc(100% - 32px));
+}
+
+.case-study-hero {
+  display: grid;
+  gap: 18px;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  color: var(--navy);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.back-link:hover,
+.back-link:focus-visible {
+  text-decoration: underline;
+}
+
+.back-link::before {
+  content: "←";
+}
+
+.callout-card {
+  background:
+    radial-gradient(circle at top right, rgba(255, 255, 255, 0.4), transparent 32%),
+    linear-gradient(180deg, rgba(255, 252, 248, 0.94), rgba(247, 243, 235, 0.82));
+}
+
+.metric-card {
+  background:
+    radial-gradient(circle at top right, rgba(245, 223, 209, 0.54), transparent 32%),
+    linear-gradient(180deg, rgba(255, 252, 248, 0.94), rgba(247, 243, 235, 0.82));
+}
+
+.metric-card p:last-child,
+.callout-card p:not(.detail-label) {
+  color: var(--ink-soft);
+  line-height: 1.72;
+}
+
+.note-banner {
+  background:
+    radial-gradient(circle at top right, rgba(217, 239, 233, 0.56), transparent 32%),
+    linear-gradient(180deg, rgba(255, 252, 248, 0.94), rgba(247, 243, 235, 0.82));
 }
 
 .project-stack {
@@ -762,6 +885,9 @@ a {
   .impact-grid,
   .focus-shell,
   .project-grid,
+  .case-study-grid,
+  .story-grid,
+  .metric-strip,
   .research-grid,
   .leadership-grid,
   .skill-grid,
@@ -811,6 +937,9 @@ a {
   .focus-panel,
   .experience-card,
   .project-card,
+  .case-study-card,
+  .callout-card,
+  .metric-card,
   .research-card,
   .leadership-card,
   .skill-card,

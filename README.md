@@ -12,11 +12,13 @@ Personal portfolio site and GitHub Pages home for
 - a recruiter-facing portfolio homepage
 - project links to the main public showcase repos
 - experience highlights mapped from the resume
+- public-safe case studies for internal systems and research work
 - research/archive material pulled from the LinkedIn presentation history
 
 ## Site structure
 
 - `index.html` for content and layout
+- `case-studies/` for public-safe writeups of confidential or internal work
 - `styles.css` for the visual system and responsive behavior
 - `script.js` for stat animations and interactions
 - `assets/` for the favicon and downloadable resume PDF
@@ -28,9 +30,10 @@ flowchart TD
     A["Hero"] --> B["Impact snapshot"]
     B --> C["Experience"]
     C --> D["Projects"]
-    D --> E["Research archive"]
-    E --> F["Education and leadership"]
-    F --> G["Contact"]
+    D --> E["Case studies"]
+    E --> F["Research archive"]
+    F --> G["Education and leadership"]
+    G --> H["Contact"]
 ```
 
 ## Related repos
