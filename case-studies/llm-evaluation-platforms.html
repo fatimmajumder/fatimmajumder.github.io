@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Public-safe case study of LLM evaluation platform engineering and deterministic experiment infrastructure built by Fatim Majumder."
+    />
+    <title>LLM Evaluation Platforms | Fatim Majumder</title>
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="page-orb page-orb-left" aria-hidden="true"></div>
+    <div class="page-orb page-orb-right" aria-hidden="true"></div>
+
+    <div class="site-shell case-study-shell">
+      <header class="site-header">
+        <a class="brand-lockup" href="../index.html" aria-label="Back to portfolio home">
+          <span class="brand-mark">FM</span>
+          <span class="brand-copy">
+            <strong>Fatim Majumder</strong>
+            <span>Public-safe systems case study</span>
+          </span>
+        </a>
+
+        <nav class="site-nav" aria-label="Case study navigation">
+          <a class="nav-link" href="../index.html#experience">Experience</a>
+          <a class="nav-link" href="../index.html#projects">Projects</a>
+          <a class="nav-link is-active" href="../index.html#case-studies">Case Studies</a>
+          <a class="nav-link" href="../index.html#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <a class="button button-secondary" href="../index.html">Portfolio Home</a>
+          <a class="button button-secondary" href="../assets/Fatim-Majumder-Resume.pdf" download>
+            Resume PDF
+          </a>
+          <a class="button button-primary" href="mailto:fatim.majumder@emory.edu">
+            Email
+          </a>
+        </div>
+      </header>
+
+      <main id="top">
+        <section class="section case-study-hero">
+          <article class="glass-card callout-card reveal">
+            <a class="back-link" href="../index.html#case-studies">Back to case studies</a>
+            <p class="eyebrow">Arthur AI · Summer 2025</p>
+            <p class="hero-kicker">Python · PyTorch · Ray · FastAPI · PostgreSQL · Redis · Docker · Kubernetes · AWS</p>
+            <h1>LLM evaluation systems built to keep fast-moving experiments reproducible, inspectable, and decision-safe.</h1>
+            <p class="lede">
+              This case study translates my Arthur AI work into a public-safe
+              engineering story. The focus is on the systems layer around model
+              evaluation: deterministic lineage, asynchronous execution,
+              artifact reuse, comparative analysis, and the kind of regression
+              detection teams need when evaluation becomes a product instead of
+              a spreadsheet.
+            </p>
+
+            <div class="case-study-links">
+              <a class="button button-primary" href="../index.html#experience">See resume context</a>
+              <a class="button button-secondary" href="https://github.com/fatimmajumder/re-amp-audio-eval" target="_blank" rel="noreferrer">
+                Related public repo
+              </a>
+            </div>
+          </article>
+
+          <div class="metric-strip reveal">
+            <article class="metric-card glass-card">
+              <p class="detail-label">Scale</p>
+              <h2>15K+</h2>
+              <p>benchmark runs per week across reasoning, retrieval, tool use, safety, and long-context evaluations</p>
+            </article>
+            <article class="metric-card glass-card">
+              <p class="detail-label">Reproducibility</p>
+              <h2>99.96%</h2>
+              <p>exact rerun reproducibility after deterministic lineage redesign</p>
+            </article>
+            <article class="metric-card glass-card">
+              <p class="detail-label">Throughput</p>
+              <h2>84%</h2>
+              <p>reduction in median experiment turnaround after async scheduling and cache-aware execution</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="story-grid">
+            <article class="glass-card callout-card reveal">
+              <p class="detail-label">System Surface</p>
+              <h2>Evaluation infrastructure for experiments that changed faster than manual tracking could keep up.</h2>
+              <ul class="bullet-list">
+                <li>Handled model, prompt, dataset, tokenizer, judge, and scoring revisions as first-class lineage inputs instead of ad hoc metadata</li>
+                <li>Supported reasoning, retrieval, multilingual, safety, tool-use, and long-context evaluation lanes inside one platform surface</li>
+                <li>Made benchmark results legible through scenario summaries, slice-level comparisons, artifacts, and replayable manifests</li>
+              </ul>
+            </article>
+
+            <article class="glass-card callout-card reveal">
+              <p class="detail-label">Engineering Decisions</p>
+              <h2>Determinism and auditability were product requirements, not cleanup work.</h2>
+              <ul class="bullet-list">
+                <li>Built asynchronous scheduling, retry semantics, and cache-aware execution so large evaluation batches stayed tractable</li>
+                <li>Structured artifacts and manifests so the exact inputs behind a run were preserved for reruns, comparisons, and review</li>
+                <li>Added run-diff tooling and slice-level regression detection to surface breakages hidden by aggregate scores</li>
+                <li>Used lineage as the contract that made experiments explainable to both engineers and decision-makers</li>
+              </ul>
+            </article>
+
+            <article class="glass-card callout-card reveal">
+              <p class="detail-label">Reliability Outcomes</p>
+              <h2>What changed once the platform could tell the truth about its own experiments.</h2>
+              <ul class="bullet-list">
+                <li>Exact rerun reproducibility increased from 74.1% to 99.96%</li>
+                <li>Median turnaround dropped by 84% and wasted GPU-hours fell by 51%</li>
+                <li>Regression tooling surfaced a preprocessing defect that had inflated internal metrics by 6.1 points</li>
+                <li>Experiment review became auditable enough to support faster iteration without losing confidence in results</li>
+              </ul>
+            </article>
+
+            <article class="glass-card callout-card reveal">
+              <p class="detail-label">Public-Safe Translation</p>
+              <h2>How this shows up on GitHub without exposing internal platform code.</h2>
+              <ul class="bullet-list">
+                <li>RE-AMP is the public-facing product version of these instincts: deterministic lineage, replay, artifact bundles, and regression-aware comparison</li>
+                <li>This case study makes the infrastructure depth on my resume visible even where the original code cannot be published</li>
+                <li>It shows I think about evaluation as a systems and reliability problem, not just a modeling problem</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <article class="glass-card callout-card reveal note-banner">
+            <p class="detail-label">Confidentiality Boundary</p>
+            <h2>Architecture, workflow, and outcomes are documented here. Internal models, prompts, and proprietary platform details are not.</h2>
+            <p>
+              This page is intentionally written as a public-safe reconstruction
+              of the engineering work. It preserves the substance of the
+              platform decisions without disclosing employer IP.
+            </p>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

@@ -12,13 +12,15 @@ Personal portfolio site and GitHub Pages home for
 - a recruiter-facing portfolio homepage
 - project links to the main public showcase repos
 - experience highlights mapped from the resume
-- public-safe case studies for internal systems and research work
+- public-safe case studies for all four major resume experience areas
 - research/archive material pulled from the LinkedIn presentation history
 
 ## Site structure
 
 - `index.html` for content and layout
 - `case-studies/` for public-safe writeups of confidential or internal work
+  across LLM evaluation, analytics observability, quant research
+  infrastructure, and biomedical ML
 - `styles.css` for the visual system and responsive behavior
 - `script.js` for stat animations and interactions
 - `assets/` for the favicon and downloadable resume PDF
