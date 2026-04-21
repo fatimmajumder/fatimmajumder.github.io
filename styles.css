@@ -11,6 +11,9 @@
   --line-strong: rgba(19, 33, 58, 0.2);
   --accent: #0f6b61;
   --accent-soft: rgba(15, 107, 97, 0.09);
+  --signal: rgba(15, 107, 97, 0.4);
+  --signal-soft: rgba(15, 107, 97, 0.12);
+  --signal-warm: rgba(153, 86, 39, 0.26);
   --warm: #995627;
   --shadow: 0 18px 48px rgba(16, 24, 38, 0.07);
   --shadow-strong: 0 28px 84px rgba(16, 24, 38, 0.14);
@@ -124,10 +127,22 @@ main > .section:not(.hero):not(.page-hero)::before {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
+  left: 22px;
   right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, var(--line-strong), transparent);
+  background: linear-gradient(90deg, var(--signal), rgba(19, 33, 58, 0.16) 20%, transparent 74%);
+}
+
+main > .section:not(.hero):not(.page-hero)::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  background: linear-gradient(135deg, var(--accent), var(--warm));
+  box-shadow: 16px 0 0 var(--signal-soft);
 }
 
 .site-header {
@@ -318,6 +333,36 @@ main > .section:not(.hero):not(.page-hero)::before {
   text-transform: uppercase;
 }
 
+.eyebrow,
+.detail-label,
+.card-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+}
+
+.eyebrow::before,
+.detail-label::before,
+.card-kicker::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  background: linear-gradient(135deg, var(--accent), var(--warm));
+  box-shadow: 0 0 0 5px rgba(15, 107, 97, 0.08);
+}
+
+.eyebrow::after,
+.detail-label::after,
+.card-kicker::after {
+  content: "";
+  width: 42px;
+  height: 1px;
+  background: linear-gradient(90deg, var(--signal), transparent);
+}
+
 .hero-copy h1,
 .section-heading h2,
 .card-header h3,
@@ -332,6 +377,17 @@ main > .section:not(.hero):not(.page-hero)::before {
   font-family: var(--display);
   font-weight: 700;
   letter-spacing: -0.045em;
+}
+
+.hero-proof-value,
+.proof-value,
+.card-proof-value,
+.metric-value,
+.hero-meta,
+.page-meta,
+.stack-list,
+.story-grid-case .content-card::after {
+  font-variant-numeric: tabular-nums lining-nums;
 }
 
 .hero-copy h1 {
@@ -430,7 +486,10 @@ main > .section:not(.hero):not(.page-hero)::before {
   border: 1px solid var(--line);
   border-radius: 26px;
   background: var(--surface);
-  box-shadow: var(--shadow);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.56),
+    inset 0 2px 0 rgba(15, 107, 97, 0.12),
+    var(--shadow);
   backdrop-filter: blur(16px);
 }
 
@@ -446,6 +505,39 @@ main > .section:not(.hero):not(.page-hero)::before {
   inset: 0;
   pointer-events: none;
   background: linear-gradient(145deg, rgba(255, 255, 255, 0.42), transparent 42%);
+}
+
+.hero-rail-card,
+.proof-card,
+.project-card,
+.writing-card,
+.metric-card,
+.boundary-card,
+.page-rail-card,
+.contact-card {
+  --panel-signal: var(--signal);
+  --panel-signal-fade: var(--signal-warm);
+}
+
+.hero-rail-card::after,
+.proof-card::after,
+.project-card::after,
+.writing-card::after,
+.metric-card::after,
+.boundary-card::after,
+.page-rail-card::after,
+.contact-card::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 68px;
+  height: 10px;
+  pointer-events: none;
+  background:
+    radial-gradient(circle, var(--panel-signal) 0 1.4px, transparent 1.9px) 0 50% / 10px 10px no-repeat,
+    linear-gradient(90deg, var(--panel-signal), var(--panel-signal-fade)) 16px 50% / 52px 1px no-repeat;
+  opacity: 0.88;
 }
 
 .hero-rail-card,
@@ -469,11 +561,24 @@ main > .section:not(.hero):not(.page-hero)::before {
 }
 
 .hero-proof-item {
+  position: relative;
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 16px;
+  padding-left: 14px;
   padding-top: 16px;
   border-top: 1px solid var(--line);
+}
+
+.hero-proof-item::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 0;
+  width: 2px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, var(--signal), rgba(15, 107, 97, 0));
 }
 
 .hero-proof-item:first-child {
@@ -584,7 +689,12 @@ main > .section:not(.hero):not(.page-hero)::before {
 .proof-grid li:first-child .proof-card {
   background: linear-gradient(145deg, rgba(19, 33, 58, 0.98), rgba(36, 66, 109, 0.92));
   border-color: rgba(255, 255, 255, 0.08);
-  box-shadow: var(--shadow-strong);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    inset 0 2px 0 rgba(255, 255, 255, 0.18),
+    var(--shadow-strong);
+  --panel-signal: rgba(255, 255, 255, 0.54);
+  --panel-signal-fade: rgba(255, 255, 255, 0.18);
 }
 
 .proof-grid li:first-child .proof-value,
@@ -912,7 +1022,12 @@ main > .section:not(.hero):not(.page-hero)::before {
     radial-gradient(circle at top right, rgba(255, 255, 255, 0.1), transparent 24%),
     linear-gradient(135deg, #13213a, #19384b 72%, #0f6b61 110%);
   color: #fff;
-  box-shadow: var(--shadow-strong);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    inset 0 2px 0 rgba(255, 255, 255, 0.18),
+    var(--shadow-strong);
+  --panel-signal: rgba(255, 255, 255, 0.54);
+  --panel-signal-fade: rgba(255, 255, 255, 0.18);
 }
 
 .contact-copy h2 {
@@ -926,6 +1041,15 @@ main > .section:not(.hero):not(.page-hero)::before {
 .contact-card .eyebrow,
 .contact-card p {
   color: rgba(255, 255, 255, 0.82);
+}
+
+.contact-card .eyebrow::before {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.55));
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.08);
+}
+
+.contact-card .eyebrow::after {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.42), transparent);
 }
 
 .contact-links {
@@ -996,13 +1120,30 @@ main > .section:not(.hero):not(.page-hero)::before {
 }
 
 .page-rail-list div {
+  position: relative;
+  padding-left: 16px;
   padding-top: 14px;
   border-top: 1px solid var(--line);
+}
+
+.page-rail-list div::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  bottom: 0;
+  left: 0;
+  width: 2px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, var(--signal), rgba(15, 107, 97, 0));
 }
 
 .page-rail-list div:first-child {
   padding-top: 0;
   border-top: 0;
+}
+
+.page-rail-list div:first-child::before {
+  top: 4px;
 }
 
 .page-rail-list span {
@@ -1040,7 +1181,12 @@ main > .section:not(.hero):not(.page-hero)::before {
 .metric-grid .metric-card:first-child {
   background: linear-gradient(145deg, rgba(19, 33, 58, 0.98), rgba(36, 66, 109, 0.92));
   border-color: rgba(255, 255, 255, 0.08);
-  box-shadow: var(--shadow-strong);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    inset 0 2px 0 rgba(255, 255, 255, 0.18),
+    var(--shadow-strong);
+  --panel-signal: rgba(255, 255, 255, 0.54);
+  --panel-signal-fade: rgba(255, 255, 255, 0.18);
 }
 
 .metric-grid .metric-card:first-child .detail-label,
@@ -1191,6 +1337,25 @@ main > .section:not(.hero):not(.page-hero)::before {
   .contact-card,
   .page-rail-card {
     padding: 22px;
+  }
+
+  .eyebrow::after,
+  .detail-label::after,
+  .card-kicker::after {
+    width: 30px;
+  }
+
+  .hero-rail-card::after,
+  .proof-card::after,
+  .project-card::after,
+  .writing-card::after,
+  .metric-card::after,
+  .boundary-card::after,
+  .page-rail-card::after,
+  .contact-card::after {
+    top: 16px;
+    right: 16px;
+    width: 52px;
   }
 
   .header-actions {
