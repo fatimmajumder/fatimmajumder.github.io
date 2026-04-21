@@ -87,6 +87,7 @@
             <a class="nav-link" href="../index.html#case-studies">Case Studies</a>
             <a class="nav-link" href="../index.html#experience">Experience</a>
             <a class="nav-link" href="../index.html#projects">Projects</a>
+            <a class="nav-link" href="../index.html#writing">Writing</a>
             <a class="nav-link" href="../index.html#contact">Contact</a>
           </nav>
 
@@ -115,10 +116,11 @@
           </p>
           <h1>Analytics observability systems for pipelines too large to debug by hand.</h1>
           <p class="page-hero-summary">
-            This case study translates my Fullstory backend systems work into a
-            public-safe engineering story. The focus is detecting bad analytics
-            before it reaches dashboards, downstream models, or decision-makers,
-            while keeping alerting precise enough that teams actually trust it.
+            The core problem was catching bad analytics before it reached
+            dashboards or downstream consumers while keeping alerting precise
+            enough for teams to trust. The work centered on validation close to
+            warehouse and scheduling layers plus incident context that made
+            failures faster to debug.
           </p>
           <div class="page-actions">
             <a class="button button-primary" href="../index.html#experience">
@@ -133,7 +135,7 @@
         <section class="section" aria-labelledby="metrics-title">
           <div class="section-heading section-heading-compact">
             <p class="eyebrow">Key Outcomes</p>
-            <h2 id="metrics-title">The proof from the observability work.</h2>
+            <h2 id="metrics-title">The proof from the observability system.</h2>
           </div>
           <div class="metric-grid">
             <article class="metric-card">
@@ -156,22 +158,31 @@
 
         <section class="section" aria-labelledby="story-title">
           <div class="section-heading section-heading-compact">
-            <p class="eyebrow">System Story</p>
-            <h2 id="story-title">What had to change for bad data to become impossible to ignore.</h2>
+            <p class="eyebrow">Case Breakdown</p>
+            <h2 id="story-title">Problem, constraints, system, decisions, and outcome.</h2>
           </div>
-          <div class="story-grid">
+          <div class="story-grid story-grid-case">
             <article class="content-card">
-              <p class="card-kicker">Constraint</p>
-              <h3>Analytics teams needed alerts that were both broad and believable.</h3>
+              <p class="card-kicker">Problem</p>
+              <h3>Silent data regressions were reaching dashboards too late.</h3>
               <ul class="bullet-list">
-                <li>Silent regressions were slipping through until dashboards or downstream consumers were already affected.</li>
-                <li>Too many alerts lacked enough context to debug quickly or to distinguish noise from real failures.</li>
-                <li>Precision mattered because teams stop trusting observability surfaces that cry wolf.</li>
+                <li>Analytics breakage was expensive because downstream teams were already working from bad data.</li>
+                <li>The system had to detect regressions early without overwhelming people with noise.</li>
               </ul>
             </article>
 
             <article class="content-card">
-              <p class="card-kicker">System design</p>
+              <p class="card-kicker">Constraints</p>
+              <h3>Teams needed alerts that were both broad and believable.</h3>
+              <ul class="bullet-list">
+                <li>Too many alerts lacked enough context to debug quickly or to distinguish noise from real failures.</li>
+                <li>Precision mattered because teams stop trusting observability surfaces that cry wolf.</li>
+                <li>Failures spanned schema changes, freshness lag, replay mismatches, and anomaly bursts rather than one simple pattern.</li>
+              </ul>
+            </article>
+
+            <article class="content-card">
+              <p class="card-kicker">System</p>
               <h3>Validation focused on the failure modes analytics pipelines actually hit.</h3>
               <ul class="bullet-list">
                 <li>Built validators for schema drift, freshness lag, broken joins, replay mismatches, null spikes, cardinality explosions, and anomaly bursts.</li>
@@ -181,22 +192,22 @@
             </article>
 
             <article class="content-card">
-              <p class="card-kicker">Outcomes</p>
+              <p class="card-kicker">Decisions</p>
+              <h3>The system emphasized failure classes and debugging context over one generic score.</h3>
+              <ul class="bullet-list">
+                <li>Structured validators around concrete failure modes instead of a monolithic anomaly heuristic.</li>
+                <li>Tuned thresholds and suppression rules to reduce false positives without hiding real regressions.</li>
+                <li>Made incident context part of the alert itself so triage started with usable evidence.</li>
+              </ul>
+            </article>
+
+            <article class="content-card">
+              <p class="card-kicker">Outcome</p>
               <h3>Precision improved because the system was structured around real debugging work.</h3>
               <ul class="bullet-list">
                 <li>Alert precision improved from 63% to 96%.</li>
                 <li>Median time-to-detection dropped from 3.4 hours to 7 minutes.</li>
                 <li>The reporting surface emphasized failure classes and triage speed instead of raw alert volume.</li>
-              </ul>
-            </article>
-
-            <article class="content-card">
-              <p class="card-kicker">Why it matters</p>
-              <h3>The same instincts show up anywhere bad data can quietly poison decisions.</h3>
-              <ul class="bullet-list">
-                <li>The observability patterns here shaped how I later built lineage, regression checks, and audit artifacts in public evaluation tooling.</li>
-                <li>It shows a backend systems mindset centered on contracts, reproducibility, and fast debugging.</li>
-                <li>This case study makes resume-level platform depth visible without exposing internal pipeline code or company data.</li>
               </ul>
             </article>
           </div>
@@ -207,10 +218,9 @@
             <p class="detail-label">Confidentiality Boundary</p>
             <h2>Architecture and outcomes are shared here. Internal source code and company data are not.</h2>
             <p>
-              This case study is intentionally written as a public-safe
-              reconstruction. It captures the system design, failure modes,
-              metrics, and engineering judgment without disclosing proprietary
-              implementation details.
+              This is a public-safe reconstruction of the system. It captures
+              the validation surfaces, failure modes, metrics, and engineering
+              decisions without exposing proprietary implementation details.
             </p>
           </article>
         </section>

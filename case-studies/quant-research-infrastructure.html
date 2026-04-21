@@ -87,6 +87,7 @@
             <a class="nav-link" href="../index.html#case-studies">Case Studies</a>
             <a class="nav-link" href="../index.html#experience">Experience</a>
             <a class="nav-link" href="../index.html#projects">Projects</a>
+            <a class="nav-link" href="../index.html#writing">Writing</a>
             <a class="nav-link" href="../index.html#contact">Contact</a>
           </nav>
 
@@ -116,11 +117,10 @@
           </p>
           <h1>Quant research infrastructure built to make strategy work faster, cleaner, and harder to fool.</h1>
           <p class="page-hero-summary">
-            This case study translates the research platform work I led at
-            Algory into a public-safe engineering narrative. The emphasis is on
-            point-in-time data, walk-forward validation, diagnostics, shared
-            tearsheets, and execution-aware review for a 30+ member research
-            organization.
+            The goal was to replace fragmented research notebooks with shared
+            infrastructure for point-in-time data, walk-forward validation,
+            diagnostics, and execution-aware review across a 30+ member
+            research organization.
           </p>
           <div class="page-actions">
             <a class="button button-primary" href="../index.html#experience">
@@ -163,22 +163,31 @@
 
         <section class="section" aria-labelledby="story-title">
           <div class="section-heading section-heading-compact">
-            <p class="eyebrow">System Story</p>
-            <h2 id="story-title">What changed when research became shared infrastructure instead of notebook folklore.</h2>
+            <p class="eyebrow">Case Breakdown</p>
+            <h2 id="story-title">Problem, constraints, system, decisions, and outcome.</h2>
           </div>
-          <div class="story-grid">
+          <div class="story-grid story-grid-case">
             <article class="content-card">
-              <p class="card-kicker">Constraint</p>
+              <p class="card-kicker">Problem</p>
               <h3>Strategy work was fragmented across analysts, notebooks, and hand-built review habits.</h3>
               <ul class="bullet-list">
-                <li>Research workflows needed consistent ingestion, diagnostics, and comparison paths.</li>
-                <li>Validation had to respect point-in-time information constraints, not retrospective convenience.</li>
-                <li>Review needed to include tradability and execution effects, not just attractive backtests.</li>
+                <li>Research quality depended too much on local notebook habits and manual interpretation.</li>
+                <li>The organization needed a shared way to ingest, validate, compare, and review strategies.</li>
               </ul>
             </article>
 
             <article class="content-card">
-              <p class="card-kicker">System design</p>
+              <p class="card-kicker">Constraints</p>
+              <h3>The platform had to stay honest about what could have been known at the time.</h3>
+              <ul class="bullet-list">
+                <li>Validation had to respect point-in-time information constraints, not retrospective convenience.</li>
+                <li>Review needed to include tradability and execution effects, not just attractive backtests.</li>
+                <li>Research workflows still needed consistent ingestion, diagnostics, and comparison paths across the team.</li>
+              </ul>
+            </article>
+
+            <article class="content-card">
+              <p class="card-kicker">System</p>
               <h3>The platform made research discipline easier to practice.</h3>
               <ul class="bullet-list">
                 <li>Built the workflow from point-in-time ingestion through factor modeling, walk-forward backtesting, portfolio construction, attribution, and execution simulation.</li>
@@ -188,22 +197,22 @@
             </article>
 
             <article class="content-card">
-              <p class="card-kicker">Outcomes</p>
+              <p class="card-kicker">Decisions</p>
+              <h3>Point-in-time validation and review legibility became platform behavior.</h3>
+              <ul class="bullet-list">
+                <li>Treated point-in-time data contracts and walk-forward validation as defaults, not optional analyst discipline.</li>
+                <li>Made diagnostics and tearsheets the standard review output instead of custom notebook prose.</li>
+                <li>Connected exposures, attribution, and execution simulation so review included tradability as well as returns.</li>
+              </ul>
+            </article>
+
+            <article class="content-card">
+              <p class="card-kicker">Outcome</p>
               <h3>The platform improved both velocity and legibility across the organization.</h3>
               <ul class="bullet-list">
                 <li>Strategy research throughput increased by 6.8x.</li>
                 <li>New-analyst ramp time dropped from about 6 weeks to 8 days.</li>
                 <li>Research review became more inspectable because diagnostics and validation were generated consistently.</li>
-              </ul>
-            </article>
-
-            <article class="content-card">
-              <p class="card-kicker">Why it matters</p>
-              <h3>This is research engineering for teams, not just for isolated experiments.</h3>
-              <ul class="bullet-list">
-                <li>Quant Research Lab is the public-facing version of the same ideas: point-in-time validation, lineage, and execution-aware review.</li>
-                <li>It shows how I build infrastructure that helps more people do serious work correctly.</li>
-                <li>The case study preserves the platform depth without exposing proprietary strategy logic or data.</li>
               </ul>
             </article>
           </div>
@@ -214,9 +223,9 @@
             <p class="detail-label">Confidentiality Boundary</p>
             <h2>Workflow, platform design, and outcomes are documented here. Proprietary strategy logic, holdings, and private data are not.</h2>
             <p>
-              This page is a public-safe reconstruction of the systems work
-              behind the research platform. The goal is to show the engineering
-              depth without disclosing private investment research.
+              This is a public-safe reconstruction of the platform work behind
+              the research system. It shows the engineering depth without
+              disclosing private investment research.
             </p>
           </article>
         </section>

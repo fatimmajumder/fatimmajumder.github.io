@@ -12,8 +12,8 @@
   --accent: #0f6b61;
   --accent-soft: rgba(15, 107, 97, 0.08);
   --warm: #95522d;
-  --shadow: 0 20px 60px rgba(16, 33, 61, 0.08);
-  --shadow-strong: 0 24px 80px rgba(16, 33, 61, 0.12);
+  --shadow: 0 18px 48px rgba(16, 33, 61, 0.07);
+  --shadow-strong: 0 24px 68px rgba(16, 33, 61, 0.1);
   --display: "Fraunces", serif;
   --body: "Manrope", sans-serif;
   --mono: "SFMono-Regular", "Menlo", "Monaco", monospace;
@@ -33,6 +33,7 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
+  overflow-x: clip;
   color: var(--ink);
   font-family: var(--body);
   background:
@@ -47,8 +48,8 @@ body::before {
   inset: 0;
   pointer-events: none;
   background-image:
-    linear-gradient(rgba(16, 33, 61, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(16, 33, 61, 0.03) 1px, transparent 1px);
+    linear-gradient(rgba(16, 33, 61, 0.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(16, 33, 61, 0.018) 1px, transparent 1px);
   background-size: 40px 40px;
   mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.22), transparent 78%);
 }
@@ -61,7 +62,7 @@ body::after {
   background:
     radial-gradient(circle at 15% 20%, rgba(255, 255, 255, 0.75), transparent 26%),
     radial-gradient(circle at 82% 12%, rgba(255, 255, 255, 0.55), transparent 22%);
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 a {
@@ -322,11 +323,13 @@ a {
 .hero-summary {
   max-width: 58ch;
   font-size: 1.08rem;
+  line-height: 1.72;
   margin-top: 22px;
 }
 
 .hero-status {
   width: fit-content;
+  max-width: 44rem;
   margin: 22px 0 0;
   padding: 11px 14px;
   border: 1px solid rgba(15, 107, 97, 0.18);
@@ -414,6 +417,10 @@ a {
   margin-bottom: 18px;
 }
 
+.proof-section .section-heading {
+  max-width: 760px;
+}
+
 .section-heading h2,
 .contact-copy h2,
 .page-hero h1 {
@@ -450,7 +457,8 @@ a {
 
 .proof-card {
   height: 100%;
-  padding: 24px;
+  padding: 22px;
+  border-color: rgba(16, 33, 61, 0.08);
   background:
     linear-gradient(180deg, rgba(255, 253, 249, 0.96), rgba(243, 238, 230, 0.92));
 }
@@ -469,6 +477,10 @@ a {
   font-size: 1rem;
   font-weight: 800;
   line-height: 1.4;
+}
+
+.proof-context {
+  line-height: 1.45;
 }
 
 .case-study-grid,
@@ -497,6 +509,23 @@ a {
   align-content: start;
 }
 
+.case-study-card {
+  border-color: rgba(15, 107, 97, 0.12);
+  background:
+    radial-gradient(circle at top right, rgba(15, 107, 97, 0.08), transparent 34%),
+    linear-gradient(180deg, rgba(255, 253, 249, 0.97), rgba(244, 239, 231, 0.94));
+}
+
+.project-card {
+  background:
+    linear-gradient(180deg, rgba(255, 253, 249, 0.97), rgba(242, 237, 229, 0.93));
+}
+
+.writing-card {
+  background:
+    linear-gradient(180deg, rgba(255, 253, 249, 0.97), rgba(244, 239, 231, 0.93));
+}
+
 .card-header {
   display: grid;
   gap: 8px;
@@ -506,6 +535,7 @@ a {
 .experience-body h3 {
   font-size: clamp(1.45rem, 2.3vw, 2.1rem);
   line-height: 1.06;
+  text-wrap: balance;
 }
 
 .boundary-card h2 {
@@ -515,6 +545,7 @@ a {
   font-weight: 700;
   line-height: 1.06;
   letter-spacing: -0.04em;
+  text-wrap: balance;
 }
 
 .fact-list {
@@ -549,6 +580,12 @@ a {
   font-size: 0.78rem;
   line-height: 1.72;
   overflow-wrap: anywhere;
+}
+
+.case-study-card .card-actions,
+.project-card .card-actions,
+.writing-card .card-actions {
+  margin-top: auto;
 }
 
 .text-link {
@@ -617,6 +654,7 @@ a {
 }
 
 .writing-card-foundation {
+  grid-column: 1 / -1;
   background:
     radial-gradient(circle at top right, rgba(15, 107, 97, 0.12), transparent 34%),
     linear-gradient(180deg, rgba(255, 253, 249, 0.96), rgba(244, 239, 231, 0.92));
@@ -669,6 +707,10 @@ a {
   max-width: 14ch;
 }
 
+.contact-copy p {
+  max-width: 54ch;
+}
+
 .contact-card .eyebrow,
 .contact-card p {
   color: rgba(255, 255, 255, 0.84);
@@ -699,7 +741,7 @@ a {
 }
 
 .case-shell {
-  width: min(1040px, calc(100% - 32px));
+  width: min(1120px, calc(100% - 32px));
 }
 
 .page-hero {
@@ -734,6 +776,10 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+}
+
+.story-grid-case .content-card:last-child {
+  grid-column: 1 / -1;
 }
 
 .metric-card {
@@ -824,6 +870,21 @@ a {
   .hero-copy h1 {
     max-width: 8ch;
     font-size: clamp(2.35rem, 12vw, 4.2rem);
+  }
+
+  .hero-summary {
+    font-size: 1rem;
+  }
+
+  .section-heading h2,
+  .contact-copy h2,
+  .page-hero h1 {
+    line-height: 1.02;
+  }
+
+  .hero-status {
+    width: 100%;
+    border-radius: 22px;
   }
 
   .hero-actions,

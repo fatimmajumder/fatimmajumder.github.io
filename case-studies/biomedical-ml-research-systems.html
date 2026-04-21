@@ -87,6 +87,7 @@
             <a class="nav-link" href="../index.html#case-studies">Case Studies</a>
             <a class="nav-link" href="../index.html#experience">Experience</a>
             <a class="nav-link" href="../index.html#projects">Projects</a>
+            <a class="nav-link" href="../index.html#writing">Writing</a>
             <a class="nav-link" href="../index.html#contact">Contact</a>
           </nav>
 
@@ -115,11 +116,10 @@
           </p>
           <h1>Biomedical ML research systems built for rigor, reproducibility, and clean evaluation.</h1>
           <p class="page-hero-summary">
-            This case study translates my biomedical ML research work into a
-            public-safe systems narrative. The emphasis is on repeatable
-            multimodal workflows, fixing cohort and evaluation methodology, and
-            making controlled experimentation practical in clinical and imaging
-            settings.
+            The core problem was experimental rigor: multimodal pipelines,
+            leakage risk, and evaluation methodology that could quietly distort
+            results. The work centered on repeatable workflows, cohort fixes,
+            and clearer analysis surfaces for collaborators.
           </p>
           <div class="page-actions">
             <a class="button button-primary" href="../index.html#experience">
@@ -139,7 +139,7 @@
         <section class="section" aria-labelledby="metrics-title">
           <div class="section-heading section-heading-compact">
             <p class="eyebrow">Key Outcomes</p>
-            <h2 id="metrics-title">The proof from the research pipeline work.</h2>
+            <h2 id="metrics-title">The proof from the research pipeline.</h2>
           </div>
           <div class="metric-grid">
             <article class="metric-card">
@@ -162,13 +162,22 @@
 
         <section class="section" aria-labelledby="story-title">
           <div class="section-heading section-heading-compact">
-            <p class="eyebrow">System Story</p>
-            <h2 id="story-title">What made the research pipeline scientifically trustworthy.</h2>
+            <p class="eyebrow">Case Breakdown</p>
+            <h2 id="story-title">Problem, constraints, system, decisions, and outcome.</h2>
           </div>
-          <div class="story-grid">
+          <div class="story-grid story-grid-case">
             <article class="content-card">
-              <p class="card-kicker">Constraint</p>
-              <h3>Most of the risk came from methodology, not from a lack of model complexity.</h3>
+              <p class="card-kicker">Problem</p>
+              <h3>Methodology issues could quietly make multimodal results look better than they were.</h3>
+              <ul class="bullet-list">
+                <li>The hardest problems were cohort construction, evaluation design, and experimental hygiene.</li>
+                <li>The system needed to make rigorous comparison easier for collaborators running many variants.</li>
+              </ul>
+            </article>
+
+            <article class="content-card">
+              <p class="card-kicker">Constraints</p>
+              <h3>There were many ways leakage and contamination could creep in.</h3>
               <ul class="bullet-list">
                 <li>Multimodal experiments combined clinical variables, imaging features, and fusion logic across many settings.</li>
                 <li>Patient overlap, temporal contamination, and feature leakage could quietly inflate performance.</li>
@@ -177,7 +186,7 @@
             </article>
 
             <article class="content-card">
-              <p class="card-kicker">System design</p>
+              <p class="card-kicker">System</p>
               <h3>Leakage prevention and reproducibility became part of the workflow itself.</h3>
               <ul class="bullet-list">
                 <li>Tracked preprocessing variants, feature sets, fusion strategies, calibration, thresholds, and evaluation outputs.</li>
@@ -187,22 +196,22 @@
             </article>
 
             <article class="content-card">
-              <p class="card-kicker">Outcomes</p>
+              <p class="card-kicker">Decisions</p>
+              <h3>Most of the gain came from better science, not a different model class.</h3>
+              <ul class="bullet-list">
+                <li>Made cohort construction and split hygiene explicit rather than buried inside experiment code.</li>
+                <li>Treated subgroup evaluation, calibration, and threshold analysis as standard outputs.</li>
+                <li>Turned leakage prevention into infrastructure instead of a one-time cleanup exercise.</li>
+              </ul>
+            </article>
+
+            <article class="content-card">
+              <p class="card-kicker">Outcome</p>
               <h3>Better science produced the largest gains.</h3>
               <ul class="bullet-list">
                 <li>Held-out AUROC improved from 0.71 to 0.88 after fixing cohort construction and evaluation methodology.</li>
                 <li>More than 1,000 controlled runs were supported across preprocessing, fusion, calibration, and threshold settings.</li>
                 <li>Leakage prevention became infrastructure rather than a one-time cleanup step.</li>
-              </ul>
-            </article>
-
-            <article class="content-card">
-              <p class="card-kicker">Why it matters</p>
-              <h3>This is the same rigor I bring to any high-stakes ML system.</h3>
-              <ul class="bullet-list">
-                <li>It reinforces the core pattern across my work: strong experimental controls, clean lineage, and high-signal diagnostics.</li>
-                <li>It shows I can work in settings where domain correctness matters as much as model performance.</li>
-                <li>The case study makes the biomedical ML depth on my resume legible without publishing restricted data.</li>
               </ul>
             </article>
           </div>
@@ -213,9 +222,10 @@
             <p class="detail-label">Confidentiality Boundary</p>
             <h2>Scientific workflow and engineering choices are documented here. Private data and internal artifacts are not.</h2>
             <p>
-              This page is designed to preserve the substance of the research
-              engineering work while respecting dataset access restrictions and
-              collaborator confidentiality.
+              This is a public-safe reconstruction of the research system. It
+              preserves the engineering decisions and measured outcomes while
+              respecting dataset access restrictions and collaborator
+              confidentiality.
             </p>
           </article>
         </section>

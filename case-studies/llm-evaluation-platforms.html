@@ -84,6 +84,7 @@
             <a class="nav-link" href="../index.html#case-studies">Case Studies</a>
             <a class="nav-link" href="../index.html#experience">Experience</a>
             <a class="nav-link" href="../index.html#projects">Projects</a>
+            <a class="nav-link" href="../index.html#writing">Writing</a>
             <a class="nav-link" href="../index.html#contact">Contact</a>
           </nav>
 
@@ -116,11 +117,10 @@
             reproducible, inspectable, and decision-safe.
           </h1>
           <p class="page-hero-summary">
-            This page turns internal platform work into a public-safe engineering
-            narrative. The focus is the systems layer around evaluation:
-            deterministic lineage, asynchronous execution, artifact reuse,
-            comparative analysis, and regression detection that teams can
-            actually trust.
+            The core problem was keeping evaluation reliable as prompts,
+            datasets, tokenizers, judges, and scoring logic changed at product
+            speed. This work focused on lineage, replay, async execution, and
+            regression analysis that kept results trustworthy.
           </p>
           <div class="page-actions">
             <a class="button button-primary" href="../index.html#experience">
@@ -140,7 +140,7 @@
         <section class="section" aria-labelledby="metrics-title">
           <div class="section-heading section-heading-compact">
             <p class="eyebrow">Key Outcomes</p>
-            <h2 id="metrics-title">The core proof from the platform work.</h2>
+            <h2 id="metrics-title">The proof from the evaluation platform.</h2>
           </div>
           <div class="metric-grid">
             <article class="metric-card">
@@ -166,13 +166,22 @@
 
         <section class="section" aria-labelledby="story-title">
           <div class="section-heading section-heading-compact">
-            <p class="eyebrow">System Story</p>
-            <h2 id="story-title">What had to be true for the platform to stay trustworthy.</h2>
+            <p class="eyebrow">Case Breakdown</p>
+            <h2 id="story-title">Problem, constraints, system, decisions, and outcome.</h2>
           </div>
-          <div class="story-grid">
+          <div class="story-grid story-grid-case">
             <article class="content-card">
-              <p class="card-kicker">Constraint</p>
-              <h3>Evaluation inputs changed faster than manual tracking could keep up.</h3>
+              <p class="card-kicker">Problem</p>
+              <h3>Shared benchmark workflows could not guarantee exact reruns or trustworthy comparisons.</h3>
+              <ul class="bullet-list">
+                <li>Evaluation was no longer a one-off spreadsheet exercise; it was a shared product surface.</li>
+                <li>Teams needed to compare runs confidently even as core inputs changed across the stack.</li>
+              </ul>
+            </article>
+
+            <article class="content-card">
+              <p class="card-kicker">Constraints</p>
+              <h3>Inputs changed faster than manual tracking could keep up.</h3>
               <ul class="bullet-list">
                 <li>Models, prompts, datasets, tokenizers, judges, and scoring logic all changed independently.</li>
                 <li>Aggregate metrics hid regressions that only showed up in slices or scenario families.</li>
@@ -181,8 +190,8 @@
             </article>
 
             <article class="content-card">
-              <p class="card-kicker">System design</p>
-              <h3>Determinism and auditability became product requirements.</h3>
+              <p class="card-kicker">System</p>
+              <h3>The platform treated lineage, execution, and review as one system.</h3>
               <ul class="bullet-list">
                 <li>Handled model, prompt, dataset, tokenizer, judge, and scoring revisions as first-class lineage inputs.</li>
                 <li>Built async scheduling, retry semantics, and cache-aware execution to keep large evaluations tractable.</li>
@@ -191,22 +200,22 @@
             </article>
 
             <article class="content-card">
-              <p class="card-kicker">Outcomes</p>
+              <p class="card-kicker">Decisions</p>
+              <h3>Determinism and auditability were product requirements, not cleanup work.</h3>
+              <ul class="bullet-list">
+                <li>Used lineage as the contract that made experiments explainable to both engineers and decision-makers.</li>
+                <li>Made run diffs and slice-level regression checks part of the review surface instead of post-hoc debugging.</li>
+                <li>Preserved manifests and artifacts so every important result could be replayed and inspected.</li>
+              </ul>
+            </article>
+
+            <article class="content-card">
+              <p class="card-kicker">Outcome</p>
               <h3>The platform became faster while telling the truth about its own experiments.</h3>
               <ul class="bullet-list">
                 <li>Exact rerun reproducibility increased from 74.1% to 99.96%.</li>
                 <li>Median turnaround dropped by 84% and wasted GPU-hours fell by 51%.</li>
                 <li>Run-diff tooling surfaced a preprocessing defect that had inflated internal metrics by 6.1 points.</li>
-              </ul>
-            </article>
-
-            <article class="content-card">
-              <p class="card-kicker">Why it matters</p>
-              <h3>This is how evaluation becomes infrastructure instead of a spreadsheet habit.</h3>
-              <ul class="bullet-list">
-                <li>It shows how I think about evaluation as a systems and reliability problem, not only a modeling problem.</li>
-                <li>RE-AMP is the public-facing version of many of these instincts: replay, lineage, artifact bundles, and regression-aware comparison.</li>
-                <li>The case study preserves the platform decisions without exposing private models, prompts, or employer IP.</li>
               </ul>
             </article>
           </div>
@@ -217,9 +226,9 @@
             <p class="detail-label">Confidentiality Boundary</p>
             <h2>Architecture, workflow, and outcomes are documented here. Internal models, prompts, and proprietary platform details are not.</h2>
             <p>
-              This case study is intentionally written as a public-safe
-              reconstruction of the engineering work. It preserves the substance
-              of the platform decisions without disclosing employer IP.
+              This is a public-safe reconstruction of the engineering work. It
+              preserves the platform decisions, failure modes, and measured
+              outcomes without disclosing employer IP.
             </p>
           </article>
         </section>
