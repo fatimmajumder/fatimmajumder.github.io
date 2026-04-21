@@ -84,10 +84,10 @@
           </a>
 
           <nav class="site-nav" aria-label="Primary navigation">
-            <a class="nav-link" href="../index.html#case-studies">Case Studies</a>
+            <a class="nav-link" href="../index.html#top">Overview</a>
+            <a class="nav-link is-active" href="../index.html#case-studies" aria-current="page">Case Studies</a>
             <a class="nav-link" href="../index.html#experience">Experience</a>
             <a class="nav-link" href="../index.html#projects">Projects</a>
-            <a class="nav-link" href="../index.html#writing">Writing</a>
             <a class="nav-link" href="../index.html#contact">Contact</a>
           </nav>
 
@@ -109,27 +109,59 @@
 
       <main id="main-content">
         <section class="section page-hero">
-          <a class="back-link" href="../index.html#case-studies">Back to case studies</a>
-          <p class="eyebrow">Fullstory | Summer 2024</p>
-          <p class="page-meta">
-            Python | SQL | Kafka | Airflow | dbt | Docker
-          </p>
-          <h1>Analytics observability systems for pipelines too large to debug by hand.</h1>
-          <p class="page-hero-summary">
-            The core problem was catching bad analytics before it reached
-            dashboards or downstream consumers while keeping alerting precise
-            enough for teams to trust. The work centered on validation close to
-            warehouse and scheduling layers plus incident context that made
-            failures faster to debug.
-          </p>
-          <div class="page-actions">
-            <a class="button button-primary" href="../index.html#experience">
-              See resume context
-            </a>
-            <a class="button button-secondary" href="../index.html#projects">
-              View public projects
-            </a>
+          <div class="page-hero-main">
+            <a class="back-link" href="../index.html#case-studies">Back to case studies</a>
+            <p class="eyebrow">Fullstory | Summer 2024</p>
+            <p class="page-meta">
+              Python | SQL | Kafka | Airflow | dbt | Docker
+            </p>
+            <h1>Analytics observability systems for pipelines too large to debug by hand.</h1>
+            <p class="page-hero-summary">
+              The core problem was catching bad analytics before it reached
+              dashboards or downstream consumers while keeping alerting precise
+              enough for teams to trust. The work centered on validation close
+              to warehouse and scheduling layers plus incident context that made
+              failures faster to debug.
+            </p>
+            <div class="page-actions">
+              <a class="button button-primary" href="../index.html#experience">
+                See resume context
+              </a>
+              <a class="button button-secondary" href="../index.html#projects">
+                View public projects
+              </a>
+            </div>
           </div>
+
+          <aside class="page-hero-rail" aria-label="Case study quick read">
+            <article class="page-rail-card">
+              <p class="detail-label">Quick read</p>
+              <div class="page-rail-list">
+                <div>
+                  <span>Problem</span>
+                  <p>
+                    Silent data regressions were reaching dashboards too late,
+                    and alerting was not precise enough for teams to trust.
+                  </p>
+                </div>
+                <div>
+                  <span>System</span>
+                  <p>
+                    Validators for schema drift, freshness lag, replay
+                    mismatches, null spikes, cardinality explosions, and anomaly
+                    bursts.
+                  </p>
+                </div>
+                <div>
+                  <span>Outcome</span>
+                  <p>
+                    4B+ weekly events monitored, 96% alert precision, and
+                    median detection time down from 3.4 hours to 7 minutes.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </aside>
         </section>
 
         <section class="section" aria-labelledby="metrics-title">

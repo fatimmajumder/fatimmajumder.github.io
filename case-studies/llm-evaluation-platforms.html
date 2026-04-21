@@ -81,10 +81,10 @@
           </a>
 
           <nav class="site-nav" aria-label="Primary navigation">
-            <a class="nav-link" href="../index.html#case-studies">Case Studies</a>
+            <a class="nav-link" href="../index.html#top">Overview</a>
+            <a class="nav-link is-active" href="../index.html#case-studies" aria-current="page">Case Studies</a>
             <a class="nav-link" href="../index.html#experience">Experience</a>
             <a class="nav-link" href="../index.html#projects">Projects</a>
-            <a class="nav-link" href="../index.html#writing">Writing</a>
             <a class="nav-link" href="../index.html#contact">Contact</a>
           </nav>
 
@@ -106,35 +106,68 @@
 
       <main id="main-content">
         <section class="section page-hero">
-          <a class="back-link" href="../index.html#case-studies">Back to case studies</a>
-          <p class="eyebrow">Arthur AI | Summer 2025</p>
-          <p class="page-meta">
-            Python | PyTorch | Ray | FastAPI | PostgreSQL | Redis | Docker |
-            Kubernetes | AWS
-          </p>
-          <h1>
-            LLM evaluation systems built to keep fast-moving experiments
-            reproducible, inspectable, and decision-safe.
-          </h1>
-          <p class="page-hero-summary">
-            The core problem was keeping evaluation reliable as prompts,
-            datasets, tokenizers, judges, and scoring logic changed at product
-            speed. This work focused on lineage, replay, async execution, and
-            regression analysis that kept results trustworthy.
-          </p>
-          <div class="page-actions">
-            <a class="button button-primary" href="../index.html#experience">
-              See resume context
-            </a>
-            <a
-              class="button button-secondary"
-              href="https://github.com/fatimmajumder/re-amp-audio-eval"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Related public repo
-            </a>
+          <div class="page-hero-main">
+            <a class="back-link" href="../index.html#case-studies">Back to case studies</a>
+            <p class="eyebrow">Arthur AI | Summer 2025</p>
+            <p class="page-meta">
+              Python | PyTorch | Ray | FastAPI | PostgreSQL | Redis | Docker |
+              Kubernetes | AWS
+            </p>
+            <h1>
+              LLM evaluation systems built to keep fast-moving experiments
+              reproducible, inspectable, and decision-safe.
+            </h1>
+            <p class="page-hero-summary">
+              The core problem was keeping evaluation reliable as prompts,
+              datasets, tokenizers, judges, and scoring logic changed at
+              product speed. This work focused on lineage, replay, async
+              execution, and regression analysis that kept results trustworthy.
+            </p>
+            <div class="page-actions">
+              <a class="button button-primary" href="../index.html#experience">
+                See resume context
+              </a>
+              <a
+                class="button button-secondary"
+                href="https://github.com/fatimmajumder/re-amp-audio-eval"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Related public repo
+              </a>
+            </div>
           </div>
+
+          <aside class="page-hero-rail" aria-label="Case study quick read">
+            <article class="page-rail-card">
+              <p class="detail-label">Quick read</p>
+              <div class="page-rail-list">
+                <div>
+                  <span>Problem</span>
+                  <p>
+                    Shared benchmark workflows could not guarantee exact reruns
+                    or trustworthy comparisons as prompts, datasets, and models
+                    changed.
+                  </p>
+                </div>
+                <div>
+                  <span>System</span>
+                  <p>
+                    Deterministic lineage, async scheduling, artifact caching,
+                    retry semantics, run diffing, and slice-level regression
+                    detection.
+                  </p>
+                </div>
+                <div>
+                  <span>Outcome</span>
+                  <p>
+                    15K+ runs per week, 99.96% exact rerun reproducibility, and
+                    84% faster median turnaround.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </aside>
         </section>
 
         <section class="section" aria-labelledby="metrics-title">

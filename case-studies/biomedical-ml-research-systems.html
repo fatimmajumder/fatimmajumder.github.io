@@ -84,10 +84,10 @@
           </a>
 
           <nav class="site-nav" aria-label="Primary navigation">
-            <a class="nav-link" href="../index.html#case-studies">Case Studies</a>
+            <a class="nav-link" href="../index.html#top">Overview</a>
+            <a class="nav-link is-active" href="../index.html#case-studies" aria-current="page">Case Studies</a>
             <a class="nav-link" href="../index.html#experience">Experience</a>
             <a class="nav-link" href="../index.html#projects">Projects</a>
-            <a class="nav-link" href="../index.html#writing">Writing</a>
             <a class="nav-link" href="../index.html#contact">Contact</a>
           </nav>
 
@@ -109,31 +109,64 @@
 
       <main id="main-content">
         <section class="section page-hero">
-          <a class="back-link" href="../index.html#case-studies">Back to case studies</a>
-          <p class="eyebrow">Georgia Tech / Emory University | 2022 to 2023</p>
-          <p class="page-meta">
-            Python | PyTorch | scikit-learn | SQL | Streamlit
-          </p>
-          <h1>Biomedical ML research systems built for rigor, reproducibility, and clean evaluation.</h1>
-          <p class="page-hero-summary">
-            The core problem was experimental rigor: multimodal pipelines,
-            leakage risk, and evaluation methodology that could quietly distort
-            results. The work centered on repeatable workflows, cohort fixes,
-            and clearer analysis surfaces for collaborators.
-          </p>
-          <div class="page-actions">
-            <a class="button button-primary" href="../index.html#experience">
-              See resume context
-            </a>
-            <a
-              class="button button-secondary"
-              href="https://github.com/fatimmajumder/quant-research-lab"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Related public lab
-            </a>
+          <div class="page-hero-main">
+            <a class="back-link" href="../index.html#case-studies">Back to case studies</a>
+            <p class="eyebrow">Georgia Tech / Emory University | 2022 to 2023</p>
+            <p class="page-meta">
+              Python | PyTorch | scikit-learn | SQL | Streamlit
+            </p>
+            <h1>Biomedical ML research systems built for rigor, reproducibility, and clean evaluation.</h1>
+            <p class="page-hero-summary">
+              The core problem was experimental rigor: multimodal pipelines,
+              leakage risk, and evaluation methodology that could quietly
+              distort results. The work centered on repeatable workflows,
+              cohort fixes, and clearer analysis surfaces for collaborators.
+            </p>
+            <div class="page-actions">
+              <a class="button button-primary" href="../index.html#experience">
+                See resume context
+              </a>
+              <a
+                class="button button-secondary"
+                href="https://github.com/fatimmajumder/quant-research-lab"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Related public lab
+              </a>
+            </div>
           </div>
+
+          <aside class="page-hero-rail" aria-label="Case study quick read">
+            <article class="page-rail-card">
+              <p class="detail-label">Quick read</p>
+              <div class="page-rail-list">
+                <div>
+                  <span>Problem</span>
+                  <p>
+                    Multimodal clinical experiments were vulnerable to patient
+                    overlap, temporal contamination, and weak evaluation
+                    discipline.
+                  </p>
+                </div>
+                <div>
+                  <span>System</span>
+                  <p>
+                    Reproducible pipelines for preprocessing, fusion,
+                    calibration, threshold analysis, and subgroup-aware
+                    evaluation.
+                  </p>
+                </div>
+                <div>
+                  <span>Outcome</span>
+                  <p>
+                    1,000+ controlled runs supported and held-out AUROC
+                    improved from 0.71 to 0.88 after cohort fixes.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </aside>
         </section>
 
         <section class="section" aria-labelledby="metrics-title">

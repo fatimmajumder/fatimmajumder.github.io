@@ -122,10 +122,10 @@
           </a>
 
           <nav class="site-nav" aria-label="Primary navigation">
+            <a class="nav-link" href="#top">Overview</a>
             <a class="nav-link" href="#case-studies">Case Studies</a>
             <a class="nav-link" href="#experience">Experience</a>
             <a class="nav-link" href="#projects">Projects</a>
-            <a class="nav-link" href="#writing">Writing</a>
             <a class="nav-link" href="#contact">Contact</a>
           </nav>
 
@@ -161,10 +161,12 @@
               infrastructure so fast iteration stays reproducible, measurable,
               and easy to debug.
             </p>
-            <p class="hero-status">
-              Open to ML research engineering, AI infrastructure,
-              backend/platform, and applied ML roles.
-            </p>
+
+            <ul class="hero-focus-list" aria-label="Core focus areas">
+              <li>Evaluation infrastructure</li>
+              <li>Data reliability</li>
+              <li>Experimentation systems</li>
+            </ul>
 
             <div class="hero-actions">
               <a
@@ -173,7 +175,7 @@
                 download
                 aria-label="Download resume PDF"
               >
-                Resume
+                Download resume
               </a>
               <a class="button button-secondary" href="mailto:fatim.majumder@emory.edu">
                 Email
@@ -197,31 +199,52 @@
             </div>
           </div>
 
-          <aside class="hero-panel" aria-label="Role fit summary">
-            <p class="detail-label">Core systems</p>
-            <div class="hero-panel-grid">
-              <article class="mini-panel">
-                <h2>Evaluation systems</h2>
-                <p>
-                  Deterministic lineage, replay, run diffing, and async
-                  execution for benchmark workflows that change quickly.
-                </p>
-              </article>
-              <article class="mini-panel">
-                <h2>Data reliability systems</h2>
-                <p>
-                  Validation and incident tooling for schema drift, freshness,
-                  replay mismatches, and broken analytics contracts.
-                </p>
-              </article>
-              <article class="mini-panel">
-                <h2>Research platforms</h2>
-                <p>
-                  Point-in-time data, walk-forward validation, and inspectable
-                  experiment workflows for technical teams.
-                </p>
-              </article>
-            </div>
+          <aside class="hero-rail" aria-label="Selected proof and search focus">
+            <article class="hero-rail-card hero-proof-rail">
+              <p class="detail-label">Selected proof</p>
+              <ul class="hero-proof-list">
+                <li class="hero-proof-item">
+                  <span class="hero-proof-value">99.96%</span>
+                  <div class="hero-proof-copy">
+                    <strong>Exact rerun reproducibility</strong>
+                    <span>Arthur AI after deterministic lineage redesign</span>
+                  </div>
+                </li>
+                <li class="hero-proof-item">
+                  <span class="hero-proof-value">15K+</span>
+                  <div class="hero-proof-copy">
+                    <strong>Benchmark runs per week</strong>
+                    <span>Arthur AI evaluation platform</span>
+                  </div>
+                </li>
+                <li class="hero-proof-item">
+                  <span class="hero-proof-value">4B+</span>
+                  <div class="hero-proof-copy">
+                    <strong>Weekly events monitored</strong>
+                    <span>Fullstory analytics validation systems</span>
+                  </div>
+                </li>
+                <li class="hero-proof-item">
+                  <span class="hero-proof-value">6.8x</span>
+                  <div class="hero-proof-copy">
+                    <strong>Research throughput increase</strong>
+                    <span>Algory Capital shared research platform</span>
+                  </div>
+                </li>
+              </ul>
+            </article>
+
+            <article class="hero-rail-card hero-status-card">
+              <p class="detail-label">Current search</p>
+              <h2>
+                Open to ML research engineering, AI infrastructure,
+                backend/platform, and applied ML roles.
+              </h2>
+              <p>
+                Best fit: teams where rigorous experimentation and reliable
+                systems are part of the product rather than cleanup work.
+              </p>
+            </article>
           </aside>
         </section>
 
@@ -229,21 +252,25 @@
           <div class="section-heading section-heading-compact">
             <p class="eyebrow">Proof Up Front</p>
             <h2 id="proof-title">Hard evidence for evaluation, observability, and research infrastructure.</h2>
+            <p class="section-intro">
+              Quantified outcomes across public-safe case studies, production
+              systems, and research infrastructure.
+            </p>
           </div>
 
           <ul class="proof-grid">
             <li>
               <article class="proof-card">
-                <p class="proof-value">15K+</p>
-                <p class="proof-label">benchmark runs per week</p>
-                <p class="proof-context">Arthur AI evaluation platform</p>
+                <p class="proof-value">99.96%</p>
+                <p class="proof-label">exact rerun reproducibility</p>
+                <p class="proof-context">after lineage redesign at Arthur AI</p>
               </article>
             </li>
             <li>
               <article class="proof-card">
-                <p class="proof-value">99.96%</p>
-                <p class="proof-label">exact rerun reproducibility</p>
-                <p class="proof-context">after lineage redesign at Arthur AI</p>
+                <p class="proof-value">15K+</p>
+                <p class="proof-label">benchmark runs per week</p>
+                <p class="proof-context">Arthur AI evaluation platform</p>
               </article>
             </li>
             <li>
@@ -277,191 +304,223 @@
 
           <div class="case-study-grid">
             <article class="content-card case-study-card">
-              <header class="card-header">
-                <p class="card-kicker">Arthur AI | LLM evaluation</p>
-                <h3>Deterministic evaluation infrastructure for fast-moving model teams.</h3>
+              <header class="card-header card-header-split">
+                <div>
+                  <p class="card-kicker">Arthur AI | LLM evaluation</p>
+                  <h3>Deterministic evaluation infrastructure for fast-moving model teams.</h3>
+                </div>
+                <div class="card-proof">
+                  <span class="card-proof-value">99.96%</span>
+                  <span class="card-proof-label">exact rerun reproducibility</span>
+                </div>
               </header>
               <p class="card-summary">
                 Built a production-grade evaluation and model analysis platform
                 spanning orchestration, lineage, caching, replay, and
                 regression-aware review.
               </p>
-              <dl class="fact-list">
-                <div>
-                  <dt>Problem</dt>
-                  <dd>
+              <div class="card-detail-grid">
+                <article class="detail-block">
+                  <p class="detail-label">Problem</p>
+                  <p>
                     Shared benchmark workflows could not guarantee exact reruns
                     or trustworthy comparisons as prompts, datasets, and models
                     changed.
-                  </dd>
-                </div>
-                <div>
-                  <dt>System</dt>
-                  <dd>
+                  </p>
+                </article>
+                <article class="detail-block">
+                  <p class="detail-label">System</p>
+                  <p>
                     Deterministic lineage, async scheduling, artifact caching,
                     retry semantics, run diffing, and slice-level regression
                     detection.
-                  </dd>
-                </div>
-                <div>
-                  <dt>Outcome</dt>
-                  <dd>
+                  </p>
+                </article>
+                <article class="detail-block detail-block-outcome">
+                  <p class="detail-label">Outcome</p>
+                  <p>
                     15K+ runs per week, 99.96% exact rerun reproducibility, 84%
                     faster median turnaround, and 51% less wasted GPU time.
-                  </dd>
+                  </p>
+                </article>
+              </div>
+              <div class="card-footer">
+                <p class="stack-list">
+                  Python, PyTorch, Ray, FastAPI, PostgreSQL, Redis, Docker,
+                  Kubernetes, AWS
+                </p>
+                <div class="card-actions">
+                  <a class="text-link" href="./case-studies/llm-evaluation-platforms.html">
+                    Read case study
+                  </a>
                 </div>
-              </dl>
-              <p class="stack-list">
-                Python, PyTorch, Ray, FastAPI, PostgreSQL, Redis, Docker,
-                Kubernetes, AWS
-              </p>
-              <div class="card-actions">
-                <a class="text-link" href="./case-studies/llm-evaluation-platforms.html">
-                  Read case study
-                </a>
               </div>
             </article>
 
             <article class="content-card case-study-card">
-              <header class="card-header">
-                <p class="card-kicker">Fullstory | Observability</p>
-                <h3>Analytics reliability systems built to catch silent regressions early.</h3>
+              <header class="card-header card-header-split">
+                <div>
+                  <p class="card-kicker">Fullstory | Observability</p>
+                  <h3>Analytics reliability systems built to catch silent regressions early.</h3>
+                </div>
+                <div class="card-proof">
+                  <span class="card-proof-value">4B+</span>
+                  <span class="card-proof-label">weekly events monitored</span>
+                </div>
               </header>
               <p class="card-summary">
                 Built backend validation and incident tooling for analytics
                 pipelines where precision mattered as much as coverage.
               </p>
-              <dl class="fact-list">
-                <div>
-                  <dt>Problem</dt>
-                  <dd>
+              <div class="card-detail-grid">
+                <article class="detail-block">
+                  <p class="detail-label">Problem</p>
+                  <p>
                     Silent data regressions were reaching dashboards too late,
                     and alerting was not precise enough for teams to trust.
-                  </dd>
-                </div>
-                <div>
-                  <dt>System</dt>
-                  <dd>
+                  </p>
+                </article>
+                <article class="detail-block">
+                  <p class="detail-label">System</p>
+                  <p>
                     Validators for schema drift, freshness lag, replay
                     mismatches, null spikes, cardinality explosions, and anomaly
                     bursts.
-                  </dd>
-                </div>
-                <div>
-                  <dt>Outcome</dt>
-                  <dd>
+                  </p>
+                </article>
+                <article class="detail-block detail-block-outcome">
+                  <p class="detail-label">Outcome</p>
+                  <p>
                     4B+ weekly events monitored, alert precision improved from
                     63% to 96%, and median detection time dropped from 3.4
                     hours to 7 minutes.
-                  </dd>
+                  </p>
+                </article>
+              </div>
+              <div class="card-footer">
+                <p class="stack-list">
+                  Python, SQL, Kafka, Airflow, dbt, Docker, validation, incident
+                  tooling
+                </p>
+                <div class="card-actions">
+                  <a
+                    class="text-link"
+                    href="./case-studies/analytics-observability-systems.html"
+                  >
+                    Read case study
+                  </a>
                 </div>
-              </dl>
-              <p class="stack-list">
-                Python, SQL, Kafka, Airflow, dbt, Docker, validation, incident
-                tooling
-              </p>
-              <div class="card-actions">
-                <a
-                  class="text-link"
-                  href="./case-studies/analytics-observability-systems.html"
-                >
-                  Read case study
-                </a>
               </div>
             </article>
 
             <article class="content-card case-study-card">
-              <header class="card-header">
-                <p class="card-kicker">Algory Capital | Research infrastructure</p>
-                <h3>Shared research systems that made quant work faster and harder to fool.</h3>
+              <header class="card-header card-header-split">
+                <div>
+                  <p class="card-kicker">Algory Capital | Research infrastructure</p>
+                  <h3>Shared research systems that made quant work faster and harder to fool.</h3>
+                </div>
+                <div class="card-proof">
+                  <span class="card-proof-value">6.8x</span>
+                  <span class="card-proof-label">research throughput increase</span>
+                </div>
               </header>
               <p class="card-summary">
                 Turned fragmented analyst workflows into a unified platform for
                 ingestion, validation, backtesting, diagnostics, and review.
               </p>
-              <dl class="fact-list">
-                <div>
-                  <dt>Problem</dt>
-                  <dd>
+              <div class="card-detail-grid">
+                <article class="detail-block">
+                  <p class="detail-label">Problem</p>
+                  <p>
                     Strategy work lived in disconnected notebooks, slow
                     handoffs, and inconsistent review paths across the team.
-                  </dd>
-                </div>
-                <div>
-                  <dt>System</dt>
-                  <dd>
+                  </p>
+                </article>
+                <article class="detail-block">
+                  <p class="detail-label">System</p>
+                  <p>
                     Shared workflows for point-in-time ingestion, walk-forward
                     validation, tearsheets, diagnostics, and execution-aware
                     analysis.
-                  </dd>
-                </div>
-                <div>
-                  <dt>Outcome</dt>
-                  <dd>
+                  </p>
+                </article>
+                <article class="detail-block detail-block-outcome">
+                  <p class="detail-label">Outcome</p>
+                  <p>
                     6.8x faster research throughput, new-analyst ramp cut from
                     about 6 weeks to 8 days, and a 30+ member organization
                     supported by one platform surface.
-                  </dd>
+                  </p>
+                </article>
+              </div>
+              <div class="card-footer">
+                <p class="stack-list">
+                  Python, SQL, PostgreSQL, DuckDB, Streamlit, Docker, GitHub
+                  Actions
+                </p>
+                <div class="card-actions">
+                  <a class="text-link" href="./case-studies/quant-research-infrastructure.html">
+                    Read case study
+                  </a>
                 </div>
-              </dl>
-              <p class="stack-list">
-                Python, SQL, PostgreSQL, DuckDB, Streamlit, Docker, GitHub
-                Actions
-              </p>
-              <div class="card-actions">
-                <a class="text-link" href="./case-studies/quant-research-infrastructure.html">
-                  Read case study
-                </a>
               </div>
             </article>
 
             <article class="content-card case-study-card">
-              <header class="card-header">
-                <p class="card-kicker">Georgia Tech / Emory | Biomedical ML</p>
-                <h3>Reproducible multimodal pipelines with cleaner science and stronger evaluation.</h3>
+              <header class="card-header card-header-split">
+                <div>
+                  <p class="card-kicker">Georgia Tech / Emory | Biomedical ML</p>
+                  <h3>Reproducible multimodal pipelines with cleaner science and stronger evaluation.</h3>
+                </div>
+                <div class="card-proof">
+                  <span class="card-proof-value">0.71→0.88</span>
+                  <span class="card-proof-label">held-out AUROC after cohort fixes</span>
+                </div>
               </header>
               <p class="card-summary">
                 Built research workflows that made leakage prevention, subgroup
                 evaluation, and controlled experimentation part of the default
                 system.
               </p>
-              <dl class="fact-list">
-                <div>
-                  <dt>Problem</dt>
-                  <dd>
+              <div class="card-detail-grid">
+                <article class="detail-block">
+                  <p class="detail-label">Problem</p>
+                  <p>
                     Multimodal clinical experiments were vulnerable to patient
                     overlap, temporal contamination, and weak evaluation
                     discipline.
-                  </dd>
-                </div>
-                <div>
-                  <dt>System</dt>
-                  <dd>
-                    Reproducible pipelines for preprocessing, fusion, calibration,
-                    threshold analysis, and subgroup-aware evaluation across
-                    clinical and imaging data.
-                  </dd>
-                </div>
-                <div>
-                  <dt>Outcome</dt>
-                  <dd>
+                  </p>
+                </article>
+                <article class="detail-block">
+                  <p class="detail-label">System</p>
+                  <p>
+                    Reproducible pipelines for preprocessing, fusion,
+                    calibration, threshold analysis, and subgroup-aware
+                    evaluation across clinical and imaging data.
+                  </p>
+                </article>
+                <article class="detail-block detail-block-outcome">
+                  <p class="detail-label">Outcome</p>
+                  <p>
                     1,000+ controlled runs supported and held-out AUROC improved
                     from 0.71 to 0.88 after fixing leakage and cohort
                     contamination.
-                  </dd>
+                  </p>
+                </article>
+              </div>
+              <div class="card-footer">
+                <p class="stack-list">
+                  Python, PyTorch, scikit-learn, SQL, Streamlit, reproducible ML
+                  workflows
+                </p>
+                <div class="card-actions">
+                  <a
+                    class="text-link"
+                    href="./case-studies/biomedical-ml-research-systems.html"
+                  >
+                    Read case study
+                  </a>
                 </div>
-              </dl>
-              <p class="stack-list">
-                Python, PyTorch, scikit-learn, SQL, Streamlit, reproducible ML
-                workflows
-              </p>
-              <div class="card-actions">
-                <a
-                  class="text-link"
-                  href="./case-studies/biomedical-ml-research-systems.html"
-                >
-                  Read case study
-                </a>
               </div>
             </article>
           </div>
@@ -634,21 +693,21 @@
                 structured artifact storage, reproducible replay, and
                 comparative analysis workflows built for auditability.
               </p>
-              <dl class="fact-list fact-list-compact">
-                <div>
-                  <dt>Stack</dt>
-                  <dd>
+              <div class="card-detail-grid card-detail-grid-compact">
+                <article class="detail-block">
+                  <p class="detail-label">Stack</p>
+                  <p>
                     Python, PyTorch, FastAPI, TypeScript, async workers, Docker
-                  </dd>
-                </div>
-                <div>
-                  <dt>Outcome</dt>
-                  <dd>
+                  </p>
+                </article>
+                <article class="detail-block detail-block-outcome">
+                  <p class="detail-label">Outcome</p>
+                  <p>
                     Supported 6,000+ controlled robustness runs and reduced
                     experiment setup time by 89%.
-                  </dd>
-                </div>
-              </dl>
+                  </p>
+                </article>
+              </div>
               <div class="card-actions">
                 <a
                   class="text-link"
@@ -671,21 +730,22 @@
                 road-network data, combining spatial, temporal, structural, and
                 contextual features.
               </p>
-              <dl class="fact-list fact-list-compact">
-                <div>
-                  <dt>Stack</dt>
-                  <dd>
-                    Python, PyTorch Geometric, SQL, GeoPandas, NetworkX, XGBoost
-                  </dd>
-                </div>
-                <div>
-                  <dt>Outcome</dt>
-                  <dd>
+              <div class="card-detail-grid card-detail-grid-compact">
+                <article class="detail-block">
+                  <p class="detail-label">Stack</p>
+                  <p>
+                    Python, PyTorch Geometric, SQL, GeoPandas, NetworkX,
+                    XGBoost
+                  </p>
+                </article>
+                <article class="detail-block detail-block-outcome">
+                  <p class="detail-label">Outcome</p>
+                  <p>
                     Improved hotspot-detection AUC by 21 points over strong
                     tabular baselines.
-                  </dd>
-                </div>
-              </dl>
+                  </p>
+                </article>
+              </div>
               <div class="card-actions">
                 <a
                   class="text-link"
@@ -708,19 +768,19 @@
                 burst noise, outliers, covariance misspecification, and
                 asynchronous measurements.
               </p>
-              <dl class="fact-list fact-list-compact">
-                <div>
-                  <dt>Stack</dt>
-                  <dd>Python, NumPy, SciPy, MATLAB, C++</dd>
-                </div>
-                <div>
-                  <dt>Outcome</dt>
-                  <dd>
+              <div class="card-detail-grid card-detail-grid-compact">
+                <article class="detail-block">
+                  <p class="detail-label">Stack</p>
+                  <p>Python, NumPy, SciPy, MATLAB, C++</p>
+                </article>
+                <article class="detail-block detail-block-outcome">
+                  <p class="detail-label">Outcome</p>
+                  <p>
                     Reduced median localization error by 46% and
                     95th-percentile error by 41%.
-                  </dd>
-                </div>
-              </dl>
+                  </p>
+                </article>
+              </div>
               <div class="card-actions">
                 <a
                   class="text-link"
@@ -743,21 +803,21 @@
                 built to make validation, lineage, and execution-aware review
                 inspectable.
               </p>
-              <dl class="fact-list fact-list-compact">
-                <div>
-                  <dt>Stack</dt>
-                  <dd>
+              <div class="card-detail-grid card-detail-grid-compact">
+                <article class="detail-block">
+                  <p class="detail-label">Stack</p>
+                  <p>
                     Python, FastAPI, pandas, NumPy, Docker, GitHub Actions
-                  </dd>
-                </div>
-                <div>
-                  <dt>Outcome</dt>
-                  <dd>
+                  </p>
+                </article>
+                <article class="detail-block detail-block-outcome">
+                  <p class="detail-label">Outcome</p>
+                  <p>
                     Shows point-in-time validation, exposure control, universe
                     retention, and execution slippage end to end.
-                  </dd>
-                </div>
-              </dl>
+                  </p>
+                </article>
+              </div>
               <div class="card-actions">
                 <a
                   class="text-link"

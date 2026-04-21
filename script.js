@@ -26,9 +26,13 @@ if (navLinks.length > 0 && "IntersectionObserver" in window) {
     },
     {
       threshold: [0.3, 0.5, 0.7],
-      rootMargin: "-18% 0px -55% 0px"
+      rootMargin: "-18% 0px -60% 0px"
     }
   );
+
+  if (sections[0]?.id) {
+    setActiveLink(sections[0].id);
+  }
 
   sections.forEach((section) => observer.observe(section));
 }
