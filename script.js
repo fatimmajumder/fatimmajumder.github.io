@@ -5,17 +5,17 @@ const navLinks = Array.from(
 );
 
 const revealGroups = [
-  { selector: ".section-heading", step: 0, maxDelay: 0, distance: "18px" },
-  { selector: ".proof-grid > *", step: 42, maxDelay: 126, distance: "14px" },
-  { selector: ".case-study-grid > *", step: 52, maxDelay: 156, distance: "14px" },
-  { selector: ".experience-list > *", step: 48, maxDelay: 144, distance: "14px" },
-  { selector: ".project-grid > *", step: 48, maxDelay: 144, distance: "14px" },
-  { selector: ".writing-grid > *", step: 52, maxDelay: 156, distance: "14px" },
-  { selector: ".metric-grid > *", step: 40, maxDelay: 120, distance: "14px" },
-  { selector: ".story-grid-case > *", step: 44, maxDelay: 132, distance: "14px" },
-  { selector: ".boundary-card", step: 0, maxDelay: 0, distance: "16px" },
-  { selector: ".contact-card", step: 0, maxDelay: 0, distance: "16px" },
-  { selector: ".site-footer", step: 0, maxDelay: 0, distance: "12px" }
+  { selector: ".section-heading", step: 0, maxDelay: 0, distance: "12px" },
+  { selector: ".proof-grid > *", step: 24, maxDelay: 72, distance: "10px" },
+  { selector: ".case-study-grid > *", step: 32, maxDelay: 96, distance: "10px" },
+  { selector: ".experience-list > *", step: 24, maxDelay: 72, distance: "10px" },
+  { selector: ".project-grid > *", step: 28, maxDelay: 84, distance: "10px" },
+  { selector: ".writing-grid > *", step: 28, maxDelay: 84, distance: "10px" },
+  { selector: ".metric-grid > *", step: 18, maxDelay: 54, distance: "8px" },
+  { selector: ".story-grid-case > *", step: 18, maxDelay: 54, distance: "8px" },
+  { selector: ".boundary-card", step: 0, maxDelay: 0, distance: "10px" },
+  { selector: ".contact-card", step: 0, maxDelay: 0, distance: "8px" },
+  { selector: ".site-footer", step: 0, maxDelay: 0, distance: "8px" }
 ];
 
 const setActiveLink = (id) => {
@@ -88,7 +88,7 @@ const setupStickyHeaderState = () => {
 
 const isNearViewport = (element) => {
   const rect = element.getBoundingClientRect();
-  return rect.top <= window.innerHeight * 0.92;
+  return rect.top <= window.innerHeight * 1.02;
 };
 
 const setupRevealSystem = () => {
@@ -131,8 +131,8 @@ const setupRevealSystem = () => {
       });
     },
     {
-      threshold: 0.16,
-      rootMargin: "0px 0px -12% 0px"
+      threshold: 0.12,
+      rootMargin: "0px 0px -8% 0px"
     }
   );
 
