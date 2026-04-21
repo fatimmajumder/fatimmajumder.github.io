@@ -335,8 +335,8 @@ main > .section:not(.hero):not(.page-hero)::before {
 }
 
 .hero-copy h1 {
-  max-width: 10.6ch;
-  font-size: clamp(3.45rem, 6.8vw, 6.35rem);
+  max-width: 11.7ch;
+  font-size: clamp(3.2rem, 6.15vw, 5.9rem);
   line-height: 0.9;
   text-wrap: balance;
 }
@@ -369,7 +369,7 @@ main > .section:not(.hero):not(.page-hero)::before {
 }
 
 .hero-summary {
-  max-width: 58ch;
+  max-width: 54ch;
   margin-top: 24px;
   font-size: 1.08rem;
 }
@@ -510,13 +510,35 @@ main > .section:not(.hero):not(.page-hero)::before {
 
 .hero-status-card h2 {
   margin-top: 10px;
-  font-size: clamp(1.55rem, 2vw, 2rem);
-  line-height: 1.08;
+  max-width: 14ch;
+  font-size: clamp(1.36rem, 1.75vw, 1.82rem);
+  line-height: 1.1;
   text-wrap: balance;
+}
+
+.hero-role-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hero-role-list li {
+  padding: 8px 12px;
+  border: 1px solid rgba(15, 107, 97, 0.16);
+  border-radius: 999px;
+  background: rgba(15, 107, 97, 0.05);
+  color: var(--ink-soft);
+  font-size: 0.86rem;
+  font-weight: 700;
 }
 
 .hero-status-card p {
   margin-top: 12px;
+  max-width: 34ch;
+  font-size: 0.98rem;
 }
 
 .section-heading {
@@ -646,6 +668,10 @@ main > .section:not(.hero):not(.page-hero)::before {
   text-wrap: balance;
 }
 
+.card-summary {
+  max-width: 58ch;
+}
+
 .card-proof {
   display: grid;
   justify-items: end;
@@ -699,6 +725,40 @@ main > .section:not(.hero):not(.page-hero)::before {
 
 .detail-block-outcome p:last-child {
   color: var(--ink);
+}
+
+.card-compact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.compact-detail {
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
+.compact-detail p:last-child {
+  margin-top: 8px;
+  color: var(--ink-soft);
+  line-height: 1.68;
+}
+
+.case-metric-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.case-metric-list li {
+  padding: 10px 12px;
+  border: 1px solid rgba(15, 107, 97, 0.14);
+  border-radius: 14px;
+  background: rgba(15, 107, 97, 0.05);
+  color: var(--ink);
+  font-size: 0.88rem;
+  font-weight: 700;
+  line-height: 1.35;
 }
 
 .card-footer {
@@ -904,6 +964,11 @@ main > .section:not(.hero):not(.page-hero)::before {
   padding-top: 48px;
 }
 
+.hero + .section,
+.page-hero + .section {
+  padding-top: clamp(44px, 6vw, 72px);
+}
+
 .page-hero-main {
   display: grid;
   gap: 18px;
@@ -970,6 +1035,26 @@ main > .section:not(.hero):not(.page-hero)::before {
 .metric-card {
   background:
     linear-gradient(180deg, rgba(249, 246, 241, 0.97), rgba(241, 236, 229, 0.92));
+}
+
+.metric-grid .metric-card:first-child {
+  background: linear-gradient(145deg, rgba(19, 33, 58, 0.98), rgba(36, 66, 109, 0.92));
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: var(--shadow-strong);
+}
+
+.metric-grid .metric-card:first-child .detail-label,
+.metric-grid .metric-card:first-child .metric-value,
+.metric-grid .metric-card:first-child p:last-child {
+  color: #fff;
+}
+
+.metric-grid .metric-card:first-child .detail-label {
+  opacity: 0.8;
+}
+
+.metric-grid .metric-card:first-child p:last-child {
+  opacity: 0.88;
 }
 
 .metric-value {
@@ -1044,7 +1129,8 @@ main > .section:not(.hero):not(.page-hero)::before {
   }
 
   .card-detail-grid,
-  .card-detail-grid-compact {
+  .card-detail-grid-compact,
+  .card-compact-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1142,6 +1228,10 @@ main > .section:not(.hero):not(.page-hero)::before {
   .hero-proof-item {
     grid-template-columns: 1fr;
     gap: 10px;
+  }
+
+  .case-metric-list {
+    display: grid;
   }
 
   .proof-grid li:first-child .proof-card {

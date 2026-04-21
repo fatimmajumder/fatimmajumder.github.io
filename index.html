@@ -236,13 +236,16 @@
 
             <article class="hero-rail-card hero-status-card">
               <p class="detail-label">Current search</p>
-              <h2>
-                Open to ML research engineering, AI infrastructure,
-                backend/platform, and applied ML roles.
-              </h2>
+              <h2>Open to ML infrastructure, research engineering, and platform roles.</h2>
+              <ul class="hero-role-list" aria-label="Current role targets">
+                <li>ML research engineering</li>
+                <li>AI infrastructure</li>
+                <li>Backend / platform</li>
+                <li>Applied ML</li>
+              </ul>
               <p>
                 Best fit: teams where rigorous experimentation and reliable
-                systems are part of the product rather than cleanup work.
+                systems are part of the product, not cleanup work.
               </p>
             </article>
           </aside>
@@ -319,31 +322,27 @@
                 spanning orchestration, lineage, caching, replay, and
                 regression-aware review.
               </p>
-              <div class="card-detail-grid">
-                <article class="detail-block">
+              <div class="card-compact-grid">
+                <article class="compact-detail">
                   <p class="detail-label">Problem</p>
                   <p>
-                    Shared benchmark workflows could not guarantee exact reruns
-                    or trustworthy comparisons as prompts, datasets, and models
+                    Exact reruns broke as prompts, datasets, and models
                     changed.
                   </p>
                 </article>
-                <article class="detail-block">
+                <article class="compact-detail">
                   <p class="detail-label">System</p>
                   <p>
-                    Deterministic lineage, async scheduling, artifact caching,
-                    retry semantics, run diffing, and slice-level regression
-                    detection.
-                  </p>
-                </article>
-                <article class="detail-block detail-block-outcome">
-                  <p class="detail-label">Outcome</p>
-                  <p>
-                    15K+ runs per week, 99.96% exact rerun reproducibility, 84%
-                    faster median turnaround, and 51% less wasted GPU time.
+                    Deterministic lineage, cache-aware execution, async
+                    scheduling, and run diffing.
                   </p>
                 </article>
               </div>
+              <ul class="case-metric-list" aria-label="Key outcomes">
+                <li>15K+ runs/week</li>
+                <li>74.1%→99.96% reproducibility</li>
+                <li>84% faster turnaround</li>
+              </ul>
               <div class="card-footer">
                 <p class="stack-list">
                   Python, PyTorch, Ray, FastAPI, PostgreSQL, Redis, Docker,
@@ -372,31 +371,27 @@
                 Built backend validation and incident tooling for analytics
                 pipelines where precision mattered as much as coverage.
               </p>
-              <div class="card-detail-grid">
-                <article class="detail-block">
+              <div class="card-compact-grid">
+                <article class="compact-detail">
                   <p class="detail-label">Problem</p>
                   <p>
-                    Silent data regressions were reaching dashboards too late,
-                    and alerting was not precise enough for teams to trust.
+                    Silent regressions reached dashboards too late for teams to
+                    trust alerting.
                   </p>
                 </article>
-                <article class="detail-block">
+                <article class="compact-detail">
                   <p class="detail-label">System</p>
                   <p>
-                    Validators for schema drift, freshness lag, replay
-                    mismatches, null spikes, cardinality explosions, and anomaly
-                    bursts.
-                  </p>
-                </article>
-                <article class="detail-block detail-block-outcome">
-                  <p class="detail-label">Outcome</p>
-                  <p>
-                    4B+ weekly events monitored, alert precision improved from
-                    63% to 96%, and median detection time dropped from 3.4
-                    hours to 7 minutes.
+                    Failure-mode validators for schema drift, freshness lag,
+                    replay mismatches, and anomaly bursts.
                   </p>
                 </article>
               </div>
+              <ul class="case-metric-list" aria-label="Key outcomes">
+                <li>4B+ weekly events</li>
+                <li>63%→96% alert precision</li>
+                <li>3.4h→7 min detection</li>
+              </ul>
               <div class="card-footer">
                 <p class="stack-list">
                   Python, SQL, Kafka, Airflow, dbt, Docker, validation, incident
@@ -428,31 +423,27 @@
                 Turned fragmented analyst workflows into a unified platform for
                 ingestion, validation, backtesting, diagnostics, and review.
               </p>
-              <div class="card-detail-grid">
-                <article class="detail-block">
+              <div class="card-compact-grid">
+                <article class="compact-detail">
                   <p class="detail-label">Problem</p>
                   <p>
-                    Strategy work lived in disconnected notebooks, slow
-                    handoffs, and inconsistent review paths across the team.
+                    Research lived in disconnected notebooks and inconsistent
+                    review paths.
                   </p>
                 </article>
-                <article class="detail-block">
+                <article class="compact-detail">
                   <p class="detail-label">System</p>
                   <p>
                     Shared workflows for point-in-time ingestion, walk-forward
-                    validation, tearsheets, diagnostics, and execution-aware
-                    analysis.
-                  </p>
-                </article>
-                <article class="detail-block detail-block-outcome">
-                  <p class="detail-label">Outcome</p>
-                  <p>
-                    6.8x faster research throughput, new-analyst ramp cut from
-                    about 6 weeks to 8 days, and a 30+ member organization
-                    supported by one platform surface.
+                    validation, diagnostics, and execution-aware review.
                   </p>
                 </article>
               </div>
+              <ul class="case-metric-list" aria-label="Key outcomes">
+                <li>6.8x throughput</li>
+                <li>6 weeks→8 days ramp</li>
+                <li>30+ researchers supported</li>
+              </ul>
               <div class="card-footer">
                 <p class="stack-list">
                   Python, SQL, PostgreSQL, DuckDB, Streamlit, Docker, GitHub
@@ -482,32 +473,27 @@
                 evaluation, and controlled experimentation part of the default
                 system.
               </p>
-              <div class="card-detail-grid">
-                <article class="detail-block">
+              <div class="card-compact-grid">
+                <article class="compact-detail">
                   <p class="detail-label">Problem</p>
                   <p>
-                    Multimodal clinical experiments were vulnerable to patient
-                    overlap, temporal contamination, and weak evaluation
-                    discipline.
+                    Leakage and cohort contamination quietly distorted
+                    multimodal results.
                   </p>
                 </article>
-                <article class="detail-block">
+                <article class="compact-detail">
                   <p class="detail-label">System</p>
                   <p>
                     Reproducible pipelines for preprocessing, fusion,
-                    calibration, threshold analysis, and subgroup-aware
-                    evaluation across clinical and imaging data.
-                  </p>
-                </article>
-                <article class="detail-block detail-block-outcome">
-                  <p class="detail-label">Outcome</p>
-                  <p>
-                    1,000+ controlled runs supported and held-out AUROC improved
-                    from 0.71 to 0.88 after fixing leakage and cohort
-                    contamination.
+                    calibration, thresholding, and subgroup evaluation.
                   </p>
                 </article>
               </div>
+              <ul class="case-metric-list" aria-label="Key outcomes">
+                <li>1,000+ controlled runs</li>
+                <li>0.71→0.88 held-out AUROC</li>
+                <li>Leakage + cohort fixes</li>
+              </ul>
               <div class="card-footer">
                 <p class="stack-list">
                   Python, PyTorch, scikit-learn, SQL, Streamlit, reproducible ML
