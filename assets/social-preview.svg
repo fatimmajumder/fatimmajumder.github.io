@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Fatim Majumder social preview</title>
+  <desc id="desc">Social preview image for Fatim Majumder's personal site highlighting ML systems, evaluation, observability, and research infrastructure.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbf8f2" />
+      <stop offset="100%" stop-color="#efe7dc" />
+    </linearGradient>
+    <linearGradient id="panel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10213d" />
+      <stop offset="100%" stop-color="#20456b" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <g opacity="0.24" stroke="#10213d" stroke-width="1">
+    <path d="M0 82H1200" />
+    <path d="M0 164H1200" />
+    <path d="M0 246H1200" />
+    <path d="M0 328H1200" />
+    <path d="M0 410H1200" />
+    <path d="M0 492H1200" />
+    <path d="M0 574H1200" />
+    <path d="M120 0V630" />
+    <path d="M240 0V630" />
+    <path d="M360 0V630" />
+    <path d="M480 0V630" />
+    <path d="M600 0V630" />
+    <path d="M720 0V630" />
+    <path d="M840 0V630" />
+    <path d="M960 0V630" />
+    <path d="M1080 0V630" />
+  </g>
+
+  <rect x="58" y="52" width="1084" height="526" rx="28" fill="#fffdfa" stroke="rgba(16,33,61,0.12)" />
+  <rect x="84" y="78" width="86" height="86" rx="24" fill="url(#panel)" />
+  <text x="127" y="131" fill="#ffffff" font-family="Georgia, serif" font-size="36" text-anchor="middle">FM</text>
+
+  <text x="204" y="118" fill="#6f7c90" font-family="Helvetica, Arial, sans-serif" font-size="18" letter-spacing="4">MACHINE LEARNING RESEARCH ENGINEER</text>
+  <text x="84" y="238" fill="#10213d" font-family="Georgia, serif" font-size="62" font-weight="700">
+    <tspan x="84" dy="0">ML systems, evaluation,</tspan>
+    <tspan x="84" dy="70">and research infrastructure</tspan>
+  </text>
+  <text x="84" y="368" fill="#4b5a72" font-family="Helvetica, Arial, sans-serif" font-size="28">
+    <tspan x="84" dy="0">I build the systems that let ML teams trust their results:</tspan>
+    <tspan x="84" dy="42">deterministic evaluation, data reliability, and reproducible experimentation.</tspan>
+  </text>
+
+  <text x="84" y="470" fill="#95522d" font-family="Helvetica, Arial, sans-serif" font-size="18" letter-spacing="3">FATIMMAJUMDER.GITHUB.IO</text>
+
+  <g transform="translate(84 510)">
+    <rect width="220" height="120" rx="22" fill="#f6f1e8" stroke="#d8d1c5" />
+    <text x="22" y="42" fill="#10213d" font-family="Georgia, serif" font-size="34" font-weight="700">15K+</text>
+    <text x="22" y="70" fill="#4b5a72" font-family="Helvetica, Arial, sans-serif" font-size="18">benchmark runs / week</text>
+    <text x="22" y="96" fill="#6f7c90" font-family="Helvetica, Arial, sans-serif" font-size="14" letter-spacing="2">ARTHUR AI</text>
+  </g>
+
+  <g transform="translate(322 510)">
+    <rect width="220" height="120" rx="22" fill="#f6f1e8" stroke="#d8d1c5" />
+    <text x="22" y="42" fill="#10213d" font-family="Georgia, serif" font-size="34" font-weight="700">99.96%</text>
+    <text x="22" y="70" fill="#4b5a72" font-family="Helvetica, Arial, sans-serif" font-size="18">exact rerun reproducibility</text>
+    <text x="22" y="96" fill="#6f7c90" font-family="Helvetica, Arial, sans-serif" font-size="14" letter-spacing="2">DETERMINISTIC LINEAGE</text>
+  </g>
+
+  <g transform="translate(560 510)">
+    <rect width="220" height="120" rx="22" fill="#f6f1e8" stroke="#d8d1c5" />
+    <text x="22" y="42" fill="#10213d" font-family="Georgia, serif" font-size="34" font-weight="700">4B+</text>
+    <text x="22" y="70" fill="#4b5a72" font-family="Helvetica, Arial, sans-serif" font-size="18">weekly events monitored</text>
+    <text x="22" y="96" fill="#6f7c90" font-family="Helvetica, Arial, sans-serif" font-size="14" letter-spacing="2">FULLSTORY</text>
+  </g>
+
+  <g transform="translate(798 510)">
+    <rect width="220" height="120" rx="22" fill="#f6f1e8" stroke="#d8d1c5" />
+    <text x="22" y="42" fill="#10213d" font-family="Georgia, serif" font-size="34" font-weight="700">6.8x</text>
+    <text x="22" y="70" fill="#4b5a72" font-family="Helvetica, Arial, sans-serif" font-size="18">research throughput gain</text>
+    <text x="22" y="96" fill="#6f7c90" font-family="Helvetica, Arial, sans-serif" font-size="14" letter-spacing="2">ALGORY CAPITAL</text>
+  </g>
+</svg>

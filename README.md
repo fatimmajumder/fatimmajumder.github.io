@@ -1,44 +1,58 @@
-# Fatim Majumder Portfolio
+# Fatim Majumder Personal Site
 
-Personal portfolio site and GitHub Pages home for
-[fatimmajumder](https://github.com/fatimmajumder).
+Static personal website and GitHub Pages home for
+[fatimmajumder.github.io](https://fatimmajumder.github.io).
 
-## Live site
+## What the site is optimized for
 
-[fatimmajumder.github.io](https://fatimmajumder.github.io)
+- fast recruiter scanability in the first 10 to 15 seconds
+- hard proof and systems depth for technical hiring managers
+- deeper public-safe case studies for engineers evaluating judgment and rigor
+- simple maintenance and zero-backend deployment on GitHub Pages
 
-## What this repo includes
+## Local development
 
-- a recruiter-facing portfolio homepage
-- project links to the main public showcase repos
-- experience highlights mapped from the resume
-- public-safe case studies for all four major resume experience areas
-- research/archive material pulled from the LinkedIn presentation history
+The site is plain HTML, CSS, and JavaScript. No build step is required.
+
+```bash
+python3 -m http.server 4173
+```
+
+Then open [http://localhost:4173](http://localhost:4173).
+
+## Deployment
+
+This repo is designed to deploy directly from the default branch on GitHub
+Pages.
+
+- `index.html` is the homepage
+- `styles.css` contains the shared visual system for the homepage and case studies
+- `script.js` is progressive enhancement only for active nav highlighting
+- `case-studies/` contains the public-safe engineering writeups
+- `assets/` contains the favicon, social preview, and resume PDF
+- `sitemap.xml` and `robots.txt` support crawlability
 
 ## Site structure
 
-- `index.html` for content and layout
-- `case-studies/` for public-safe writeups of confidential or internal work
-  across LLM evaluation, analytics observability, quant research
-  infrastructure, and biomedical ML
-- `styles.css` for the visual system and responsive behavior
-- `script.js` for stat animations and interactions
-- `assets/` for the favicon and downloadable resume PDF
-
-## Site map
-
 ```mermaid
 flowchart TD
-    A["Hero"] --> B["Impact snapshot"]
-    B --> C["Experience"]
-    C --> D["Projects"]
-    D --> E["Case studies"]
-    E --> F["Research archive"]
-    F --> G["Education and leadership"]
-    G --> H["Contact"]
+    A["Hero"] --> B["Proof strip"]
+    B --> C["Featured case studies"]
+    C --> D["Selected experience"]
+    D --> E["Projects"]
+    E --> F["Research and writing"]
+    F --> G["Contact"]
 ```
 
-## Related repos
+## Content rules
+
+- Do not invent achievements, dates, employers, metrics, or links.
+- Keep proof static in the HTML. Core credibility should not depend on JS.
+- Preserve quantified outcomes whenever possible.
+- Keep the site static and GitHub Pages friendly.
+- Treat case studies as public-safe translations of real work, not speculative reconstructions.
+
+## Related public repos
 
 - [re-amp-audio-eval](https://github.com/fatimmajumder/re-amp-audio-eval)
 - [traffic-collision-risk](https://github.com/fatimmajumder/traffic-collision-risk)

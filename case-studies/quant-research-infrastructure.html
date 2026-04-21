@@ -1,145 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta
       name="description"
-      content="Public-safe case study of quant research platform engineering and reproducible investment workflows built by Fatim Majumder."
-    />
+      content="Public-safe case study of quant research platform engineering, point-in-time validation, and shared research infrastructure built by Fatim Majumder."
+   >
+    <meta name="author" content="Fatim Majumder">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#10213d">
     <title>Quant Research Infrastructure | Fatim Majumder</title>
-    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="canonical"
+      href="https://fatimmajumder.github.io/case-studies/quant-research-infrastructure.html"
+   >
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+    <meta property="og:site_name" content="Fatim Majumder">
+    <meta
+      property="og:title"
+      content="Quant Research Infrastructure | Fatim Majumder"
+   >
+    <meta
+      property="og:description"
+      content="Public-safe case study of shared research systems, walk-forward validation, and audit-friendly quant infrastructure."
+   >
+    <meta property="og:type" content="article">
+    <meta
+      property="og:url"
+      content="https://fatimmajumder.github.io/case-studies/quant-research-infrastructure.html"
+   >
+    <meta
+      property="og:image"
+      content="https://fatimmajumder.github.io/assets/social-preview.png"
+   >
+    <meta name="twitter:card" content="summary_large_image">
+    <meta
+      name="twitter:title"
+      content="Quant Research Infrastructure | Fatim Majumder"
+   >
+    <meta
+      name="twitter:description"
+      content="Shared research workflows for ingestion, validation, backtesting, diagnostics, and execution-aware review."
+   >
+    <meta
+      name="twitter:image"
+      content="https://fatimmajumder.github.io/assets/social-preview.png"
+   >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../styles.css" />
+   >
+    <link rel="stylesheet" href="../styles.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Quant research infrastructure built to make strategy work faster, cleaner, and harder to fool.",
+        "author": {
+          "@type": "Person",
+          "name": "Fatim Majumder",
+          "url": "https://fatimmajumder.github.io/"
+        },
+        "url": "https://fatimmajumder.github.io/case-studies/quant-research-infrastructure.html",
+        "description": "Public-safe case study of shared research systems, point-in-time validation, and walk-forward quantitative workflows."
+      }
+    </script>
   </head>
   <body>
-    <div class="page-orb page-orb-left" aria-hidden="true"></div>
-    <div class="page-orb page-orb-right" aria-hidden="true"></div>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <div class="site-shell case-study-shell">
+    <div class="site-shell case-shell">
       <header class="site-header">
-        <a class="brand-lockup" href="../index.html" aria-label="Back to portfolio home">
-          <span class="brand-mark">FM</span>
-          <span class="brand-copy">
-            <strong>Fatim Majumder</strong>
-            <span>Public-safe systems case study</span>
-          </span>
-        </a>
-
-        <nav class="site-nav" aria-label="Case study navigation">
-          <a class="nav-link" href="../index.html#experience">Experience</a>
-          <a class="nav-link" href="../index.html#projects">Projects</a>
-          <a class="nav-link is-active" href="../index.html#case-studies">Case Studies</a>
-          <a class="nav-link" href="../index.html#contact">Contact</a>
-        </nav>
-
-        <div class="header-actions">
-          <a class="button button-secondary" href="../index.html">Portfolio Home</a>
-          <a class="button button-secondary" href="../assets/Fatim-Majumder-Resume.pdf" download>
-            Resume PDF
+        <div class="site-header-inner">
+          <a class="brand-lockup" href="../index.html" aria-label="Fatim Majumder home">
+            <span class="brand-mark" aria-hidden="true">FM</span>
+            <span class="brand-copy">
+              <strong>Fatim Majumder</strong>
+              <span>Public-safe case study</span>
+            </span>
           </a>
-          <a class="button button-primary" href="mailto:fatim.majumder@emory.edu">
-            Email
-          </a>
+
+          <nav class="site-nav" aria-label="Primary navigation">
+            <a class="nav-link" href="../index.html#case-studies">Case Studies</a>
+            <a class="nav-link" href="../index.html#experience">Experience</a>
+            <a class="nav-link" href="../index.html#projects">Projects</a>
+            <a class="nav-link" href="../index.html#contact">Contact</a>
+          </nav>
+
+          <div class="header-actions">
+            <a class="button button-secondary" href="mailto:fatim.majumder@emory.edu">
+              Email
+            </a>
+            <a
+              class="button button-primary"
+              href="../assets/Fatim-Majumder-Resume.pdf"
+              download
+              aria-label="Download resume PDF"
+            >
+              Resume
+            </a>
+          </div>
         </div>
       </header>
 
-      <main id="top">
-        <section class="section case-study-hero">
-          <article class="glass-card callout-card reveal">
-            <a class="back-link" href="../index.html#case-studies">Back to case studies</a>
-            <p class="eyebrow">Algory Capital / Emory University · 2023 to present</p>
-            <p class="hero-kicker">Python · SQL · PostgreSQL · DuckDB · Streamlit · Docker · GitHub Actions</p>
-            <h1>Quant research infrastructure built to make strategy work faster, cleaner, and harder to fool.</h1>
-            <p class="lede">
-              This case study translates the research platform work I led at
-              Algory into a public-safe engineering narrative. The emphasis is
-              on turning raw market data and fragmented analyst workflows into a
-              shared platform for point-in-time ingestion, walk-forward
-              validation, portfolio construction, exposure control, and
-              execution-aware review.
-            </p>
+      <main id="main-content">
+        <section class="section page-hero">
+          <a class="back-link" href="../index.html#case-studies">Back to case studies</a>
+          <p class="eyebrow">Algory Capital / Emory University | 2023 to present</p>
+          <p class="page-meta">
+            Python | SQL | PostgreSQL | DuckDB | Streamlit | Docker | GitHub
+            Actions
+          </p>
+          <h1>Quant research infrastructure built to make strategy work faster, cleaner, and harder to fool.</h1>
+          <p class="page-hero-summary">
+            This case study translates the research platform work I led at
+            Algory into a public-safe engineering narrative. The emphasis is on
+            point-in-time data, walk-forward validation, diagnostics, shared
+            tearsheets, and execution-aware review for a 30+ member research
+            organization.
+          </p>
+          <div class="page-actions">
+            <a class="button button-primary" href="../index.html#experience">
+              See resume context
+            </a>
+            <a
+              class="button button-secondary"
+              href="https://github.com/fatimmajumder/quant-research-lab"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Related public repo
+            </a>
+          </div>
+        </section>
 
-            <div class="case-study-links">
-              <a class="button button-primary" href="../index.html#experience">See resume context</a>
-              <a class="button button-secondary" href="https://github.com/fatimmajumder/quant-research-lab" target="_blank" rel="noreferrer">
-                Related public repo
-              </a>
-            </div>
-          </article>
-
-          <div class="metric-strip reveal">
-            <article class="metric-card glass-card">
-              <p class="detail-label">Team Surface</p>
-              <h2>30+</h2>
-              <p>researchers supported by the unified platform and shared review workflows</p>
+        <section class="section" aria-labelledby="metrics-title">
+          <div class="section-heading section-heading-compact">
+            <p class="eyebrow">Key Outcomes</p>
+            <h2 id="metrics-title">The proof from the shared research platform.</h2>
+          </div>
+          <div class="metric-grid">
+            <article class="metric-card">
+              <p class="detail-label">Team surface</p>
+              <p class="metric-value">30+</p>
+              <p>researchers supported by one unified platform and review workflow</p>
             </article>
-            <article class="metric-card glass-card">
+            <article class="metric-card">
               <p class="detail-label">Velocity</p>
-              <h2>6.8x</h2>
-              <p>increase in strategy research throughput after consolidating ingestion, validation, and tearsheets</p>
+              <p class="metric-value">6.8x</p>
+              <p>increase in strategy research throughput after consolidating tooling</p>
             </article>
-            <article class="metric-card glass-card">
+            <article class="metric-card">
               <p class="detail-label">Onboarding</p>
-              <h2>8 days</h2>
-              <p>new-analyst ramp time after replacing fragmented handoffs and notebook-only workflows</p>
+              <p class="metric-value">8 days</p>
+              <p>new-analyst ramp time after replacing fragmented handoffs</p>
             </article>
           </div>
         </section>
 
-        <section class="section">
+        <section class="section" aria-labelledby="story-title">
+          <div class="section-heading section-heading-compact">
+            <p class="eyebrow">System Story</p>
+            <h2 id="story-title">What changed when research became shared infrastructure instead of notebook folklore.</h2>
+          </div>
           <div class="story-grid">
-            <article class="glass-card callout-card reveal">
-              <p class="detail-label">System Surface</p>
-              <h2>A research platform instead of a collection of disconnected strategy notebooks.</h2>
+            <article class="content-card">
+              <p class="card-kicker">Constraint</p>
+              <h3>Strategy work was fragmented across analysts, notebooks, and hand-built review habits.</h3>
               <ul class="bullet-list">
-                <li>Built the workflow from point-in-time data ingestion through factor modeling, backtesting, portfolio construction, attribution, and execution simulation</li>
-                <li>Standardized tearsheets, diagnostics, and experiment tracking so strategies could be reviewed consistently</li>
-                <li>Made universe filters, sector exposures, and risk controls explicit rather than leaving them buried inside analyst-specific code</li>
+                <li>Research workflows needed consistent ingestion, diagnostics, and comparison paths.</li>
+                <li>Validation had to respect point-in-time information constraints, not retrospective convenience.</li>
+                <li>Review needed to include tradability and execution effects, not just attractive backtests.</li>
               </ul>
             </article>
 
-            <article class="glass-card callout-card reveal">
-              <p class="detail-label">Research Discipline</p>
-              <h2>Keep the platform honest about what could have been known at the time.</h2>
+            <article class="content-card">
+              <p class="card-kicker">System design</p>
+              <h3>The platform made research discipline easier to practice.</h3>
               <ul class="bullet-list">
-                <li>Treated point-in-time data contracts and walk-forward splits as core platform behavior</li>
-                <li>Added leakage-aware validation so factor performance and portfolio quality were evaluated under realistic information constraints</li>
-                <li>Connected exposure control, attribution, and execution simulation so strategy review included tradability, not just backtest returns</li>
-                <li>Made experiment lineage part of review so analysts could replay and compare strategy revisions cleanly</li>
+                <li>Built the workflow from point-in-time ingestion through factor modeling, walk-forward backtesting, portfolio construction, attribution, and execution simulation.</li>
+                <li>Standardized tearsheets, diagnostics, universe filtering, and experiment tracking.</li>
+                <li>Made lineage, exposure control, and validation gates part of the default review surface.</li>
               </ul>
             </article>
 
-            <article class="glass-card callout-card reveal">
-              <p class="detail-label">Operational Outcomes</p>
-              <h2>What changed once the platform became shared infrastructure instead of tribal knowledge.</h2>
+            <article class="content-card">
+              <p class="card-kicker">Outcomes</p>
+              <h3>The platform improved both velocity and legibility across the organization.</h3>
               <ul class="bullet-list">
-                <li>Strategy research throughput increased by 6.8x across the organization</li>
-                <li>New-analyst ramp time dropped from roughly 6 weeks to 8 days</li>
-                <li>Research review became more legible because tearsheets, diagnostics, and validation gates were generated consistently</li>
-                <li>The platform supported a 30+ member organization without relying on a few people to manually interpret every pipeline</li>
+                <li>Strategy research throughput increased by 6.8x.</li>
+                <li>New-analyst ramp time dropped from about 6 weeks to 8 days.</li>
+                <li>Research review became more inspectable because diagnostics and validation were generated consistently.</li>
               </ul>
             </article>
 
-            <article class="glass-card callout-card reveal">
-              <p class="detail-label">Public-Safe Translation</p>
-              <h2>How this becomes an inspectable GitHub story.</h2>
+            <article class="content-card">
+              <p class="card-kicker">Why it matters</p>
+              <h3>This is research engineering for teams, not just for isolated experiments.</h3>
               <ul class="bullet-list">
-                <li>Quant Research Lab is the public-facing product version of these ideas: lineage, universe filtering, execution diagnostics, and research review tooling</li>
-                <li>This case study makes the research-platform depth on my resume legible without exposing proprietary strategy logic or data</li>
-                <li>It shows I can build systems for research teams, not just isolated models or notebooks</li>
+                <li>Quant Research Lab is the public-facing version of the same ideas: point-in-time validation, lineage, and execution-aware review.</li>
+                <li>It shows how I build infrastructure that helps more people do serious work correctly.</li>
+                <li>The case study preserves the platform depth without exposing proprietary strategy logic or data.</li>
               </ul>
             </article>
           </div>
         </section>
 
         <section class="section">
-          <article class="glass-card callout-card reveal note-banner">
+          <article class="boundary-card">
             <p class="detail-label">Confidentiality Boundary</p>
             <h2>Workflow, platform design, and outcomes are documented here. Proprietary strategy logic, holdings, and private data are not.</h2>
             <p>

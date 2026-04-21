@@ -1,154 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta
       name="description"
-      content="Public-safe case study of analytics observability and validation systems built by Fatim Majumder."
-    />
+      content="Public-safe case study of analytics observability, data validation, and backend reliability systems built by Fatim Majumder."
+   >
+    <meta name="author" content="Fatim Majumder">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#10213d">
     <title>Analytics Observability Systems | Fatim Majumder</title>
-    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="canonical"
+      href="https://fatimmajumder.github.io/case-studies/analytics-observability-systems.html"
+   >
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+    <meta property="og:site_name" content="Fatim Majumder">
+    <meta
+      property="og:title"
+      content="Analytics Observability Systems | Fatim Majumder"
+   >
+    <meta
+      property="og:description"
+      content="Public-safe case study of validation and incident tooling for large-scale analytics pipelines."
+   >
+    <meta property="og:type" content="article">
+    <meta
+      property="og:url"
+      content="https://fatimmajumder.github.io/case-studies/analytics-observability-systems.html"
+   >
+    <meta
+      property="og:image"
+      content="https://fatimmajumder.github.io/assets/social-preview.png"
+   >
+    <meta name="twitter:card" content="summary_large_image">
+    <meta
+      name="twitter:title"
+      content="Analytics Observability Systems | Fatim Majumder"
+   >
+    <meta
+      name="twitter:description"
+      content="Schema drift, freshness, replay, and anomaly validation for analytics systems processing billions of events."
+   >
+    <meta
+      name="twitter:image"
+      content="https://fatimmajumder.github.io/assets/social-preview.png"
+   >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../styles.css" />
+   >
+    <link rel="stylesheet" href="../styles.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Analytics observability systems for pipelines too large to debug by hand.",
+        "author": {
+          "@type": "Person",
+          "name": "Fatim Majumder",
+          "url": "https://fatimmajumder.github.io/"
+        },
+        "url": "https://fatimmajumder.github.io/case-studies/analytics-observability-systems.html",
+        "description": "Public-safe case study of analytics observability, validation, and incident tooling for large-scale pipelines."
+      }
+    </script>
   </head>
   <body>
-    <div class="page-orb page-orb-left" aria-hidden="true"></div>
-    <div class="page-orb page-orb-right" aria-hidden="true"></div>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <div class="site-shell case-study-shell">
+    <div class="site-shell case-shell">
       <header class="site-header">
-        <a class="brand-lockup" href="../index.html" aria-label="Back to portfolio home">
-          <span class="brand-mark">FM</span>
-          <span class="brand-copy">
-            <strong>Fatim Majumder</strong>
-            <span>Public-safe systems case study</span>
-          </span>
-        </a>
-
-        <nav class="site-nav" aria-label="Case study navigation">
-          <a class="nav-link" href="../index.html#impact">Impact</a>
-          <a class="nav-link" href="../index.html#projects">Projects</a>
-          <a class="nav-link is-active" href="../index.html#case-studies">Case Studies</a>
-          <a class="nav-link" href="../index.html#contact">Contact</a>
-        </nav>
-
-        <div class="header-actions">
-          <a class="button button-secondary" href="../index.html">Portfolio Home</a>
-          <a class="button button-secondary" href="../assets/Fatim-Majumder-Resume.pdf" download>
-            Resume PDF
+        <div class="site-header-inner">
+          <a class="brand-lockup" href="../index.html" aria-label="Fatim Majumder home">
+            <span class="brand-mark" aria-hidden="true">FM</span>
+            <span class="brand-copy">
+              <strong>Fatim Majumder</strong>
+              <span>Public-safe case study</span>
+            </span>
           </a>
-          <a
-            class="button button-primary"
-            href="mailto:fatim.majumder@emory.edu"
-          >
-            Email
-          </a>
+
+          <nav class="site-nav" aria-label="Primary navigation">
+            <a class="nav-link" href="../index.html#case-studies">Case Studies</a>
+            <a class="nav-link" href="../index.html#experience">Experience</a>
+            <a class="nav-link" href="../index.html#projects">Projects</a>
+            <a class="nav-link" href="../index.html#contact">Contact</a>
+          </nav>
+
+          <div class="header-actions">
+            <a class="button button-secondary" href="mailto:fatim.majumder@emory.edu">
+              Email
+            </a>
+            <a
+              class="button button-primary"
+              href="../assets/Fatim-Majumder-Resume.pdf"
+              download
+              aria-label="Download resume PDF"
+            >
+              Resume
+            </a>
+          </div>
         </div>
       </header>
 
-      <main id="top">
-        <section class="section case-study-hero">
-          <article class="glass-card callout-card reveal">
-            <a class="back-link" href="../index.html#case-studies">Back to case studies</a>
-            <p class="eyebrow">Fullstory · Summer 2024</p>
-            <p class="hero-kicker">Python · SQL · Kafka · Airflow · dbt · Docker</p>
-            <h1>Analytics observability systems for pipelines too large to debug by hand.</h1>
-            <p class="lede">
-              This case study translates my Fullstory backend systems work into
-              a public-safe engineering story. The focus is on how to detect
-              bad analytics before it reaches dashboards, downstream models, or
-              decision-makers, while keeping alerting precise enough that teams
-              actually trust it.
-            </p>
+      <main id="main-content">
+        <section class="section page-hero">
+          <a class="back-link" href="../index.html#case-studies">Back to case studies</a>
+          <p class="eyebrow">Fullstory | Summer 2024</p>
+          <p class="page-meta">
+            Python | SQL | Kafka | Airflow | dbt | Docker
+          </p>
+          <h1>Analytics observability systems for pipelines too large to debug by hand.</h1>
+          <p class="page-hero-summary">
+            This case study translates my Fullstory backend systems work into a
+            public-safe engineering story. The focus is detecting bad analytics
+            before it reaches dashboards, downstream models, or decision-makers,
+            while keeping alerting precise enough that teams actually trust it.
+          </p>
+          <div class="page-actions">
+            <a class="button button-primary" href="../index.html#experience">
+              See resume context
+            </a>
+            <a class="button button-secondary" href="../index.html#projects">
+              View public projects
+            </a>
+          </div>
+        </section>
 
-            <div class="case-study-links">
-              <a class="button button-primary" href="../index.html#experience">See resume context</a>
-              <a class="button button-secondary" href="../index.html#projects">View public projects</a>
-            </div>
-          </article>
-
-          <div class="metric-strip reveal">
-            <article class="metric-card glass-card">
+        <section class="section" aria-labelledby="metrics-title">
+          <div class="section-heading section-heading-compact">
+            <p class="eyebrow">Key Outcomes</p>
+            <h2 id="metrics-title">The proof from the observability work.</h2>
+          </div>
+          <div class="metric-grid">
+            <article class="metric-card">
               <p class="detail-label">Scale</p>
-              <h2>4B+</h2>
+              <p class="metric-value">4B+</p>
               <p>weekly events monitored across analytics pipelines</p>
             </article>
-            <article class="metric-card glass-card">
+            <article class="metric-card">
               <p class="detail-label">Precision</p>
-              <h2>96%</h2>
+              <p class="metric-value">96%</p>
               <p>alert precision after validation redesign</p>
             </article>
-            <article class="metric-card glass-card">
+            <article class="metric-card">
               <p class="detail-label">Detection</p>
-              <h2>7 min</h2>
+              <p class="metric-value">7 min</p>
               <p>median time-to-detection after workflow improvements</p>
             </article>
           </div>
         </section>
 
-        <section class="section">
+        <section class="section" aria-labelledby="story-title">
+          <div class="section-heading section-heading-compact">
+            <p class="eyebrow">System Story</p>
+            <h2 id="story-title">What had to change for bad data to become impossible to ignore.</h2>
+          </div>
           <div class="story-grid">
-            <article class="glass-card callout-card reveal">
-              <p class="detail-label">System Surface</p>
-              <h2>Validation for the failures analytics teams actually hit.</h2>
+            <article class="content-card">
+              <p class="card-kicker">Constraint</p>
+              <h3>Analytics teams needed alerts that were both broad and believable.</h3>
               <ul class="bullet-list">
-                <li>Schema drift across upstream producers and warehouse models</li>
-                <li>Freshness lag and broken job dependencies in scheduled pipelines</li>
-                <li>Replay mismatches between live ingestion and reconstructed history</li>
-                <li>Null spikes, cardinality explosions, and broken joins that silently poison dashboards</li>
-                <li>Anomaly bursts that needed triage context instead of noisy one-off alerts</li>
+                <li>Silent regressions were slipping through until dashboards or downstream consumers were already affected.</li>
+                <li>Too many alerts lacked enough context to debug quickly or to distinguish noise from real failures.</li>
+                <li>Precision mattered because teams stop trusting observability surfaces that cry wolf.</li>
               </ul>
             </article>
 
-            <article class="glass-card callout-card reveal">
-              <p class="detail-label">Engineering Approach</p>
-              <h2>Make bad data loud, but only when it matters.</h2>
+            <article class="content-card">
+              <p class="card-kicker">System design</p>
+              <h3>Validation focused on the failure modes analytics pipelines actually hit.</h3>
               <ul class="bullet-list">
-                <li>Built Python and SQL validators that ran close to the warehouse and scheduling layers</li>
-                <li>Added contextual alert routing so incident notifications included affected tables, lag, expected freshness windows, and replay deltas</li>
-                <li>Structured validators around failure classes instead of one monolithic anomaly score, which made incidents debuggable</li>
-                <li>Tuned thresholds and suppression rules to reduce false positives without hiding real regressions</li>
+                <li>Built validators for schema drift, freshness lag, broken joins, replay mismatches, null spikes, cardinality explosions, and anomaly bursts.</li>
+                <li>Ran checks close to the warehouse and scheduling layers using Python and SQL.</li>
+                <li>Attached incident context so alerts included affected tables, lag windows, and replay deltas instead of isolated warnings.</li>
               </ul>
             </article>
 
-            <article class="glass-card callout-card reveal">
-              <p class="detail-label">Reliability Design</p>
-              <h2>What made the system trustworthy for the team using it.</h2>
+            <article class="content-card">
+              <p class="card-kicker">Outcomes</p>
+              <h3>Precision improved because the system was structured around real debugging work.</h3>
               <ul class="bullet-list">
-                <li>Replay-aware checks let us compare current output against historical expectations, not just static thresholds</li>
-                <li>Freshness logic was aware of schedule cadence and dependency timing, which prevented misleading lag alarms</li>
-                <li>Validator outputs were normalized so downstream incident tooling could group, prioritize, and summarize failures consistently</li>
-                <li>The reporting surface emphasized precision and debugging speed, not just alert volume</li>
+                <li>Alert precision improved from 63% to 96%.</li>
+                <li>Median time-to-detection dropped from 3.4 hours to 7 minutes.</li>
+                <li>The reporting surface emphasized failure classes and triage speed instead of raw alert volume.</li>
               </ul>
             </article>
 
-            <article class="glass-card callout-card reveal">
-              <p class="detail-label">Public-Safe Translation</p>
-              <h2>How this shows up in my GitHub portfolio.</h2>
+            <article class="content-card">
+              <p class="card-kicker">Why it matters</p>
+              <h3>The same instincts show up anywhere bad data can quietly poison decisions.</h3>
               <ul class="bullet-list">
-                <li>The observability patterns here also shape how I built lineage, regression checks, and audit artifacts in RE-AMP</li>
-                <li>The same engineering instincts show up in validation-heavy project work: deterministic inputs, explicit contracts, and reproducible debugging</li>
-                <li>This page exists so the GitHub profile reflects the backend systems depth on my resume even when the original code cannot be made public</li>
+                <li>The observability patterns here shaped how I later built lineage, regression checks, and audit artifacts in public evaluation tooling.</li>
+                <li>It shows a backend systems mindset centered on contracts, reproducibility, and fast debugging.</li>
+                <li>This case study makes resume-level platform depth visible without exposing internal pipeline code or company data.</li>
               </ul>
             </article>
           </div>
         </section>
 
         <section class="section">
-          <article class="glass-card callout-card reveal note-banner">
+          <article class="boundary-card">
             <p class="detail-label">Confidentiality Boundary</p>
             <h2>Architecture and outcomes are shared here. Internal source code and company data are not.</h2>
             <p>
               This case study is intentionally written as a public-safe
               reconstruction. It captures the system design, failure modes,
-              metrics, and engineering judgment from the work without disclosing
-              proprietary implementation details.
+              metrics, and engineering judgment without disclosing proprietary
+              implementation details.
             </p>
           </article>
         </section>
