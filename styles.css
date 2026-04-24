@@ -395,8 +395,8 @@ p + p {
 }
 
 .hero-portrait {
-  width: min(100%, 326px);
-  margin : 0;
+  width: min(100%, 340px);
+  margin: 0;
 }
 
 .hero-portrait img {
@@ -407,7 +407,7 @@ p + p {
   object-fit: cover;
   object-position: center top;
   border: 1px solid var(--line);
-  border-radius: 22px;
+  border-radius: 18px;
   background: var(--surface-subtle);
 }
 
@@ -452,7 +452,7 @@ p + p {
 .hero-rail .rail-block,
 .hero-portrait {
   width: 100%;
-  max-width: 326px;
+  max-width: 340px;
   justify-self: end;
 }
 
