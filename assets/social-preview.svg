@@ -1,26 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
   <title id="title">Fatim Majumder social preview</title>
-  <desc id="desc">Social preview image for Fatim Majumder's personal site highlighting ML systems, evaluation, observability, and research infrastructure.</desc>
-  <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#fbf8f2" />
-      <stop offset="100%" stop-color="#efe7dc" />
-    </linearGradient>
-    <linearGradient id="panel" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#10213d" />
-      <stop offset="100%" stop-color="#20456b" />
-    </linearGradient>
-  </defs>
+  <desc id="desc">Social preview image for Fatim Majumder's academic homepage, highlighting applied mathematics, mathematical machine learning, optimization, and scientific computing.</desc>
+  <rect width="1200" height="630" fill="#f7f7f4" />
 
-  <rect width="1200" height="630" fill="url(#bg)" />
-  <g opacity="0.24" stroke="#10213d" stroke-width="1">
-    <path d="M0 82H1200" />
-    <path d="M0 164H1200" />
-    <path d="M0 246H1200" />
-    <path d="M0 328H1200" />
-    <path d="M0 410H1200" />
-    <path d="M0 492H1200" />
-    <path d="M0 574H1200" />
+  <g opacity="0.24" stroke="#c7cfdb" stroke-width="1">
+    <path d="M0 90H1200" />
+    <path d="M0 180H1200" />
+    <path d="M0 270H1200" />
+    <path d="M0 360H1200" />
+    <path d="M0 450H1200" />
+    <path d="M0 540H1200" />
     <path d="M120 0V630" />
     <path d="M240 0V630" />
     <path d="M360 0V630" />
@@ -32,47 +21,34 @@
     <path d="M1080 0V630" />
   </g>
 
-  <rect x="58" y="52" width="1084" height="526" rx="28" fill="#fffdfa" stroke="rgba(16,33,61,0.12)" />
-  <rect x="84" y="78" width="86" height="86" rx="24" fill="url(#panel)" />
-  <text x="127" y="131" fill="#ffffff" font-family="Georgia, serif" font-size="36" text-anchor="middle">FM</text>
+  <rect x="62" y="58" width="1076" height="514" rx="16" fill="#ffffff" stroke="#d9dee7" />
 
-  <text x="204" y="118" fill="#6f7c90" font-family="Helvetica, Arial, sans-serif" font-size="18" letter-spacing="4">MACHINE LEARNING RESEARCH ENGINEER</text>
-  <text x="84" y="238" fill="#10213d" font-family="Georgia, serif" font-size="62" font-weight="700">
-    <tspan x="84" dy="0">ML systems, evaluation,</tspan>
-    <tspan x="84" dy="70">and research infrastructure</tspan>
+  <rect x="92" y="92" width="78" height="78" rx="12" fill="#172033" />
+  <text x="131" y="141" fill="#ffffff" font-family="Georgia, serif" font-size="33" font-weight="700" text-anchor="middle">FM</text>
+
+  <text x="198" y="121" fill="#7a2835" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="700">Incoming Columbia M.S. Applied Mathematics</text>
+  <text x="92" y="236" fill="#172033" font-family="Georgia, serif" font-size="64" font-weight="700">
+    <tspan x="92" dy="0">Fatim Majumder</tspan>
   </text>
-  <text x="84" y="368" fill="#4b5a72" font-family="Helvetica, Arial, sans-serif" font-size="28">
-    <tspan x="84" dy="0">I build the systems that let ML teams trust their results:</tspan>
-    <tspan x="84" dy="42">deterministic evaluation, data reliability, and reproducible experimentation.</tspan>
+  <text x="92" y="314" fill="#173c66" font-family="Georgia, serif" font-size="38" font-weight="600">
+    <tspan x="92" dy="0">Mathematical Machine Learning, Optimization,</tspan>
+    <tspan x="92" dy="48">and Scientific Computing</tspan>
+  </text>
+  <text x="92" y="435" fill="#3e485c" font-family="Helvetica, Arial, sans-serif" font-size="25">
+    <tspan x="92" dy="0">Research interests: stochastic processes, numerical linear algebra,</tspan>
+    <tspan x="92" dy="38">graph learning, reproducible experimentation, and reliable AI evaluation.</tspan>
   </text>
 
-  <text x="84" y="470" fill="#95522d" font-family="Helvetica, Arial, sans-serif" font-size="18" letter-spacing="3">FATIMMAJUMDER.GITHUB.IO</text>
-
-  <g transform="translate(84 510)">
-    <rect width="220" height="120" rx="22" fill="#f6f1e8" stroke="#d8d1c5" />
-    <text x="22" y="42" fill="#10213d" font-family="Georgia, serif" font-size="34" font-weight="700">15K+</text>
-    <text x="22" y="70" fill="#4b5a72" font-family="Helvetica, Arial, sans-serif" font-size="18">benchmark runs / week</text>
-    <text x="22" y="96" fill="#6f7c90" font-family="Helvetica, Arial, sans-serif" font-size="14" letter-spacing="2">ARTHUR AI</text>
+  <g transform="translate(92 514)">
+    <rect width="220" height="46" rx="8" fill="#eef2f6" stroke="#d9dee7" />
+    <text x="18" y="30" fill="#172033" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700">fatimmajumder.github.io</text>
   </g>
-
-  <g transform="translate(322 510)">
-    <rect width="220" height="120" rx="22" fill="#f6f1e8" stroke="#d8d1c5" />
-    <text x="22" y="42" fill="#10213d" font-family="Georgia, serif" font-size="34" font-weight="700">99.96%</text>
-    <text x="22" y="70" fill="#4b5a72" font-family="Helvetica, Arial, sans-serif" font-size="18">exact rerun reproducibility</text>
-    <text x="22" y="96" fill="#6f7c90" font-family="Helvetica, Arial, sans-serif" font-size="14" letter-spacing="2">DETERMINISTIC LINEAGE</text>
+  <g transform="translate(334 514)">
+    <rect width="212" height="46" rx="8" fill="#f3f4ef" stroke="#d9dee7" />
+    <text x="18" y="30" fill="#3f6b5b" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700">Emory CS + Math</text>
   </g>
-
-  <g transform="translate(560 510)">
-    <rect width="220" height="120" rx="22" fill="#f6f1e8" stroke="#d8d1c5" />
-    <text x="22" y="42" fill="#10213d" font-family="Georgia, serif" font-size="34" font-weight="700">4B+</text>
-    <text x="22" y="70" fill="#4b5a72" font-family="Helvetica, Arial, sans-serif" font-size="18">weekly events monitored</text>
-    <text x="22" y="96" fill="#6f7c90" font-family="Helvetica, Arial, sans-serif" font-size="14" letter-spacing="2">FULLSTORY</text>
-  </g>
-
-  <g transform="translate(798 510)">
-    <rect width="220" height="120" rx="22" fill="#f6f1e8" stroke="#d8d1c5" />
-    <text x="22" y="42" fill="#10213d" font-family="Georgia, serif" font-size="34" font-weight="700">6.8x</text>
-    <text x="22" y="70" fill="#4b5a72" font-family="Helvetica, Arial, sans-serif" font-size="18">research throughput gain</text>
-    <text x="22" y="96" fill="#6f7c90" font-family="Helvetica, Arial, sans-serif" font-size="14" letter-spacing="2">ALGORY CAPITAL</text>
+  <g transform="translate(568 514)">
+    <rect width="278" height="46" rx="8" fill="#f3f4ef" stroke="#d9dee7" />
+    <text x="18" y="30" fill="#7a2835" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700">PhD-bound applied math</text>
   </g>
 </svg>

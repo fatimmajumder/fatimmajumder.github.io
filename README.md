@@ -1,14 +1,15 @@
-# Fatim Majumder Personal Site
+# Fatim Majumder Academic Homepage
 
-Static personal website and GitHub Pages home for
+Static academic research homepage and GitHub Pages site for
 [fatimmajumder.github.io](https://fatimmajumder.github.io).
 
 ## What the site is optimized for
 
-- fast recruiter scanability in the first 10 to 15 seconds
-- hard proof and systems depth for technical hiring managers
-- deeper public-safe case studies for engineers evaluating judgment and rigor
-- simple maintenance and zero-backend deployment on GitHub Pages
+- professors, potential research advisors, PhD admissions readers, research labs, and mathematically serious ML groups
+- a clear transition from Emory Computer Science and Mathematics into Columbia Applied Mathematics
+- research direction in mathematical machine learning, optimization, stochastic processes, numerical computation, graph learning, and reliable AI evaluation
+- computational maturity shown through reproducible experimentation, benchmarking, graph learning, robust filtering, biomedical ML, and quantitative research systems
+- fast, static, accessible deployment on GitHub Pages
 
 ## Local development
 
@@ -22,35 +23,38 @@ Then open [http://localhost:4173](http://localhost:4173).
 
 ## Deployment
 
-This repo is designed to deploy directly from the default branch on GitHub
-Pages.
+This repo is designed to deploy directly from the default branch on GitHub Pages.
 
-- `index.html` is the homepage
-- `styles.css` contains the shared visual system for the homepage and case studies
-- `script.js` is progressive enhancement only for active nav highlighting
-- `case-studies/` contains the public-safe engineering writeups
-- `assets/` contains the favicon, social preview, and resume PDF
+- `index.html` is the academic homepage / about page
+- `research.html` contains the research interests, research statement preview, and current questions
+- `projects.html` reframes selected engineering work as computational research systems
+- `notes.html` contains placeholders for technical notes and writing
+- `cv.html` is the academic CV page and links to the CV PDF
+- `contact.html` contains research-oriented contact links
+- `case-studies/` preserves deeper public-safe project detail pages
+- `assets/` contains the favicon, social preview, resume PDF, and academic CV PDF
 - `sitemap.xml` and `robots.txt` support crawlability
 
 ## Site structure
 
 ```mermaid
 flowchart TD
-    A["Hero"] --> B["Proof strip"]
-    B --> C["Featured case studies"]
-    C --> D["Selected experience"]
-    D --> E["Projects"]
-    E --> F["Research and writing"]
-    F --> G["Contact"]
+    A["Home / About"] --> B["Research"]
+    A --> C["Projects"]
+    A --> D["Notes"]
+    A --> E["CV"]
+    A --> F["Contact"]
+    C --> G["Preserved project detail pages"]
 ```
 
 ## Content rules
 
-- Do not invent achievements, dates, employers, metrics, or links.
-- Keep proof static in the HTML. Core credibility should not depend on JS.
-- Preserve quantified outcomes whenever possible.
-- Keep the site static and GitHub Pages friendly.
-- Treat case studies as public-safe translations of real work, not speculative reconstructions.
+- Do not invent papers, advisors, lab affiliations, acceptances, publications, or Columbia details.
+- Use Columbia wording carefully: incoming M.S. in Applied Mathematics, expected start Fall 2026.
+- Keep the engineering background framed as evidence of computational research maturity, not the main identity.
+- Prefer precise academic language over startup, recruiting, or product marketing language.
+- Keep proof static in the HTML. Core credibility should not depend on JavaScript.
+- Preserve useful case-study URLs even when the main site framing changes.
 
 ## Related public repos
 

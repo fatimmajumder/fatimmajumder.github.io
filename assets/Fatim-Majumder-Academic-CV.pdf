@@ -1,0 +1,309 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R 9 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 6 0 R >>
+endobj
+6 0 obj
+<< /Length 4618 >>
+stream
+BT
+/F2 18 Tf
+54 748 Td (Fatim Majumder) Tj
+/F1 8.5 Tf
+54 726 Td (Fatim Majumder) Tj
+/F1 8.5 Tf
+54 713 Td (New York, NY | fatim.majumder@emory.edu | \(347\) 832-6751 | fatimmajumder.github.io |) Tj
+/F1 8.5 Tf
+54 700 Td (github.com/fatimmajumder | linkedin.com/in/fatim-majumder) Tj
+/F2 10.5 Tf
+54 674 Td (Research Interests) Tj
+/F1 8.5 Tf
+54 660 Td (Mathematical machine learning; optimization for machine learning; stochastic processes and) Tj
+/F1 8.5 Tf
+54 647 Td (stochastic approximation; numerical linear algebra; scientific computing; graph machine) Tj
+/F1 8.5 Tf
+54 634 Td (learning; reliable ML evaluation and benchmarking infrastructure; reproducible experimentation) Tj
+/F1 8.5 Tf
+54 621 Td (systems.) Tj
+/F2 10.5 Tf
+54 595 Td (Education) Tj
+/F1 8.5 Tf
+54 581 Td (Emory University) Tj
+/F1 8.5 Tf
+54 568 Td (Atlanta, GA) Tj
+/F1 8.5 Tf
+54 555 Td (B.S. in Computer Science and Mathematics, expected May 2026) Tj
+/F1 8.5 Tf
+54 542 Td (Selected coursework: Machine Learning; Artificial Intelligence; Analysis of Algorithms; Theory) Tj
+/F1 8.5 Tf
+54 529 Td (of Computing; Data Structures and Algorithms; Computer Architecture; Systems Programming; Convex) Tj
+/F1 8.5 Tf
+54 516 Td (Optimization; Numerical Optimization; Mathematical Statistics; Real Analysis; Numerical) Tj
+/F1 8.5 Tf
+54 503 Td (Analysis; Partial Differential Equations; Combinatorics; Probabilistic Machine Learning; Graph) Tj
+/F1 8.5 Tf
+54 490 Td (Deep Learning.) Tj
+/F1 8.5 Tf
+54 477 Td (Honors and activities: QuestBridge National Match Scholar; Dean's List; Undergraduate Research) Tj
+/F1 8.5 Tf
+54 464 Td (Distinction; HackDuke Finalist; Selective Technical Leadership Fellow; Varsity Rowing.) Tj
+/F2 10.5 Tf
+54 438 Td (Research And Engineering Experience) Tj
+/F1 8.5 Tf
+54 424 Td (Arthur AI - Machine Learning Research Engineering Intern) Tj
+/F1 8.5 Tf
+54 411 Td (New York, NY | May 2025 - Aug. 2025) Tj
+/F1 8.5 Tf
+54 398 Td (Built infrastructure for large-scale LLM evaluation and model analysis, emphasizing) Tj
+/F1 8.5 Tf
+54 385 Td (reproducibility, auditability, regression detection, and scalable experimentation.) Tj
+/F1 8.5 Tf
+54 372 Td (- Architected a multi-tenant LLM evaluation platform in Python, PyTorch, Ray, FastAPI, PostgreSQL,) Tj
+/F1 8.5 Tf
+54 359 Td (  Redis, Docker, Kubernetes, and AWS, supporting 15K+ benchmark runs per week across reasoning,) Tj
+/F1 8.5 Tf
+54 346 Td (  retrieval, tool use, multilingual, safety, and long-context evaluations.) Tj
+/F1 8.5 Tf
+54 333 Td (- Designed deterministic run lineage across dataset versions, prompt schemas, tokenizer revisions,) Tj
+/F1 8.5 Tf
+54 320 Td (  model artifacts, judge configurations, and scoring logic, raising exact rerun reproducibility) Tj
+/F1 8.5 Tf
+54 307 Td (  from 74.1% to 99.96%.) Tj
+/F1 8.5 Tf
+54 294 Td (- Built async inference scheduling, artifact caching, retry semantics, run-diff tooling, and) Tj
+/F1 8.5 Tf
+54 281 Td (  slice-level regression detection, reducing median experiment turnaround by 84% and wasted) Tj
+/F1 8.5 Tf
+54 268 Td (  GPU-hours by 51%.) Tj
+/F1 8.5 Tf
+54 255 Td (- Surfaced a preprocessing defect that inflated internal evaluation metrics by 6.1 points,) Tj
+/F1 8.5 Tf
+54 242 Td (  strengthening the reliability of downstream model comparisons.) Tj
+/F1 8.5 Tf
+54 229 Td (Fullstory - Software Engineering Intern) Tj
+/F1 8.5 Tf
+54 216 Td (Atlanta, GA | May 2024 - Aug. 2024) Tj
+/F1 8.5 Tf
+54 203 Td (Developed observability and validation systems for large-scale analytics pipelines, focused on) Tj
+/F1 8.5 Tf
+54 190 Td (preventing silent metric regressions and improving incident response.) Tj
+/F1 8.5 Tf
+54 177 Td (- Built backend data reliability tooling for analytics pipelines processing 4B+ weekly events) Tj
+/F1 8.5 Tf
+54 164 Td (  using Python, SQL, Kafka, Airflow, dbt, Docker, and lineage tooling.) Tj
+/F1 8.5 Tf
+54 151 Td (- Implemented validators for schema drift, freshness lag, broken joins, replay mismatches, null) Tj
+/F1 8.5 Tf
+54 138 Td (  spikes, cardinality explosions, and deploy-correlated anomalies.) Tj
+/F1 8.5 Tf
+54 125 Td (- Improved alert precision from 63% to 96%, reduced false positives by 79%, and lowered median) Tj
+/F1 8.5 Tf
+54 112 Td (  time-to-detection from 3.4 hours to 7 minutes.) Tj
+/F1 8.5 Tf
+54 99 Td (- Built self-serve incident triage linking deploy diffs, ownership metadata, suspect columns,) Tj
+/F1 8.5 Tf
+54 86 Td (  lineage graphs, and rollback context, reducing median debugging time from 2.9 hours to 24) Tj
+/F1 8.5 Tf
+54 73 Td (  minutes.) Tj
+/F1 8.5 Tf
+54 60 Td (Algory Capital, Emory University - Head of Research) Tj
+/F1 8.5 Tf
+54 47 Td (Atlanta, GA | Sept. 2023 - Present) Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 4359 >>
+stream
+BT
+/F1 8.5 Tf
+54 748 Td (Lead research infrastructure for a 30+ member student-run investment organization, building) Tj
+/F1 8.5 Tf
+54 735 Td (systems for reproducible quantitative research and model validation.) Tj
+/F1 8.5 Tf
+54 722 Td (- Built a research platform spanning point-in-time data ingestion, factor modeling, walk-forward) Tj
+/F1 8.5 Tf
+54 709 Td (  backtesting, portfolio construction, exposure control, attribution, and execution simulation.) Tj
+/F1 8.5 Tf
+54 696 Td (- Engineered a unified Python, SQL, PostgreSQL, DuckDB, Streamlit, Docker, and GitHub Actions) Tj
+/F1 8.5 Tf
+54 683 Td (  stack for tearsheets, experiment tracking, factor diagnostics, universe filtering, and) Tj
+/F1 8.5 Tf
+54 670 Td (  leakage-aware validation.) Tj
+/F1 8.5 Tf
+54 657 Td (- Increased strategy research throughput by 6.8x and reduced new-analyst ramp time from) Tj
+/F1 8.5 Tf
+54 644 Td (  approximately six weeks to eight days.) Tj
+/F1 8.5 Tf
+54 615 Td (Georgia Tech / Emory University - Research Assistant, Wallace H. Coulter Department of) Tj
+/F1 8.5 Tf
+54 602 Td (Biomedical Engineering) Tj
+/F1 8.5 Tf
+54 589 Td (Atlanta, GA | Sept. 2022 - Jan. 2024) Tj
+/F1 8.5 Tf
+54 576 Td (Built reproducible multimodal machine learning pipelines for clinical and imaging datasets,) Tj
+/F1 8.5 Tf
+54 563 Td (emphasizing leakage prevention, controlled experimentation, calibration, and subgroup) Tj
+/F1 8.5 Tf
+54 550 Td (evaluation.) Tj
+/F1 8.5 Tf
+54 537 Td (- Developed ML pipelines using Python, PyTorch, scikit-learn, SQL, and Streamlit, enabling 1,000+) Tj
+/F1 8.5 Tf
+54 524 Td (  controlled runs across preprocessing, fusion, calibration, subgroup evaluation, and threshold) Tj
+/F1 8.5 Tf
+54 511 Td (  analysis.) Tj
+/F1 8.5 Tf
+54 498 Td (- Reworked cohort construction and evaluation to eliminate patient overlap, temporal) Tj
+/F1 8.5 Tf
+54 485 Td (  contamination, and feature leakage.) Tj
+/F1 8.5 Tf
+54 472 Td (- Improved held-out AUROC from 0.71 to 0.88 and enabled scientifically defensible comparisons) Tj
+/F1 8.5 Tf
+54 459 Td (  across model families.) Tj
+/F2 10.5 Tf
+54 433 Td (Selected Projects) Tj
+/F1 8.5 Tf
+54 419 Td (RE-AMP: Generative Audio Robustness Evaluation) Tj
+/F1 8.5 Tf
+54 406 Td (Python, PyTorch, FastAPI, React, TypeScript, Redis, PostgreSQL, Docker) Tj
+/F1 8.5 Tf
+54 393 Td (- Built a full-stack benchmarking platform for generative audio systems with async job) Tj
+/F1 8.5 Tf
+54 380 Td (  orchestration, structured artifact storage, reproducible replay, and comparative analysis) Tj
+/F1 8.5 Tf
+54 367 Td (  workflows.) Tj
+/F1 8.5 Tf
+54 354 Td (- Supported 6,000+ controlled robustness runs and reduced experiment setup time by 89%.) Tj
+/F1 8.5 Tf
+54 341 Td (- Added robustness harnesses for adversarial prompt perturbations, codec corruption, multilingual) Tj
+/F1 8.5 Tf
+54 328 Td (  prompts, and speaker-transfer failures, surfacing model-specific breakdowns hidden by) Tj
+/F1 8.5 Tf
+54 315 Td (  aggregate MOS-style summaries.) Tj
+/F1 8.5 Tf
+54 302 Td (Traffic Collision Risk Modeling) Tj
+/F1 8.5 Tf
+54 289 Td (Python, PyTorch Geometric, SQL, GeoPandas, NetworkX, XGBoost) Tj
+/F1 8.5 Tf
+54 276 Td (- Built a graph-learning pipeline over 1M+ collision records and road-network topology,) Tj
+/F1 8.5 Tf
+54 263 Td (  integrating spatial, temporal, structural, and contextual features.) Tj
+/F1 8.5 Tf
+54 250 Td (- Improved hotspot-ranking AUROC by more than 20 points over strong tabular baselines.) Tj
+/F1 8.5 Tf
+54 237 Td (Robust Kalman Filtering for Vehicle Localization) Tj
+/F1 8.5 Tf
+54 224 Td (Python, NumPy, SciPy, MATLAB, C++) Tj
+/F1 8.5 Tf
+54 211 Td (- Implemented a localization simulation framework under sensor dropout, burst noise, outliers,) Tj
+/F1 8.5 Tf
+54 198 Td (  covariance misspecification, and asynchronous measurement streams.) Tj
+/F1 8.5 Tf
+54 185 Td (- Reduced median localization error by 46% and 95th-percentile localization error by 41% compared) Tj
+/F1 8.5 Tf
+54 172 Td (  with a standard Kalman filter.) Tj
+/F1 8.5 Tf
+54 159 Td (Quant Research Lab) Tj
+/F1 8.5 Tf
+54 146 Td (Python, FastAPI, pandas, NumPy, Docker, GitHub Actions) Tj
+/F1 8.5 Tf
+54 133 Td (- Built a public-facing factor research and walk-forward backtesting demo designed to make) Tj
+/F1 8.5 Tf
+54 120 Td (  validation, lineage, exposure control, universe retention, and execution slippage inspectable) Tj
+/F1 8.5 Tf
+54 107 Td (  end to end.) Tj
+ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 10 0 R >>
+endobj
+10 0 obj
+<< /Length 2341 >>
+stream
+BT
+/F2 10.5 Tf
+54 743 Td (Technical Notes And Presentations) Tj
+/F1 8.5 Tf
+54 729 Td (Public technical notes) Tj
+/F1 8.5 Tf
+54 708 Td (- Stochastic Optimization Notes - mirror descent, momentum methods, and stochastic control.) Tj
+/F1 8.5 Tf
+54 695 Td (- Diffusion Models and ML Foundations - diffusion models, Gaussian processes, and optimizer) Tj
+/F1 8.5 Tf
+54 682 Td (  behavior.) Tj
+/F1 8.5 Tf
+54 669 Td (Selected talks and research archive topics) Tj
+/F1 8.5 Tf
+54 648 Td (- Diffusion Models; Enhanced Gaussian Processes with Derivative Matching; Exploration of Robust) Tj
+/F1 8.5 Tf
+54 635 Td (  Kalman Filtering for Vehicle Localization; Foundations and Strategies in Stochastic Control;) Tj
+/F1 8.5 Tf
+54 622 Td (  Foundations of Momentum Methods; Mirror Descent in Stochastic Approximation; SGD with Momentum) Tj
+/F1 8.5 Tf
+54 609 Td (  and Adam Optimizers in Image Classification.) Tj
+/F2 10.5 Tf
+54 583 Td (Technical Skills) Tj
+/F1 8.5 Tf
+54 569 Td (Languages: Python, C++, C, SQL, TypeScript, JavaScript, Java, Bash, MATLAB.) Tj
+/F1 8.5 Tf
+54 556 Td (Machine learning and applied math: PyTorch, PyTorch Geometric, scikit-learn, XGBoost, Ray, LLM) Tj
+/F1 8.5 Tf
+54 543 Td (evaluation, multimodal ML, graph ML, transformer inference, retrieval pipelines, calibration,) Tj
+/F1 8.5 Tf
+54 530 Td (ablations, robustness testing, stochastic optimization, numerical methods, factor modeling,) Tj
+/F1 8.5 Tf
+54 517 Td (backtesting.) Tj
+/F1 8.5 Tf
+54 504 Td (Systems and infrastructure: FastAPI, PostgreSQL, MySQL, Redis, Docker, Kubernetes, AWS, Linux,) Tj
+/F1 8.5 Tf
+54 491 Td (Git, CI/CD, Airflow, dbt, Kafka, ETL, observability, lineage, reliability engineering,) Tj
+/F1 8.5 Tf
+54 478 Td (distributed execution, caching, batching, async orchestration.) Tj
+/F1 8.5 Tf
+54 465 Td (Reliability and evaluation: prompt-injection testing, audit logging, regression detection,) Tj
+/F1 8.5 Tf
+54 452 Td (incident triage, profiling, GPU throughput tuning, reproducible experiment design, dataset and) Tj
+/F1 8.5 Tf
+54 439 Td (model artifact lineage.) Tj
+/F2 10.5 Tf
+54 413 Td (Selected Professional Interests) Tj
+/F1 8.5 Tf
+54 399 Td (Research roles and doctoral preparation at the intersection of mathematical machine learning,) Tj
+/F1 8.5 Tf
+54 386 Td (optimization, stochastic processes, numerical computation, and reliable AI systems.) Tj
+ET
+endstream
+endobj
+xref
+0 11
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000127 00000 n 
+0000000197 00000 n 
+0000000272 00000 n 
+0000000408 00000 n 
+0000005078 00000 n 
+0000005214 00000 n 
+0000009625 00000 n 
+0000009762 00000 n 
+trailer
+<< /Size 11 /Root 1 0 R >>
+startxref
+12156
+%%EOF
