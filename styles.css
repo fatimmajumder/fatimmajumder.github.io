@@ -378,6 +378,23 @@ p + p {
   gap: 16px;
 }
 
+.hero-portrait {
+  width: min(100%, 340px);
+  margin: 0;
+}
+
+.hero-portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center top;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--surface-subtle);
+}
+
 .rail-block,
 .page-rail-card,
 .theme-card,
@@ -922,6 +939,10 @@ p + p {
   .hero-rail,
   .page-hero-rail {
     margin-top: 28px;
+  }
+
+  .hero-portrait {
+    width: min(100%, 280px);
   }
 
   h1,
