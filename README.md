@@ -7,8 +7,8 @@ Static academic research homepage and GitHub Pages site for
 
 - professors, potential research advisors, PhD admissions readers, research labs, and mathematically serious ML groups
 - a clear transition from Emory Computer Science and Mathematics into Columbia Applied Mathematics
-- research direction in mathematical machine learning, optimization, stochastic processes, numerical computation, graph learning, and reliable AI evaluation
-- computational maturity shown through reproducible experimentation, benchmarking, graph learning, robust filtering, biomedical ML, and quantitative research systems
+- research direction in mathematical machine learning, scientific computing, optimization, statistical learning, AI for science, and reliable AI systems
+- computational maturity shown through reproducible evaluation, benchmark design, statistical model comparison, graph learning, robust filtering, biomedical ML, and quantitative research systems
 - fast, static, accessible deployment on GitHub Pages
 
 ## Local development

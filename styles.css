@@ -413,6 +413,7 @@ p + p {
 
 .rail-block,
 .page-rail-card,
+.education-card,
 .theme-card,
 .project-preview,
 .note-card,
@@ -434,6 +435,7 @@ p + p {
 
 .rail-block,
 .page-rail-card,
+.education-card,
 .theme-card,
 .project-preview,
 .note-card,
@@ -508,6 +510,7 @@ p + p {
 }
 
 .theme-grid,
+.education-grid,
 .notes-preview-grid,
 .notes-grid,
 .contact-layout,
@@ -521,6 +524,7 @@ p + p {
   gap: 22px;
 }
 
+.education-card p,
 .theme-card p,
 .project-preview p,
 .note-card p,
@@ -545,7 +549,7 @@ p + p {
 }
 
 .project-preview-list {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .project-preview {
@@ -1004,6 +1008,7 @@ p + p {
 
   .project-preview-list,
   .theme-grid,
+  .education-grid,
   .notes-preview-grid,
   .notes-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1110,6 +1115,7 @@ p + p {
   }
 
   .theme-grid,
+  .education-grid,
   .notes-preview-grid,
   .notes-grid,
   .project-preview-list,
@@ -1129,6 +1135,7 @@ p + p {
   .project-detail,
   .rail-block,
   .page-rail-card,
+  .education-card,
   .theme-card,
   .project-preview,
   .note-card,

@@ -1,309 +1,112 @@
 %PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document (opensource)
 1 0 obj
-<< /Type /Catalog /Pages 2 0 R >>
+<<
+/F1 2 0 R /F2 3 0 R
+>>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [5 0 R 7 0 R 9 0 R] /Count 3 >>
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
 endobj
 3 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
 endobj
 4 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+<<
+/Contents 10 0 R /MediaBox [ 0 0 612 792 ] /Parent 9 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 5 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 6 0 R >>
+<<
+/Contents 11 0 R /MediaBox [ 0 0 612 792 ] /Parent 9 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 6 0 obj
-<< /Length 4618 >>
-stream
-BT
-/F2 18 Tf
-54 748 Td (Fatim Majumder) Tj
-/F1 8.5 Tf
-54 726 Td (Fatim Majumder) Tj
-/F1 8.5 Tf
-54 713 Td (New York, NY | fatim.majumder@emory.edu | \(347\) 832-6751 | fatimmajumder.github.io |) Tj
-/F1 8.5 Tf
-54 700 Td (github.com/fatimmajumder | linkedin.com/in/fatim-majumder) Tj
-/F2 10.5 Tf
-54 674 Td (Research Interests) Tj
-/F1 8.5 Tf
-54 660 Td (Mathematical machine learning; optimization for machine learning; stochastic processes and) Tj
-/F1 8.5 Tf
-54 647 Td (stochastic approximation; numerical linear algebra; scientific computing; graph machine) Tj
-/F1 8.5 Tf
-54 634 Td (learning; reliable ML evaluation and benchmarking infrastructure; reproducible experimentation) Tj
-/F1 8.5 Tf
-54 621 Td (systems.) Tj
-/F2 10.5 Tf
-54 595 Td (Education) Tj
-/F1 8.5 Tf
-54 581 Td (Emory University) Tj
-/F1 8.5 Tf
-54 568 Td (Atlanta, GA) Tj
-/F1 8.5 Tf
-54 555 Td (B.S. in Computer Science and Mathematics, expected May 2026) Tj
-/F1 8.5 Tf
-54 542 Td (Selected coursework: Machine Learning; Artificial Intelligence; Analysis of Algorithms; Theory) Tj
-/F1 8.5 Tf
-54 529 Td (of Computing; Data Structures and Algorithms; Computer Architecture; Systems Programming; Convex) Tj
-/F1 8.5 Tf
-54 516 Td (Optimization; Numerical Optimization; Mathematical Statistics; Real Analysis; Numerical) Tj
-/F1 8.5 Tf
-54 503 Td (Analysis; Partial Differential Equations; Combinatorics; Probabilistic Machine Learning; Graph) Tj
-/F1 8.5 Tf
-54 490 Td (Deep Learning.) Tj
-/F1 8.5 Tf
-54 477 Td (Honors and activities: QuestBridge National Match Scholar; Dean's List; Undergraduate Research) Tj
-/F1 8.5 Tf
-54 464 Td (Distinction; HackDuke Finalist; Selective Technical Leadership Fellow; Varsity Rowing.) Tj
-/F2 10.5 Tf
-54 438 Td (Research And Engineering Experience) Tj
-/F1 8.5 Tf
-54 424 Td (Arthur AI - Machine Learning Research Engineering Intern) Tj
-/F1 8.5 Tf
-54 411 Td (New York, NY | May 2025 - Aug. 2025) Tj
-/F1 8.5 Tf
-54 398 Td (Built infrastructure for large-scale LLM evaluation and model analysis, emphasizing) Tj
-/F1 8.5 Tf
-54 385 Td (reproducibility, auditability, regression detection, and scalable experimentation.) Tj
-/F1 8.5 Tf
-54 372 Td (- Architected a multi-tenant LLM evaluation platform in Python, PyTorch, Ray, FastAPI, PostgreSQL,) Tj
-/F1 8.5 Tf
-54 359 Td (  Redis, Docker, Kubernetes, and AWS, supporting 15K+ benchmark runs per week across reasoning,) Tj
-/F1 8.5 Tf
-54 346 Td (  retrieval, tool use, multilingual, safety, and long-context evaluations.) Tj
-/F1 8.5 Tf
-54 333 Td (- Designed deterministic run lineage across dataset versions, prompt schemas, tokenizer revisions,) Tj
-/F1 8.5 Tf
-54 320 Td (  model artifacts, judge configurations, and scoring logic, raising exact rerun reproducibility) Tj
-/F1 8.5 Tf
-54 307 Td (  from 74.1% to 99.96%.) Tj
-/F1 8.5 Tf
-54 294 Td (- Built async inference scheduling, artifact caching, retry semantics, run-diff tooling, and) Tj
-/F1 8.5 Tf
-54 281 Td (  slice-level regression detection, reducing median experiment turnaround by 84% and wasted) Tj
-/F1 8.5 Tf
-54 268 Td (  GPU-hours by 51%.) Tj
-/F1 8.5 Tf
-54 255 Td (- Surfaced a preprocessing defect that inflated internal evaluation metrics by 6.1 points,) Tj
-/F1 8.5 Tf
-54 242 Td (  strengthening the reliability of downstream model comparisons.) Tj
-/F1 8.5 Tf
-54 229 Td (Fullstory - Software Engineering Intern) Tj
-/F1 8.5 Tf
-54 216 Td (Atlanta, GA | May 2024 - Aug. 2024) Tj
-/F1 8.5 Tf
-54 203 Td (Developed observability and validation systems for large-scale analytics pipelines, focused on) Tj
-/F1 8.5 Tf
-54 190 Td (preventing silent metric regressions and improving incident response.) Tj
-/F1 8.5 Tf
-54 177 Td (- Built backend data reliability tooling for analytics pipelines processing 4B+ weekly events) Tj
-/F1 8.5 Tf
-54 164 Td (  using Python, SQL, Kafka, Airflow, dbt, Docker, and lineage tooling.) Tj
-/F1 8.5 Tf
-54 151 Td (- Implemented validators for schema drift, freshness lag, broken joins, replay mismatches, null) Tj
-/F1 8.5 Tf
-54 138 Td (  spikes, cardinality explosions, and deploy-correlated anomalies.) Tj
-/F1 8.5 Tf
-54 125 Td (- Improved alert precision from 63% to 96%, reduced false positives by 79%, and lowered median) Tj
-/F1 8.5 Tf
-54 112 Td (  time-to-detection from 3.4 hours to 7 minutes.) Tj
-/F1 8.5 Tf
-54 99 Td (- Built self-serve incident triage linking deploy diffs, ownership metadata, suspect columns,) Tj
-/F1 8.5 Tf
-54 86 Td (  lineage graphs, and rollback context, reducing median debugging time from 2.9 hours to 24) Tj
-/F1 8.5 Tf
-54 73 Td (  minutes.) Tj
-/F1 8.5 Tf
-54 60 Td (Algory Capital, Emory University - Head of Research) Tj
-/F1 8.5 Tf
-54 47 Td (Atlanta, GA | Sept. 2023 - Present) Tj
-ET
-endstream
+<<
+/Contents 12 0 R /MediaBox [ 0 0 612 792 ] /Parent 9 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 7 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 8 0 R >>
+<<
+/PageMode /UseNone /Pages 9 0 R /Type /Catalog
+>>
 endobj
 8 0 obj
-<< /Length 4359 >>
-stream
-BT
-/F1 8.5 Tf
-54 748 Td (Lead research infrastructure for a 30+ member student-run investment organization, building) Tj
-/F1 8.5 Tf
-54 735 Td (systems for reproducible quantitative research and model validation.) Tj
-/F1 8.5 Tf
-54 722 Td (- Built a research platform spanning point-in-time data ingestion, factor modeling, walk-forward) Tj
-/F1 8.5 Tf
-54 709 Td (  backtesting, portfolio construction, exposure control, attribution, and execution simulation.) Tj
-/F1 8.5 Tf
-54 696 Td (- Engineered a unified Python, SQL, PostgreSQL, DuckDB, Streamlit, Docker, and GitHub Actions) Tj
-/F1 8.5 Tf
-54 683 Td (  stack for tearsheets, experiment tracking, factor diagnostics, universe filtering, and) Tj
-/F1 8.5 Tf
-54 670 Td (  leakage-aware validation.) Tj
-/F1 8.5 Tf
-54 657 Td (- Increased strategy research throughput by 6.8x and reduced new-analyst ramp time from) Tj
-/F1 8.5 Tf
-54 644 Td (  approximately six weeks to eight days.) Tj
-/F1 8.5 Tf
-54 615 Td (Georgia Tech / Emory University - Research Assistant, Wallace H. Coulter Department of) Tj
-/F1 8.5 Tf
-54 602 Td (Biomedical Engineering) Tj
-/F1 8.5 Tf
-54 589 Td (Atlanta, GA | Sept. 2022 - Jan. 2024) Tj
-/F1 8.5 Tf
-54 576 Td (Built reproducible multimodal machine learning pipelines for clinical and imaging datasets,) Tj
-/F1 8.5 Tf
-54 563 Td (emphasizing leakage prevention, controlled experimentation, calibration, and subgroup) Tj
-/F1 8.5 Tf
-54 550 Td (evaluation.) Tj
-/F1 8.5 Tf
-54 537 Td (- Developed ML pipelines using Python, PyTorch, scikit-learn, SQL, and Streamlit, enabling 1,000+) Tj
-/F1 8.5 Tf
-54 524 Td (  controlled runs across preprocessing, fusion, calibration, subgroup evaluation, and threshold) Tj
-/F1 8.5 Tf
-54 511 Td (  analysis.) Tj
-/F1 8.5 Tf
-54 498 Td (- Reworked cohort construction and evaluation to eliminate patient overlap, temporal) Tj
-/F1 8.5 Tf
-54 485 Td (  contamination, and feature leakage.) Tj
-/F1 8.5 Tf
-54 472 Td (- Improved held-out AUROC from 0.71 to 0.88 and enabled scientifically defensible comparisons) Tj
-/F1 8.5 Tf
-54 459 Td (  across model families.) Tj
-/F2 10.5 Tf
-54 433 Td (Selected Projects) Tj
-/F1 8.5 Tf
-54 419 Td (RE-AMP: Generative Audio Robustness Evaluation) Tj
-/F1 8.5 Tf
-54 406 Td (Python, PyTorch, FastAPI, React, TypeScript, Redis, PostgreSQL, Docker) Tj
-/F1 8.5 Tf
-54 393 Td (- Built a full-stack benchmarking platform for generative audio systems with async job) Tj
-/F1 8.5 Tf
-54 380 Td (  orchestration, structured artifact storage, reproducible replay, and comparative analysis) Tj
-/F1 8.5 Tf
-54 367 Td (  workflows.) Tj
-/F1 8.5 Tf
-54 354 Td (- Supported 6,000+ controlled robustness runs and reduced experiment setup time by 89%.) Tj
-/F1 8.5 Tf
-54 341 Td (- Added robustness harnesses for adversarial prompt perturbations, codec corruption, multilingual) Tj
-/F1 8.5 Tf
-54 328 Td (  prompts, and speaker-transfer failures, surfacing model-specific breakdowns hidden by) Tj
-/F1 8.5 Tf
-54 315 Td (  aggregate MOS-style summaries.) Tj
-/F1 8.5 Tf
-54 302 Td (Traffic Collision Risk Modeling) Tj
-/F1 8.5 Tf
-54 289 Td (Python, PyTorch Geometric, SQL, GeoPandas, NetworkX, XGBoost) Tj
-/F1 8.5 Tf
-54 276 Td (- Built a graph-learning pipeline over 1M+ collision records and road-network topology,) Tj
-/F1 8.5 Tf
-54 263 Td (  integrating spatial, temporal, structural, and contextual features.) Tj
-/F1 8.5 Tf
-54 250 Td (- Improved hotspot-ranking AUROC by more than 20 points over strong tabular baselines.) Tj
-/F1 8.5 Tf
-54 237 Td (Robust Kalman Filtering for Vehicle Localization) Tj
-/F1 8.5 Tf
-54 224 Td (Python, NumPy, SciPy, MATLAB, C++) Tj
-/F1 8.5 Tf
-54 211 Td (- Implemented a localization simulation framework under sensor dropout, burst noise, outliers,) Tj
-/F1 8.5 Tf
-54 198 Td (  covariance misspecification, and asynchronous measurement streams.) Tj
-/F1 8.5 Tf
-54 185 Td (- Reduced median localization error by 46% and 95th-percentile localization error by 41% compared) Tj
-/F1 8.5 Tf
-54 172 Td (  with a standard Kalman filter.) Tj
-/F1 8.5 Tf
-54 159 Td (Quant Research Lab) Tj
-/F1 8.5 Tf
-54 146 Td (Python, FastAPI, pandas, NumPy, Docker, GitHub Actions) Tj
-/F1 8.5 Tf
-54 133 Td (- Built a public-facing factor research and walk-forward backtesting demo designed to make) Tj
-/F1 8.5 Tf
-54 120 Td (  validation, lineage, exposure control, universe retention, and execution slippage inspectable) Tj
-/F1 8.5 Tf
-54 107 Td (  end to end.) Tj
-ET
-endstream
+<<
+/Author (Fatim Majumder) /CreationDate (D:20260425185729-04'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20260425185729-04'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (\(unspecified\)) /Title (Fatim Majumder Academic CV) /Trapped /False
+>>
 endobj
 9 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 10 0 R >>
+<<
+/Count 3 /Kids [ 4 0 R 5 0 R 6 0 R ] /Type /Pages
+>>
 endobj
 10 0 obj
-<< /Length 2341 >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 3767
+>>
 stream
-BT
-/F2 10.5 Tf
-54 743 Td (Technical Notes And Presentations) Tj
-/F1 8.5 Tf
-54 729 Td (Public technical notes) Tj
-/F1 8.5 Tf
-54 708 Td (- Stochastic Optimization Notes - mirror descent, momentum methods, and stochastic control.) Tj
-/F1 8.5 Tf
-54 695 Td (- Diffusion Models and ML Foundations - diffusion models, Gaussian processes, and optimizer) Tj
-/F1 8.5 Tf
-54 682 Td (  behavior.) Tj
-/F1 8.5 Tf
-54 669 Td (Selected talks and research archive topics) Tj
-/F1 8.5 Tf
-54 648 Td (- Diffusion Models; Enhanced Gaussian Processes with Derivative Matching; Exploration of Robust) Tj
-/F1 8.5 Tf
-54 635 Td (  Kalman Filtering for Vehicle Localization; Foundations and Strategies in Stochastic Control;) Tj
-/F1 8.5 Tf
-54 622 Td (  Foundations of Momentum Methods; Mirror Descent in Stochastic Approximation; SGD with Momentum) Tj
-/F1 8.5 Tf
-54 609 Td (  and Adam Optimizers in Image Classification.) Tj
-/F2 10.5 Tf
-54 583 Td (Technical Skills) Tj
-/F1 8.5 Tf
-54 569 Td (Languages: Python, C++, C, SQL, TypeScript, JavaScript, Java, Bash, MATLAB.) Tj
-/F1 8.5 Tf
-54 556 Td (Machine learning and applied math: PyTorch, PyTorch Geometric, scikit-learn, XGBoost, Ray, LLM) Tj
-/F1 8.5 Tf
-54 543 Td (evaluation, multimodal ML, graph ML, transformer inference, retrieval pipelines, calibration,) Tj
-/F1 8.5 Tf
-54 530 Td (ablations, robustness testing, stochastic optimization, numerical methods, factor modeling,) Tj
-/F1 8.5 Tf
-54 517 Td (backtesting.) Tj
-/F1 8.5 Tf
-54 504 Td (Systems and infrastructure: FastAPI, PostgreSQL, MySQL, Redis, Docker, Kubernetes, AWS, Linux,) Tj
-/F1 8.5 Tf
-54 491 Td (Git, CI/CD, Airflow, dbt, Kafka, ETL, observability, lineage, reliability engineering,) Tj
-/F1 8.5 Tf
-54 478 Td (distributed execution, caching, batching, async orchestration.) Tj
-/F1 8.5 Tf
-54 465 Td (Reliability and evaluation: prompt-injection testing, audit logging, regression detection,) Tj
-/F1 8.5 Tf
-54 452 Td (incident triage, profiling, GPU throughput tuning, reproducible experiment design, dataset and) Tj
-/F1 8.5 Tf
-54 439 Td (model artifact lineage.) Tj
-/F2 10.5 Tf
-54 413 Td (Selected Professional Interests) Tj
-/F1 8.5 Tf
-54 399 Td (Research roles and doctoral preparation at the intersection of mathematical machine learning,) Tj
-/F1 8.5 Tf
-54 386 Td (optimization, stochastic processes, numerical computation, and reliable AI systems.) Tj
-ET
-endstream
+Gb!#^?$"c1'n+E3^e:Q]<b+UUqQ_2H`Kh03D6MR>[b[@"JOi<u9G.\'b#'NN^?5PC7G5!.SP<aebf#f4Jf"0OHgV.!Yr;T-k2.k$m,O%Q\Fc0OZe9qUJK(iH'cYKUI=::D<sENNgLGY]kk8s#(>O)Zmg!.\HN#V6NNV.VqHf6IjZDhkeITGr#r_OGhknYHZaD_/\G[ILB+[59jLIt:2?-Q"OjH=tfbZRD.s%02^m&3qpPCotTJji/pBNthB(YSjceM9V^3F+IkMm%^OiIZJ:7N,IO\nF%D$RSi>'2&2fPaC>\(JrDloSF5O`"&8q%&T9]lcbC@-REL:=0%>-T:2`:9WRJWiN1Yh5/=s`S?^c/*65n8j;TI`4f:XpNg].+1*O[@[Z)28>bMbRG,9CjKZ15I(/,H"u#hR2q[r,h/@LW3W'*:!+2Ws3'Ql!:VO(6>!Ki1*<W"mF1_C"[kr05?H5r3J2(Df"?(uPqg_K$8u@2G$*I3p0%oXWJsf8!T&r,5p\&pYptkM\)'?A;d.&XH-RkQYk+/Q_8EQ)ACNo&!RBf3#qTd*655SGgF0:[KOTWI7-q,$]`m_U?G/rBbl>t#4p0I-JESAGBLFGq^]/>lA6j=XJ(#rKem$&g(NBG2c$WUFueRBC:-^P2YZHsT=I&kiVTDUA1;CScjnOmJ<f\JQVY_CMKK2AqB(9url=O9CCc#Sq'SC07a3M-EVl]VEDTMFUODW#e:N1(K1[lk_DSeNPrj6:f1GQ+#dhYhg^\JeO-5%@T:fQK@<UV1'fVC.N-d)6D8gcb^;`snUaeM@`>R$KRr7RVQ]$_1p."Q:+G/2H"Ud[c:bZBj5&EIDteYLcrH74?F/L<%76i"?c]fO2q2bck7kr1j=?3p/9C[gmlfD-/&MR:-=Kd(R8aCcoWM7)hRb/D!=X(L"?8HHRA&VmmpF7@7]rQDoQokLlV/5<pFY;q@h%F9sl39j@3cX"7a^=4_e3RS/o2.dbnnCoR5V<UPohh:luhUV@S++%\*;M#(!B/6^;V/3!P?::B;@B)t4Cjr*SA9([;Cq`7=l*t=g:`&X?fEL<p5=eO2Ap/sO4.&T(^:7lR%$naHA_8b0m<&0$62u$dN$X^dr98'8=[K[NB*]fT&M6P4_.?Cs+b]ZBfdKRDnD$0YXpr66^5O,5nF!6Msra?s5^A.AK1n4DjF3GW=lh:?\@H4tKp!BCJ$Ra79:+(0&q)&>lF=-T2F'd'>O/e0h+glIn!<Jat9-2-PV#9)So<^UK_iH#$D9NTu&OfYeS?g"Qb'82pRP,*[,pH]q.!mS+A@W%KS/=[U&;i"Pfh9Fu8%P.Q%CT7\<\)UVWU3e%#D5<:^ctU!>:f+qiO+pQ)s-R:c<KYaLrta8$eKe')A30=:m:`u,j7@[Su*^?cONsK1I4W^b3fDF4"A'Z'5''\A"u%@T8,EG`Chr;]_qV('kq3_b*Z?h%sc0t!"RW2%;5%=L`t!`74+_!o/J;\!nU`!Kcr`7H!I[`r7/qSeo)-D=PCBI2:c\\E`P(W^\bRX]e_p;DT'"S?VZ-:bo,-!h58E$k19f3XTkCTcA:;S'pgF8!W0E$H*4OE_;e-*NmoChkR<Y3(ND!m`"BLFM"RpF7dg:EM2qMOF&]<jgg6HPYMp/iMCb3u"E>%Q5Hc99]PC^4Bj5[9DlQAi6B7;@0UJ?8nsJcE/'(&?]I'e/Y7d[adSl:1_7sW.b>(7%<,$,#kU&5DQNEWJ$RNuW>"20$DCTW+'I\=+iC_'oP6ZAJCd%TPrIJ,Ri1(r_O]Q=`X6\jT67r^!#sRtMrh?n=lk8g,ju+.ui'm&+R0Zln!?OL7cYOoZlk1G@LGSWWDM@"D4]nN%gKP5;NKPQ!T5b*E<'C5Z>J7anldM]UYZn#V+''CXDJ!C+Qq`Xoe`k]Yn["Y'1ID234']IP[::83kIaF-Yh]]?bjf!2;RRh($W3pj&+q_X/cd%.PTiQoa)ujJ7<5QS&%6@LOiU]W_A6>#$X-thIZ_+^,!3,)0fPa^#K!Ib@$NAa`pNUO;opro/)pK0n1@S@MUc`oN%:Hl%r]*p9U_,[:>3e\Vp2dReV@2_b/t]!M>5e<o0V^nGEeu(8mR,r;JTrg,dIt6-TDb:/<\g(TiHJ&nGj>,UpMJJ$JI.2YS'P([4H+g>fI';Z8NII,+Z)T>8Kk$+nC7%<UpSa1d0@WRCofVpn'Ie_:[mpDKC2`rDRWE[B[D:SQ0kkUJ-QT;$C!k=P;Rg>J1,H;=djJSn6fj+$>Os[d40;Q</3RS[MToU#%7[G>G+gVb_YN!45?XqJh1A>T,b/6BA(Sa&dP_;H-OGW15XD0%':@PrM]!KqPZSQ_M,[YFRIJkLt/?!03L\6>q$E;BU;Z@V3Gf%,>/00E/3E%M,I%^YcFl5;N1sDD'T:k0rC'4MI<?Ht).9gu=[jc2"ViOl's+anX2k'dsSoKdMbLVdn;hEZ$g5-<*G!oPpp7p(CYI1Fe]nq>Jr33eKXVpj/pMgm(KfoFP<Im1q/O52C*hb)Bp"32gg'd3%1>n?pDZ0Qm4"UAPK>!&_8_iP!SLQ"#aeK"Ukro^?K%jh"&r8@]9I9&T"eQ6?/TqJYUCkf0)ZN_nTUgbD^S8E,a/YD"B<doo`qL2=K/"4?o\":HM&D;o%A=aT[YPf@%=C-(7PY^A!4SF;LQpLWI6b`?>SHEFQr%UQWpDR]Ysn;]-J$EfMd+,%/-7X?nY/lS_RAs2k*Z!=9\.5Gm6:D.CXWUVY*b#kK5#:VYLht$`7/E7+88PGomBKpNp#YbrT$KRkT6K8Lb97M#_qu9"HKun<JThD3q.T!rW!DR5o"*ZP]G)>>82(a<1lQt(H#eZ>;Ai>I!(gUc+pe4!"CMhBq^<Tad^'+h+Fj?(Sf#Z?m5e7a\*j#s'UrC>INN4hEastYPZK>gF&\ArhI4;+C"-*c"/?8W2L!&W3U.EJg["]9Zdj'S9k=b$UZ8ul.c6pRi&JiV(qa@5!WDuQG5Dj`1:lS<.C/dsVOJ9a&8r6^ZJpJ60-FL,_i*uZ#p"fd!2B9<GhKoVi-$tXFh6]<riMg'IZiG\O&sV2dj`M/cb'R]OP<t5.@;WPeBr2A+O8=6<UbefAb:/>Oggg^Z.mcW\i8e8YiCeN5'k\:G1Ug+>(ugp38T2b<+GfneFH<0[GEG&GFQ?bq.Z@u=fbOo$HE&0)6jL7U.cSJ&NtpWNW$eDlD-VoS=t<R[)(RI`C"3mAB`M$S(D`Gth,^,U>.Zot?3\JK)Hp"D1rD2K.aMY&WX>;)1=>RO0YCMjck4(9:_frM0d0m>+hcu']&m]oHPk1!au.EJfmLsI_0`NA"*03rgTZl;\%asS)EZA)?17_h\D.!e+$<64F[7&ki^7VfWf@Mg4B.!#=O*2SWL-dl?&T1D,h7!m5$OLql=4Kt-mcR,M]pf9>fr.QS?mR[B:GUtJFcn,]P`oU,YfU$$W7Z!n]VCn@NHG&Q!u6`Q,[#RLhnqM>Y!oQ]>brsX2[hdYEb<lmi+uM5FR&u_m_h?0Ji-;A:Y"Bj)PV1'4m2UgHJ$BM$ikS+*%b[Jhh8Yi].0h>e[GK%\q/-Y$M2(kuB[7,OeNo1)oFiM"/R!^G>u`h1)G<%PLj,]['.C@EXDB%`VW\3%CKThHM'k>Ys?,WbG/Wi&%<O:O;u!'G#A#D]J,r3eN(,-5aSf@]j9E#,Ci>^#t?]>ia-*Z*hbSNU]d0RDBKHLjFC``[F>O1Nn/CqZG_@>o%ERR?Cl>:":FH"-E\ViVqT/Z7ub+NFD=tCA.(F1>MX$~>endstream
+endobj
+11 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 4157
+>>
+stream
+Gb!;f?'F!^&q0MXQkrik]`H@/Z:j'DHK1'%a.$@42m7ij^][6(b`!=$b)a<8HU\'QD/aAQ<MWl2((_^i:\X*pH8H1]r#>/*8M7s)\TmY^5R`BV^(c3>D_1&>`U3TVDpJXXaDnt=3>#>f+hgTiI*imlVu<=Q%0qNdaee3\qU=d0=P2.[/2h1m*t3MJ@\32^f<d0]n+S09rl&+glTusS'@+d3o=_Zgq6_Y4io-g0*Ut5^grPMCBtMU5[Nj4Smta'cr5pKQi0?klb'(^=mGCkN0h]/;Ku86fQa4D&5F/=:X%_WtgKd<[\kmFD"Q%:#H5n%8PKRe:0/<K,bl97I;WSXsdLf+uI:\[gPaTP-poIO=L:I/7Ip^-k5OAnICn?U$T[*WUdd97:5]P35;rKiG'kAli-W0:AH]os"2c%E3b=ZFHi0K$KQ<$%bX+YD7Be3_FLj5IM;<h%Vbj^rVM/l?-.kuMKS_,F"a`^!6Wkp";M0W'd^2qD"jV"2TXGTl^b,qq#':E*J`32YZ3PAU!m<>*^TEeP3<LLt"aL03f:Y$O`<#O,Ze/O)t&Wf$cWHO+I]Ik]$21;&eRqc1e()?+5R2Her5o-FjZ(foo'4\/eUfV7u*BuZ?ki@'<)kAp^pBgo_\>^AtOde[a_g"^BL#o`6>\!h==]H_>&7?\bb@3nq;(ZlkW_aJOidF4a!p`f7j/7\`C'/*h8idW;h1d&$SKaW9WR]'#_?uY^3$3fXlQqEj(R/r#Z6s0+?]"'(Wl4'mjrmk54BtlT2oV-Y>87]U8t@,0:W#+/eRWg*n@d'YY"-XV9NdFtX$fnSU2WdY-DTb@)_mmGmg,s*<?/N5R8]hJL3pkjM8`4p9qR2SJL1D:MD@c2/;2Wcl?^or==pUH6!9]"3a2E\"i214jfu1">>qZT5\%jX7c#io-(PJb>1,:TEN!oAV5Fp!Qh*Zl:h4AN6Mc-$H=J]["T5a&f18B$di?QH1mHS4qW3m_-P0b.DnJ#5'H)?r*qZ*Pku5sXcF&p:!^=keD?du&=pc_l?#4H86L!$H!@Ij33Z20G%VLb.l@dl962VC#`'G37[`-K^GUj/W\%.H$+>GknN8RkaDP0EB6AefATc`2/VXe:%r2Lqe:./<k-Hg?HogpGQaBMrGAkN]E?k\Dj'W1*Z<99tH/_@gO>jF3m6<$c-p`nJBH#X1`bNZN\Fl)oK7s9d6PH%'Zind!A'PM.3S*k!'3#4BpCpdUXM6<!n]1uMg'<=^%O\W,RM0@u1H=_e-3U/q?W>4Wo_^UVplJ`Bu92Zud&Cn@qP^\VLr)P8YX"0Eb+i"o@T8^M\jA4cT26CFUY<Nn2N=iqAE&o%:4@dlZ@.K!Y*^U`b'Sh9.,"6J_7/"SN>8^\lN@_K(=\%90o_.GLb\A0+]<6CRA1Gf$gai#'S#jTQB=M*+a6T/g6Th<qpVa:#*9#O3'Ke/?e1Fp3o`fo\N\:uNM(&C+j``e\6bUkg4=2Yor8mTE"#\tENT+s\rc:s5+0#/fft;Wf0:4%/!'9*E8ClJMgWpm*,NB^jn?+6bSdllfO_d>)OQmuI-:MEe*pY[,;EkKdGhh#g)LVS!8j#)PT+p:3-HMQ$T;d0Tg8+-W)AMiW;tA2>l5-5pG:;?r!>^@8K"<:KL2(O*1Nk&PrVNi9g7S5@L^aUPhHX[&47.[1Q&o#hSus]W9O5p!UZZkGFEeC#'U2+V\3&?5.TEGm"psf`nrU8fVU#ljS-.1/+fH4hS$-+ae#iPUQ.`$mF)U#X%Po!qALoG`dmb0FYrmWUR;Eq73VKf)5rWjGYHiBmB>e-9SBCj$o_R>^dG#iG9t8(jLb]`OT#C2qGQ!A)=[d:*!Oo4+Je%5!_O+'a8BefF?m2bP#rHntODHr)nsT)?`^+oDk_E46E$i"]HBFo1iL8P*.2HccLW]79AKAFF8iEq/JJc4qYdV=<rB+i&'t.:2`15<cj/Yhklb&oPcu_c,cE.(u:1fcM!XsU`RuoZ1HD!YFE!Kre'r`f$l&j%K6%VZ\1RNYg*\Y]D\P/>9'L<+/d^^h\A,AO](;VJA=\I$"NWlfE3gY"gMb@-<;QStZ-.&Q47A!!5P*F?s,8E>gSnnm>Nbso20IuDbi/;-n%=3t&%7e>>9K(]Y)&,EN=ck'@'Y>0Cg(i2q*DooPq\Hsg%?VOS"h_2m'o4TPEXU,u`.W[i>nr+6+LU:ZDY'3^Dq%!iLh?,ll-Zm$J5b+947;^uI]lBkU=_hBd\8C3;uRmA$-G+sc@mV8"r&-OUC"XlHrL+Z8T\!/e[Sr>g_%eJ>[^=J92k'?#0'$/V=sm=ACn?KaOP>8hua8+=OefN-P6(G%XrB!^]L5bK5m\ilWo/uJE2*Cnh:aJGXHZ9?l31CP,tQ"5[aZ%4S0ca&TL-m(!Nre!?R#"RbI*W.2XfSel'scd8r%C:'!)<%Vc1:%BRlk"\ktm+TEQjZoOblj)MSHZpXkXpDMuSGI$/Aa/A?719FRS2fM"]Q!$R/ohA6;(mGj5`@D#/ZXeT'H`7JM@OfN)p)[XGreGaH2r3l``mXMVfJ,f6<P'`h7seIifUi\\q>2$L'@LD+k.,4k^kZqr'BGA.nl5!0MKDRi(GVU%;0kV]%<MFhrb42QpPF4*hs1f-j5Et]\)QCIYXs_^YQ=:3qh)#5K>ok6o_U=>7l-r%6MQtNBFr,YrtlA^5,/c,Q"H#`;#*aL'LbP\W=Ea:Y3Rldac=--GVR*g>mTB2"_Ie,C)(qbp@.VfUbj7]lt<hAb*c"H6SHu!"o2EC>W=mJ)@b#Ak^K_D`bkcP%/4CT7KD+H(C1mQN&2>*(b(Y[LCF791h2Un+*HZ:,'V(YXB_^*$X99<_N/A[U8]G\&N](gF5?sGi`lhrM(4P(/TQTc?=_*/p8-`8Bdu-tZ09'nQ;o9_.SICNnpb*6En!>N\U:_^dbN^GkPL<!Tp>:t<s(dlhn-T<Ep6`46^]2>b6F3ET5(&g?a6XBk$n^6Z_e!b'f7q\@b$(!6ap.HgQSM&2g$/jGYbou-rf8(l_JN>K;T8!?Ch%R5.H9#0Fn""!f]6^Pb\kSb]nIQ,3`J(DAI(;$;,ER"9[$jL6u<8mV`RqMUX"hrX_h9/P0.h<sQIA\6=fE\P\rWroMg/i'5s>M%bYPN*:E#8XLakKI^SiR$+X9mR]E*Zp^g9m%edo@a?AS=MEB6S-u2?hU'!ZOuCRYA$'80Q_INO;Dbq>.eV&HI]TjX5s`tedmYu0SGSE.'u^-0VF[?FI,6R,XJ@?5f$-rK:k6[o<0(Ba(FOr!"pa-cPA_[WVS29G7DkSN<(/K]kT=n'4atee:Cm?'D"En0_6,!H;/2%]obG+r]FN5gjfABVfjhN3;`GB>5"l#HpC^nOYmQi*<>\P"U6psC@mAb_^V-&m^(N@H5MZ3"T?Z8Br,MF:gtt<NcL,W-LqEPFmr6([M5qXjqqoc7gu!9f+7?iZYN'jDONi<X&bfm73R<c"gbp^.lI)i4IrS!@km`3%LF;FVZZ1#hO?FU=7u]\X<gTCA8kJ9V4^]SlY"/\R-7\(;qs#3b;`QVC]_lD9\0Mu6Q?Cl>mDjUU($b$JET_(t[q*.(Q]G@lTJ3V:U6aiAg\!B_ZrG4ZZM(\b$I;B&;QHl;j2aD=(!FHI[^rGsq+=u3g%Etb0+UP8D94COK#[qN:;3r7G$f$$YekQ=-g\$K+Xldo2u+RRl6_ndZ^;dA@!P9F(CNqZATq,o2SiuiTEUqc7+bM.-SnWt(`T>'X3)LM\:h,,80AcFotitXSjmGHDq,tCZh7Eb")uW+TeN,BGp@12'A(^r!M37:=WN$FfYo1\nAp8_Q/al7PUeD=3p.lOJB-:16;F``0g[%*rU@$eLY*kLV6=Xs^]EXOG_[e5J5j[CfS>jYTGWj75-"C2"Ik?$N#3&hku`4P^a25"e<8k'BLI&]D?:[JP8>SgNuaj>'6rHU9N3%n7T@n]$jIq?`e/Z).l>B`bm?R]HpH<9Ab;onNaubbW/Dq%8;W0i_Ot^r)F'7nZ8.DU&.$$TD_&7nMq-ZsMBE?6d=Xp!JNO,Q*VC#WQDg::h=u"TqtpX3>V"!?pEc`tgr^pslNY9I*b)d[?'Z"@g[4'VAXsllQi)D01SJ>?i^`*%cMZ+a&+:"kWV`SkN^g447R:HZ)[;uqIRQ1Kpje[XVg.o"^,(3T~>endstream
+endobj
+12 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 3842
+>>
+stream
+Gb!#^?$G$]&q05P^e<""2km$b>M1D",I(J+8Skfj=,;N#<$]9]TH*XVmi?qSkX:HdXnNeUT4?%iKo\;OGO>mlB0H1bh=!%-m!QY+^@/E-J1Xg'5O+9]@a;+l5Q(%=^NsqMl]*@ZF?%(L0Z+?IV;I6[+*>i],4gHZg`Q\;U>$baHNVh>o_YPM1$]<re$Inel'S"Es(%&FBoZhuBhs<=g2ie3$8G,U4/$A?6$I@,k8"Xk3A4rY)/$5:7D`s*XH8-,AM0A(#gN4TDcisd<#V`VVF@G*A/NW;VA5/D>hDQCf?C6]V(1>Fn497,&\40Pb[bUF2BoO'o'T`+LcE9cL-8.u0N2p@H.m6W>l9Mf(2$':.#iStC;*lnYi>pB<gTL3E<C"2E%SU8VH\Nl(k'EM2n%pE]AoZp7F:Ao:8]>*rfNba=#qj1lmulj5ajRjL*Zo:W`\=KQ)7$TZ6A^uUk@HR'rn@n\5_;/Ku:#J>\sPC(!L7b&i8e_MhS156=\Ndp1RlOo>jT.O"udG,K=)2iuI6T,pm7<m/<;'EH76X)ZCh`6s3G:)ebhHaeNL`gjctEb:Uo%(<e*fB7h6UPU(Hr&Q=7jK7fb]3<Ft@fnDj825/06$BC+QLn%_k3*@`%-l)-+L"bc[LP6!T(_PY7/&CJ=6%i4B_K[&9&T_sm+"is8L<"l\g_`_7coe5$mVn54#2R,qgH)Gc^2KN@&:qV\WShRY/`;]ZnKnf\f*rc?+;HmrE$(_jYS@>`"sX+iY*[m.7)0&iYWS+0Ddm?Z'"EM:<sV9F\XKc"XbE@!F50"R*&*9p5[!6Cd$DS5[r1et]R^_9=up"8T3\;YdCf'5Pjng(=*YqKbL@\g99*_<[QcS<V+>l<57k[W9C2`h9>,oVmdYOq[F0UtAVe`TSo0NEhP9CM1sOas4@8BX&3-3?,u-Y*(oZ2Y$r0=.YWm*VgDp^#KDsp^/6gsq@+2:)qgG+2:[Zc=1m\*adgU?f*r/cK=rj,fr@/EtVLm&-mJ0Pej[2Z[N,",nOe$jV$(I+`bJX!7p1\:UU4^'5qZNpE#UTG[SLs!1o+&BWo;2U@<L@`8A]TgPRE#mF+LWIZ@)3,:MF7dbjCO&d@RHe(N#NdLr*CI<4R*bsP7"4Y3YHB"IYS7Dq*lQ<dc3NBJiZpf7V5rCf$QA\NJ%:(/WJ*rs.(&j,aK!pb]5!=\3(G[+FIk$4X!Wb'PZd3dXo:eI#B0Ss/".hI#K>0$Q,CP"_k$m-sadu2qpGgYYn@*AH<Rb2SqjiF,/6:q"/B@*]P@=?.@R4G02&4UH/Z^9b9AWBG[@_-1Rq_Mj1>:8qsa("S[K:<jgP387Y\_UiI=lBL]X"U))U%9OK]L&G?^fFh&2/0"ZfnGgn6jm&]om(W?Vr0HM<_o!jH6Kn<8n";k:q,!+j'SFk-@ntQ:p3jqUV#YbXq!hJ-Lr?$Rt_%2KeTD:8iXb]0)?SH%+(2k^*pK4-sO+T-]:-7mti+,:`n5!l3_I9De6m0/6$B^VrB@</6KQ-[iEp!Rn3(T`f2!MdkjjY>C3E^'/!)-7p%N2@BPs*L&\EtuaW4e3rnR$MmNnm&]8tXqT!bLZi+tDJJ)fj5Fi*j^U>9(FLk]7bli2(GfTX;nDW74RrPZK?*SS7O!2p$.P`^hVBUetHkBL^HJSRZ"mdsNdaOmF-S4P+#Yk'VGfqQiJ)i`B25mib>9T5K`PM%\$-`dFA%fVJr,!]B9KBu.Dt(07@u=@>[aS@sZ>UhlW%"!*V>iS'G4?\%QhHL+%)GB/R]$-=0gGj%OD&$9lpfNXMDY-i0NGc$9ZI("-N/F&dV8p_i%R%A=R:r^%]\)b75FVdn^fp,1+@SM9X=2tF7Z;lrP`+Z\4?]tFY_o^:>ZR_WIZB-47`jm:#1J[tJ9!*@_GbmJE&)isbhi6DVV'WET@^Q:+:a+qX:$=sEGI1HY/\pMY;<C7aUa:$mOG<[h`(K0tEqH:u`<2tRqjI^W>Bm@f+K^Y56Qj<R_R_:GOMjZfiK9>6CS:?uY'nmPo+nKI&g9O%-;fh"_?-)<Lf@6WG+B^)5n-=UIEE%pV^P#*MXs>1],`A8($/:pK6h@V8FPOR@i=]$,RE?9cZRQ)WQVmKj2)H&:,9!(6)0)UQ/%P\#`$V[SG'Ol7r=i]90kC$#"cn^'o?>`Aob1RR#kU`L.hhs/pOa^Q)<!k8P4.gp5Y9(feSeng/@cQ]/9I3mt0[^o?M5'ZS_C3gMe8[[(8\tm&2(J0K+Yu%f/=I-5CrOa!1Wt=S@i8#ucYSZTUm">c2*T3-Ih&>u"X0?!Q:C>g2?smc3<lTu6<%*j0,L(Y=Uph>DTL@C*R=p5(EZ/S9p1O*;+i<^!$<Zg-N6/$8[Ej5%b&/9^aAm/HRl06)Fu]=b_)\A%c\BRPseB?0DfT1`_9F"OA@Gj!id:3t)81@7Gr.-_rY/?`re>En<MlhJ%PS8PqY5j'V:0)p#*&9?iB))@'T3&tt\L[kgP5!@\8RWBne<ULT^#VK'W#<?9Jh1$dB2d3nA)nIW>C(OUZIV7;+_0rr^j<+A^@<3j-%_KjtUAl%%&?,[Ie0)?L-2'#@q%:9h`(0X0_f['!*phkrc;++WY`>S0rX2_WZ0"nT9qFha?]sj%rFsXQ+DUPBaCFEN-O\^,S+fg*/p54LO_okn3urIAa,Jb1[.%Y;(@8_&KE<a@[&Q?>NL(AgP.Ni0!40gc$f;pRTYLOO/jcFHbc#XDDq&Xr8=E@QA"(;Nlc^`j5b7jB3%'?l)XM.qHt`:ld9nhM\;S$*BgI%L'b=2(isDf(RNinReRtXXet):eR!EXd-mK:7WXAUF?N>.,4a+ed9pL?72=ZV.R`<9n(VGhFJ-CJ)'tmGJRPuUJ^=mTT-Vkk*TQ<$X]`H4-;J>b/Q2B!Ud92O=YN_flSlaa]K?7\D]!l36)INH.qp]WS97jsMZ\t4--:!QZUk5VVJ$UJF8[sp'FJ0/_RaH['l@:uH2.[HiP-3Efat`opQk+r-B*@=hfC-G>387$ILS&MIo0[Q'NuZf%XVT6QkAc>P@s2]1G78Uk[<38>69Kp)(.e-`nI9Ddm]^bMP5>+AO<=0D_`@t7E7s+TcBDI6W!FS)SNFLhS'Ptc(CT=K[/.R%#aG^lbRjC]b-eTB9&Jm;s*Qe-MF>ZO8*)\%hm.E\Uj`m\"B_P"f2Y4rEo&9RG+J%7`4Kq$d#eLoU4JnpeiIO4<6$+ASN^'@T2'HDbD\"tl.ZZZF5V5&PMS4FSfull<bn:Z-5cIUWojcsp\cG+<Tt8S3t\j2d(`fWi2Up7HS[]".VXP(W)m(A<r+-pj(U%E8V]mlm)L2X;A21MLbDGqKZkp7CEIaa\_\0sF`Ig8T[fA5Z@.M+?_:02NM3EV(gX')S"nTHD:p[$p%IYCO56h,b;@E$PTchs1:J@BTrq&D&mirOm.Vj1(bq@VL6I$(;0qgZ9-JBg%C$[$mVfSKX'7oVSKgNj,TUR!2(UYLRU/6EBtpG^?npQPIaINK;W2PIAZdq1c1@L2*!U>N2M:UX=L`5Ybi,iP^^\o@1A!>kMTSanpC7.uh"C-:Kh![oEVol#c\;m?s*ZlQYrL_53]nI??"BVTVF+[6_geO.aBZ6=a4YAZ]]V%'^UPol\#o4ZS$s3#*D1E[iF?MMPbN7o_q#-7K-AX3T[lZY0s5^frH)7lqWc-(.)Ojl85i[+["2B_n@L).r!#GmW4i=d<t0.LIb?::*BUHoE"G^mXWecX,lY`u[",b,pI8HlN9bXHMXJ?J9sk3ama[>/s$iS:D%:P=&4FAW6X.Ef\3cO-&BWI[=f"6.*$fB:^Ou9%R<kQ.^E/#:O2`=rQ>U;<8cX;&&:`iLKDk:H:p]Yp~>endstream
 endobj
 xref
-0 11
+0 13
 0000000000 65535 f 
-0000000009 00000 n 
-0000000058 00000 n 
-0000000127 00000 n 
-0000000197 00000 n 
-0000000272 00000 n 
-0000000408 00000 n 
-0000005078 00000 n 
-0000005214 00000 n 
-0000009625 00000 n 
-0000009762 00000 n 
+0000000061 00000 n 
+0000000102 00000 n 
+0000000209 00000 n 
+0000000321 00000 n 
+0000000515 00000 n 
+0000000709 00000 n 
+0000000903 00000 n 
+0000000971 00000 n 
+0000001265 00000 n 
+0000001336 00000 n 
+0000005195 00000 n 
+0000009444 00000 n 
 trailer
-<< /Size 11 /Root 1 0 R >>
+<<
+/ID 
+[<df4e4fb82ccb10a6f1e0780a153b4116><df4e4fb82ccb10a6f1e0780a153b4116>]
+% ReportLab generated PDF document -- digest (opensource)
+
+/Info 8 0 R
+/Root 7 0 R
+/Size 13
+>>
 startxref
-12156
+13378
 %%EOF
