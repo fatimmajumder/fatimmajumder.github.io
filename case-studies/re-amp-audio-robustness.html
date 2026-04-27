@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Case study for RE-AMP, Fatim Majumder's generative audio robustness evaluation platform with 18,000+ controlled runs, 82 perturbation operators, deterministic manifests, and signal-level, perceptual, and model-based metrics."
+    >
+    <meta name="author" content="Fatim Majumder">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#10213d">
+    <title>RE-AMP Audio Robustness | Fatim Majumder</title>
+    <link rel="canonical" href="https://fatimmajumder.github.io/case-studies/re-amp-audio-robustness.html">
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+    <meta property="og:site_name" content="Fatim Majumder">
+    <meta property="og:title" content="RE-AMP Audio Robustness | Fatim Majumder">
+    <meta
+      property="og:description"
+      content="Generative audio robustness evaluation with controlled perturbations, deterministic manifests, statistical dashboards, and failure-slice analysis."
+    >
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://fatimmajumder.github.io/case-studies/re-amp-audio-robustness.html">
+    <meta property="og:image" content="https://fatimmajumder.github.io/assets/social-preview.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="RE-AMP Audio Robustness | Fatim Majumder">
+    <meta name="twitter:description" content="Controlled robustness evaluation for generative audio models.">
+    <meta name="twitter:image" content="https://fatimmajumder.github.io/assets/social-preview.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&amp;family=Inter:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body class="case-page case-project">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <div class="site-shell case-shell">
+      <header class="site-header">
+        <div class="site-header-inner">
+          <a class="brand-lockup" href="../index.html" aria-label="Fatim Majumder home">
+            <span class="brand-mark" aria-hidden="true">FM</span>
+            <span class="brand-copy">
+              <strong>Fatim Majumder</strong>
+              <span>Project detail</span>
+            </span>
+          </a>
+
+          <nav class="site-nav" aria-label="Primary navigation">
+            <a class="nav-link" data-nav="about" href="../index.html#about">About</a>
+            <a class="nav-link" data-nav="research" href="../research.html">Research</a>
+            <a class="nav-link is-active" data-nav="projects" href="../projects.html" aria-current="page">Projects</a>
+            <a class="nav-link" data-nav="notes" href="../notes.html">Notes</a>
+            <a class="nav-link" data-nav="cv" href="../cv.html">CV</a>
+            <a class="nav-link" data-nav="contact" href="../contact.html">Contact</a>
+          </nav>
+
+          <div class="header-actions">
+            <a class="button button-secondary" href="mailto:fatim.majumder@emory.edu">Email Fatim</a>
+            <a class="button button-primary" href="../assets/Fatim-Majumder-Academic-CV.pdf" download>CV PDF</a>
+          </div>
+        </div>
+      </header>
+
+      <main id="main-content">
+        <section class="section page-hero">
+          <div class="page-hero-main">
+            <a class="back-link" href="../projects.html">Back to projects</a>
+            <p class="eyebrow">Independent / Research Engineering Project</p>
+            <p class="page-meta">Python | PyTorch | torchaudio | FastAPI | React | TypeScript | Redis | PostgreSQL | Docker</p>
+            <h1>RE-AMP: controlled robustness evaluation for generative audio models.</h1>
+            <p class="page-hero-summary">
+              RE-AMP is a full-stack benchmark platform for testing generative
+              audio models under perturbations, distribution shifts,
+              compression artifacts, prompt variation, acoustic
+              transformations, stochastic decoding differences, and
+              model-version changes.
+            </p>
+            <div class="page-actions">
+              <a class="button button-primary" href="../projects.html#audio-robustness">See project summary</a>
+              <a
+                class="button button-secondary"
+                href="https://github.com/fatimmajumder/re-amp-audio-eval"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Open GitHub repository
+              </a>
+            </div>
+          </div>
+          <aside class="page-hero-rail" aria-label="Case study quick read">
+            <article class="page-rail-card">
+              <p class="detail-label">Quick read</p>
+              <div class="page-rail-list">
+                <div>
+                  <span>Scale</span>
+                  <p>18,000+ controlled robustness runs across 82 perturbation operators and 9 evaluator families.</p>
+                </div>
+                <div>
+                  <span>Core method</span>
+                  <p>Deterministic manifests over prompts, seeds, checkpoints, transforms, metric configs, and environment hashes.</p>
+                </div>
+                <div>
+                  <span>Outcome</span>
+                  <p>Experiment setup time reduced by 91% through declarative benchmark specs and reusable adapters.</p>
+                </div>
+              </div>
+            </article>
+          </aside>
+        </section>
+
+        <section class="section" aria-labelledby="metrics-title">
+          <div class="section-heading section-heading-compact">
+            <p class="eyebrow">Key Outcomes</p>
+            <h2 id="metrics-title">Robustness evaluation made reproducible.</h2>
+          </div>
+          <div class="metric-grid">
+            <article class="metric-card">
+              <p class="detail-label">Runs</p>
+              <p class="metric-value">18,000+</p>
+              <p>controlled robustness runs</p>
+            </article>
+            <article class="metric-card">
+              <p class="detail-label">Perturbations</p>
+              <p class="metric-value">82</p>
+              <p>operators across audio and prompt transformations</p>
+            </article>
+            <article class="metric-card">
+              <p class="detail-label">Setup</p>
+              <p class="metric-value">91%</p>
+              <p>reduction in experiment setup time</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="story-title">
+          <div class="section-heading section-heading-compact">
+            <p class="eyebrow">Project Breakdown</p>
+            <h2 id="story-title">Problem, method, system, validation, results, reliability, and research value.</h2>
+          </div>
+          <div class="story-grid story-grid-case">
+            <article class="content-card">
+              <p class="card-kicker">Problem</p>
+              <h3>Aggregate audio scores can hide model-specific robustness failures.</h3>
+              <ul class="bullet-list">
+                <li>Prompt changes, decoding randomness, transforms, compression, and model versions can change rankings in ways that are hard to reproduce.</li>
+                <li>A useful benchmark needed explicit manifests, reusable adapters, and failure-slice analysis.</li>
+              </ul>
+            </article>
+            <article class="content-card">
+              <p class="card-kicker">Method</p>
+              <h3>Controlled perturbation runs became the unit of comparison.</h3>
+              <ul class="bullet-list">
+                <li>Benchmarks varied prompts, seeds, checkpoints, perturbations, transforms, and metric configurations under pinned environments.</li>
+                <li>Signal-level, perceptual, and model-based metric families were compared with uncertainty and slice analysis.</li>
+              </ul>
+            </article>
+            <article class="content-card">
+              <p class="card-kicker">System / Stack</p>
+              <h3>The platform handled orchestration, storage, and comparative dashboards.</h3>
+              <ul class="bullet-list">
+                <li>Built with Python, PyTorch, torchaudio, FastAPI, React, TypeScript, Redis, PostgreSQL, Docker, async workers, and statistical dashboards.</li>
+                <li>Used declarative benchmark specifications, reusable dataset/model adapters, typed evaluator configs, cached feature extraction, and structured result storage.</li>
+              </ul>
+            </article>
+            <article class="content-card">
+              <p class="card-kicker">Validation Methodology</p>
+              <h3>Every run carried its experimental assumptions.</h3>
+              <ul class="bullet-list">
+                <li>Deterministic manifests recorded prompts, seeds, model checkpoints, audio transforms, metric configurations, and environment hashes.</li>
+                <li>Metric panels included FAD-style distribution distance, embedding similarity, spectral convergence, loudness drift, pitch/chroma stability, clipping artifacts, compression sensitivity, and ranking instability.</li>
+              </ul>
+            </article>
+            <article class="content-card">
+              <p class="card-kicker">Results</p>
+              <h3>RE-AMP made large robustness sweeps easier to run and audit.</h3>
+              <ul class="bullet-list">
+                <li>Supported 18,000+ controlled robustness runs across 82 perturbation operators and 9 evaluator families.</li>
+                <li>Reduced experiment setup time by 91% through reusable configs and adapters.</li>
+              </ul>
+            </article>
+            <article class="content-card">
+              <p class="card-kicker">Failure Modes / Reliability Checks</p>
+              <h3>The benchmark looked for hidden sensitivity, not only average quality.</h3>
+              <ul class="bullet-list">
+                <li>Tracked ranking instability, compression sensitivity, clipping artifacts, loudness drift, pitch/chroma instability, and failure slices hidden by aggregate summaries.</li>
+              </ul>
+            </article>
+            <article class="content-card">
+              <p class="card-kicker">Why It Matters for Research</p>
+              <h3>Robust generative-audio evaluation needs reproducible empirical instrumentation.</h3>
+              <ul class="bullet-list">
+                <li>The project turns informal listening comparisons into controlled, falsifiable experiments with traceable artifacts.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="../script.js" defer></script>
+  </body>
+</html>

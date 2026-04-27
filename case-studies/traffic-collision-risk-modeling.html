@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Case study for Fatim Majumder's graph-based traffic collision risk modeling project over 1.1M+ collision records and road-network topology with leakage-aware validation."
+    >
+    <meta name="author" content="Fatim Majumder">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#10213d">
+    <title>Traffic Collision Risk Modeling | Fatim Majumder</title>
+    <link rel="canonical" href="https://fatimmajumder.github.io/case-studies/traffic-collision-risk-modeling.html">
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+    <meta property="og:site_name" content="Fatim Majumder">
+    <meta property="og:title" content="Traffic Collision Risk Modeling | Fatim Majumder">
+    <meta
+      property="og:description"
+      content="Heterogeneous spatiotemporal graph prediction with leakage-aware validation, held-out corridors, spatial autocorrelation diagnostics, and calibrated risk maps."
+    >
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://fatimmajumder.github.io/case-studies/traffic-collision-risk-modeling.html">
+    <meta property="og:image" content="https://fatimmajumder.github.io/assets/social-preview.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Traffic Collision Risk Modeling | Fatim Majumder">
+    <meta name="twitter:description" content="Graph-based collision risk modeling with leakage-aware validation.">
+    <meta name="twitter:image" content="https://fatimmajumder.github.io/assets/social-preview.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&amp;family=Inter:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body class="case-page case-project">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <div class="site-shell case-shell">
+      <header class="site-header">
+        <div class="site-header-inner">
+          <a class="brand-lockup" href="../index.html" aria-label="Fatim Majumder home">
+            <span class="brand-mark" aria-hidden="true">FM</span>
+            <span class="brand-copy">
+              <strong>Fatim Majumder</strong>
+              <span>Project detail</span>
+            </span>
+          </a>
+          <nav class="site-nav" aria-label="Primary navigation">
+            <a class="nav-link" data-nav="about" href="../index.html#about">About</a>
+            <a class="nav-link" data-nav="research" href="../research.html">Research</a>
+            <a class="nav-link is-active" data-nav="projects" href="../projects.html" aria-current="page">Projects</a>
+            <a class="nav-link" data-nav="notes" href="../notes.html">Notes</a>
+            <a class="nav-link" data-nav="cv" href="../cv.html">CV</a>
+            <a class="nav-link" data-nav="contact" href="../contact.html">Contact</a>
+          </nav>
+          <div class="header-actions">
+            <a class="button button-secondary" href="mailto:fatim.majumder@emory.edu">Email Fatim</a>
+            <a class="button button-primary" href="../assets/Fatim-Majumder-Academic-CV.pdf" download>CV PDF</a>
+          </div>
+        </div>
+      </header>
+
+      <main id="main-content">
+        <section class="section page-hero">
+          <div class="page-hero-main">
+            <a class="back-link" href="../projects.html">Back to projects</a>
+            <p class="eyebrow">Independent / Applied ML Project</p>
+            <p class="page-meta">Python | PyTorch Geometric | NetworkX | GeoPandas | SQL | XGBoost | spatial statistics</p>
+            <h1>Graph-based traffic collision risk modeling with leakage-aware validation.</h1>
+            <p class="page-hero-summary">
+              This project modeled collision risk over 1.1M+ collision records
+              and road-network topology, representing intersections, road
+              segments, and neighborhoods with spatial, temporal, traffic,
+              structural, weather, and historical-risk covariates.
+            </p>
+            <div class="page-actions">
+              <a class="button button-primary" href="../projects.html#traffic-risk">See project summary</a>
+              <a
+                class="button button-secondary"
+                href="https://github.com/fatimmajumder/traffic-collision-risk"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Open GitHub repository
+              </a>
+            </div>
+          </div>
+          <aside class="page-hero-rail" aria-label="Case study quick read">
+            <article class="page-rail-card">
+              <p class="detail-label">Quick read</p>
+              <div class="page-rail-list">
+                <div>
+                  <span>Data</span>
+                  <p>1.1M+ collision records with road-network topology and spatial-temporal covariates.</p>
+                </div>
+                <div>
+                  <span>Models</span>
+                  <p>Compared GCN, GraphSAGE, GATv2, temporal aggregation, XGBoost, kernel, tabular, and geospatial baselines.</p>
+                </div>
+                <div>
+                  <span>Outcome</span>
+                  <p>Hotspot-ranking AUROC improved by 23.4 points and top-decile recall improved by 31%.</p>
+                </div>
+              </div>
+            </article>
+          </aside>
+        </section>
+
+        <section class="section" aria-labelledby="metrics-title">
+          <div class="section-heading section-heading-compact">
+            <p class="eyebrow">Key Outcomes</p>
+            <h2 id="metrics-title">Graph structure improved risk ranking under stricter validation.</h2>
+          </div>
+          <div class="metric-grid">
+            <article class="metric-card">
+              <p class="detail-label">Records</p>
+              <p class="metric-value">1.1M+</p>
+              <p>collision records with road topology</p>
+            </article>
+            <article class="metric-card">
+              <p class="detail-label">Ranking</p>
+              <p class="metric-value">+23.4</p>
+              <p>hotspot-ranking AUROC points over tabular baselines</p>
+            </article>
+            <article class="metric-card">
+              <p class="detail-label">Recall</p>
+              <p class="metric-value">+31%</p>
+              <p>top-decile recall improvement</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="story-title">
+          <div class="section-heading section-heading-compact">
+            <p class="eyebrow">Project Breakdown</p>
+            <h2 id="story-title">Problem, method, system, validation, results, reliability, and research value.</h2>
+          </div>
+          <div class="story-grid story-grid-case">
+            <article class="content-card">
+              <p class="card-kicker">Problem</p>
+              <h3>Spatial prediction can leak information through time and geography.</h3>
+              <ul class="bullet-list">
+                <li>Nearby road segments and future collision patterns can make naive validation look better than deployable performance.</li>
+                <li>The project needed to separate graph-structure signal from temporal leakage and spatial autocorrelation artifacts.</li>
+              </ul>
+            </article>
+            <article class="content-card">
+              <p class="card-kicker">Method</p>
+              <h3>Collision risk was formulated as heterogeneous spatiotemporal graph prediction.</h3>
+              <ul class="bullet-list">
+                <li>Nodes and edges represented intersections, road segments, and neighborhoods with spatial, temporal, traffic, structural, weather, and historical-risk covariates.</li>
+                <li>Compared message passing against temporal, tabular, kernel, XGBoost, and geospatial baselines.</li>
+              </ul>
+            </article>
+            <article class="content-card">
+              <p class="card-kicker">System / Stack</p>
+              <h3>The pipeline joined geospatial processing with graph ML.</h3>
+              <ul class="bullet-list">
+                <li>Used Python, PyTorch Geometric, NetworkX, GeoPandas, road-network topology, SQL, XGBoost, spatial statistics, and calibration tooling.</li>
+                <li>Built feature construction, graph assembly, model comparison, calibration, and risk-map outputs.</li>
+              </ul>
+            </article>
+            <article class="content-card">
+              <p class="card-kicker">Validation Methodology</p>
+              <h3>Evaluation used temporal and geographic defenses against leakage.</h3>
+              <ul class="bullet-list">
+                <li>Used temporal cutoffs, geographic buffer zones, held-out corridors, future-information audits, and spatial autocorrelation diagnostics.</li>
+                <li>Compared GCN, GraphSAGE, GATv2, temporal aggregation, XGBoost, kernel, tabular, and non-graph geospatial models.</li>
+              </ul>
+            </article>
+            <article class="content-card">
+              <p class="card-kicker">Results</p>
+              <h3>Topology improved hotspot ranking.</h3>
+              <ul class="bullet-list">
+                <li>Improved hotspot-ranking AUROC by 23.4 points and top-decile recall by 31% over tabular baselines.</li>
+                <li>Connectivity, neighborhood propagation, centrality, temporal exposure windows, and message passing contributed to the lift.</li>
+              </ul>
+            </article>
+            <article class="content-card">
+              <p class="card-kicker">Failure Modes / Reliability Checks</p>
+              <h3>The model was stress-tested for spatial shortcuts.</h3>
+              <ul class="bullet-list">
+                <li>Added calibrated risk maps, ablations, counterfactual edge removal, conformal-style risk sets, reliability curves, ranking-stability checks, and future-information audits.</li>
+              </ul>
+            </article>
+            <article class="content-card">
+              <p class="card-kicker">Why It Matters for Research</p>
+              <h3>The project connects graph learning to scientific validation discipline.</h3>
+              <ul class="bullet-list">
+                <li>It asks whether relational structure improves risk modeling after the validation protocol removes shortcuts that would not survive deployment.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="../script.js" defer></script>
+  </body>
+</html>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta
       name="description"
-      content="Public-safe project detail of LLM evaluation platform engineering, deterministic experiment lineage, and audit-friendly ML infrastructure built by Fatim Majumder."
+      content="Public-safe project detail of LLM evaluation platform engineering, controlled experiment lineage, statistical model comparison, and audit-friendly ML infrastructure built by Fatim Majumder."
    >
     <meta name="author" content="Fatim Majumder">
     <meta name="robots" content="index, follow">
@@ -20,7 +20,7 @@
     <meta property="og:title" content="LLM Evaluation Platforms | Fatim Majumder">
     <meta
       property="og:description"
-      content="Public-safe project detail of deterministic evaluation infrastructure, async execution, and reproducible ML experimentation."
+      content="Public-safe project detail of controlled LLM evaluation infrastructure, async execution, statistical comparison, judge reliability diagnostics, and reproducible ML experimentation."
    >
     <meta property="og:type" content="article">
     <meta
@@ -38,7 +38,7 @@
     <meta name="twitter:title" content="LLM Evaluation Platforms | Fatim Majumder">
     <meta
       name="twitter:description"
-      content="Deterministic lineage, async scheduling, and regression-aware evaluation infrastructure for fast-moving ML teams."
+      content="Controlled lineage, async scheduling, statistical comparison, and judge reliability diagnostics for fast-moving LLM evaluation."
    >
     <meta
       name="twitter:image"
@@ -111,8 +111,8 @@
             <a class="back-link" href="../projects.html">Back to projects</a>
             <p class="eyebrow">Arthur AI | Summer 2025</p>
             <p class="page-meta">
-              Python | PyTorch | Ray | FastAPI | PostgreSQL | Redis | Docker |
-              Kubernetes | AWS
+              Python | PyTorch | JAX | Ray | FastAPI | PostgreSQL | Redis
+              Streams | Docker | Kubernetes | AWS
             </p>
             <h1>
               LLM evaluation systems built to keep fast-moving experiments
@@ -128,13 +128,8 @@
               <a class="button button-primary" href="../cv.html#experience-title">
                 See this in CV
               </a>
-              <a
-                class="button button-secondary"
-                href="https://github.com/fatimmajumder/re-amp-audio-eval"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Inspect related repo
+              <a class="button button-secondary" href="../projects.html#llm-evaluation">
+                Open project framing
               </a>
             </div>
           </div>
@@ -154,16 +149,17 @@
                 <div>
                   <span>System</span>
                   <p>
-                    Deterministic lineage, async scheduling, artifact caching,
-                    retry semantics, run diffing, and slice-level regression
-                    detection.
+                    Typed run lineage, async scheduling, artifact caching,
+                    paired statistical comparison, judge diagnostics, run
+                    diffing, and slice-level uncertainty.
                   </p>
                 </div>
                 <div>
                   <span>Outcome</span>
                   <p>
-                    15,000+ runs per week, 99.96% exact rerun reproducibility, and
-                    84% faster median turnaround.
+                    52,000+ controlled evaluation jobs/month, 99.98% exact
+                    rerun reproducibility, and median turnaround down from 9.6
+                    hours to 54 minutes.
                   </p>
                 </div>
               </div>
@@ -179,21 +175,21 @@
           <div class="metric-grid">
             <article class="metric-card">
               <p class="detail-label">Reproducibility</p>
-              <p class="metric-value">99.96%</p>
+              <p class="metric-value">99.98%</p>
               <p>exact rerun reproducibility after deterministic lineage redesign</p>
             </article>
             <article class="metric-card">
               <p class="detail-label">Scale</p>
-              <p class="metric-value">15,000+</p>
+              <p class="metric-value">52,000+</p>
               <p>
-                benchmark runs per week across reasoning, retrieval, tool use,
-                safety, and long-context evaluation lanes
+                controlled evaluation jobs/month across reasoning, retrieval,
+                tool use, safety, robustness, code, and long-context suites
               </p>
             </article>
             <article class="metric-card">
               <p class="detail-label">Throughput</p>
-              <p class="metric-value">84%</p>
-              <p>reduction in median experiment turnaround after async scheduling</p>
+              <p class="metric-value">54 min</p>
+              <p>median turnaround after async scheduling, down from 9.6 hours</p>
             </article>
           </div>
         </section>
@@ -214,42 +210,60 @@
             </article>
 
             <article class="content-card">
-              <p class="card-kicker">Constraints</p>
-              <h3>Inputs changed faster than manual tracking could keep up.</h3>
+              <p class="card-kicker">Method</p>
+              <h3>Each evaluation became a typed experimental object.</h3>
               <ul class="bullet-list">
-                <li>Models, prompts, datasets, tokenizers, judges, and scoring logic all changed independently.</li>
-                <li>Aggregate metrics hid regressions that only showed up in slices or scenario families.</li>
-                <li>Teams needed to move quickly without losing the ability to explain or replay a result.</li>
+                <li>Represented each run over dataset snapshot, prompt graph, model artifact, tokenizer revision, sampling policy, inference backend, judge rubric, scorer, postprocessor, aggregation rule, and environment hash.</li>
+                <li>Made lineage explicit so model comparisons could be replayed instead of reconstructed from informal context.</li>
+                <li>Separated aggregate score movement from per-slice uncertainty and scenario-family regressions.</li>
               </ul>
             </article>
 
             <article class="content-card">
-              <p class="card-kicker">System</p>
+              <p class="card-kicker">System / Stack</p>
               <h3>The platform treated lineage, execution, and review as one system.</h3>
               <ul class="bullet-list">
-                <li>Handled model, prompt, dataset, tokenizer, judge, and scoring revisions as first-class lineage inputs.</li>
-                <li>Built async scheduling, retry semantics, and cache-aware execution to keep large evaluations tractable.</li>
+                <li>Used Python, PyTorch, JAX, Ray, FastAPI, PostgreSQL, Redis Streams, Docker, Kubernetes, AWS, OpenTelemetry, NumPy, pandas, and scikit-learn.</li>
+                <li>Built adaptive batching, token-budget admission control, retry semantics, circuit breakers, partial-failure isolation, and cost-aware queue priorities.</li>
                 <li>Structured artifacts and manifests so runs could be replayed, diffed, and reviewed cleanly.</li>
               </ul>
             </article>
 
             <article class="content-card">
-              <p class="card-kicker">Decisions</p>
-              <h3>Determinism and auditability were product requirements, not cleanup work.</h3>
+              <p class="card-kicker">Validation Methodology</p>
+              <h3>Model comparison carried uncertainty and multiplicity controls.</h3>
               <ul class="bullet-list">
-                <li>Used lineage as the contract that made experiments explainable to both engineers and decision-makers.</li>
-                <li>Made run diffs and slice-level regression checks part of the review surface instead of post-hoc debugging.</li>
+                <li>Implemented paired bootstrap intervals, stratified randomization tests, multiple-comparison correction, per-slice uncertainty bands, effect-size reporting, regression severity tiers, and run-diff reports.</li>
+                <li>Added judge reliability diagnostics with gold preference sets, rubric-level variance decomposition, inter-judge agreement, prompt sensitivity, disagreement clustering, and calibration curves.</li>
                 <li>Preserved manifests and artifacts so every important result could be replayed and inspected.</li>
               </ul>
             </article>
 
             <article class="content-card">
-              <p class="card-kicker">Outcome</p>
+              <p class="card-kicker">Results</p>
               <h3>The platform became faster while telling the truth about its own experiments.</h3>
               <ul class="bullet-list">
-                <li>Exact rerun reproducibility increased from 74.1% to 99.96%.</li>
-                <li>Median turnaround dropped by 84% and wasted GPU-hours fell by 51%.</li>
-                <li>Run-diff tooling surfaced a preprocessing defect that had inflated internal metrics by 6.1 points.</li>
+                <li>Exact rerun reproducibility increased from 71.4% to 99.98%.</li>
+                <li>Benchmark execution scaled to 52,000+ controlled evaluation jobs/month.</li>
+                <li>Median experiment turnaround dropped from 9.6 hours to 54 minutes.</li>
+                <li>Judge agreement on audited tasks improved from kappa = 0.43 to 0.76.</li>
+              </ul>
+            </article>
+
+            <article class="content-card">
+              <p class="card-kicker">Failure Modes / Reliability Checks</p>
+              <h3>Benchmark contamination and judge variance were first-class risks.</h3>
+              <ul class="bullet-list">
+                <li>Detected prompt-template leakage and near-duplicate examples that inflated a reasoning suite by 5.8 absolute points.</li>
+                <li>Added semantic deduplication checks, leakage alarms, red-team fixtures, disagreement clustering, and per-slice uncertainty bands.</li>
+              </ul>
+            </article>
+
+            <article class="content-card">
+              <p class="card-kicker">Why It Matters for Research</p>
+              <h3>Foundation-model evaluation needs the discipline of controlled experimentation.</h3>
+              <ul class="bullet-list">
+                <li>The system makes LLM evaluation more falsifiable by tying claims to lineage, uncertainty, reproducibility, and explicit data-generating assumptions.</li>
               </ul>
             </article>
           </div>

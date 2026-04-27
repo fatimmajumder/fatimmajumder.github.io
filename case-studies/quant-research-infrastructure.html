@@ -161,8 +161,9 @@
                 <div>
                   <span>Outcome</span>
                   <p>
-                    6.8x faster research throughput, statistical validation
-                    layers, and one platform surface for a 30+ person team.
+                    8.4x reproducible research throughput, 18 reviewed memos,
+                    11 reproducible repositories, and one platform surface for
+                    a 30+ member team.
                   </p>
                 </div>
               </div>
@@ -178,18 +179,18 @@
           <div class="metric-grid">
             <article class="metric-card">
               <p class="detail-label">Velocity</p>
-              <p class="metric-value">6.8x</p>
-              <p>increase in strategy research throughput after consolidating tooling</p>
+              <p class="metric-value">8.4x</p>
+              <p>increase in reproducible research throughput after consolidating tooling</p>
             </article>
             <article class="metric-card">
               <p class="detail-label">Validation</p>
-              <p class="metric-value">Checks</p>
-              <p>statistical failure modes checked across leakage, multiple testing, survivorship bias, and overfitting</p>
+              <p class="metric-value">18</p>
+              <p>reviewed research memos produced with standardized validation</p>
             </article>
             <article class="metric-card">
               <p class="detail-label">Team surface</p>
-              <p class="metric-value">30+</p>
-              <p>researchers supported by one unified platform and review workflow</p>
+              <p class="metric-value">11</p>
+              <p>reproducible project repositories produced by the research organization</p>
             </article>
           </div>
         </section>
@@ -210,42 +211,58 @@
             </article>
 
             <article class="content-card">
-              <p class="card-kicker">Constraints</p>
-              <h3>The platform had to stay honest about what could have been known at the time.</h3>
+              <p class="card-kicker">Method</p>
+              <h3>The platform made point-in-time research the default workflow.</h3>
               <ul class="bullet-list">
-                <li>Validation had to respect point-in-time information constraints, not retrospective convenience.</li>
-                <li>Review needed to include tradability and execution effects, not just attractive backtests.</li>
-                <li>Research workflows still needed consistent ingestion, diagnostics, and comparison paths across the team.</li>
+                <li>Spanned ingestion, universe construction, feature engineering, cross-sectional factor testing, walk-forward modeling, portfolio construction, transaction-cost simulation, exposure control, and attribution.</li>
+                <li>Replaced notebook-only workflows with versioned experiment templates, canonical data loaders, sealed train/test windows, automated tearsheets, invariant checks, and standardized review rubrics.</li>
+                <li>Review included tradability and execution effects, not just attractive backtests.</li>
               </ul>
             </article>
 
             <article class="content-card">
-              <p class="card-kicker">System</p>
+              <p class="card-kicker">System / Stack</p>
               <h3>The platform made research discipline easier to practice.</h3>
               <ul class="bullet-list">
+                <li>Used Python, pandas, NumPy, SciPy, scikit-learn, XGBoost, statsmodels, cvxpy, SQL, PostgreSQL, DuckDB, Streamlit, FastAPI, and Docker.</li>
                 <li>Built the workflow from point-in-time ingestion through factor modeling, walk-forward backtesting, portfolio construction, attribution, and execution simulation.</li>
-                <li>Standardized tearsheets, diagnostics, universe filtering, and experiment tracking.</li>
-                <li>Made lineage, exposure control, and validation gates part of the default review surface.</li>
+                <li>Made lineage, exposure control, covariance shrinkage, and validation gates part of the default review surface.</li>
               </ul>
             </article>
 
             <article class="content-card">
-              <p class="card-kicker">Decisions</p>
-              <h3>Point-in-time validation and review legibility became platform behavior.</h3>
+              <p class="card-kicker">Validation Methodology</p>
+              <h3>Leakage-aware evaluation and model-risk checks were built into review.</h3>
               <ul class="bullet-list">
-                <li>Treated point-in-time data contracts and walk-forward validation as defaults, not optional analyst discipline.</li>
-                <li>Made diagnostics and tearsheets the standard review output instead of custom notebook prose.</li>
-                <li>Connected exposures, attribution, and execution simulation so review included tradability as well as returns.</li>
+                <li>Used purged and embargoed time splits, universe-retention accounting, survivorship-bias checks, delayed feature availability, benchmark alignment, turnover constraints, slippage assumptions, and factor-decay analysis.</li>
+                <li>Added multiple testing controls, White-style reality checks, deflated Sharpe diagnostics, false discovery control, unstable correlation warnings, regime-sensitivity analysis, and backtest-overfitting alarms.</li>
+                <li>Connected exposures, attribution, and transaction-cost-aware rebalancing so review included tradability as well as returns.</li>
               </ul>
             </article>
 
             <article class="content-card">
-              <p class="card-kicker">Outcome</p>
+              <p class="card-kicker">Results</p>
               <h3>The platform improved both velocity and legibility across the organization.</h3>
               <ul class="bullet-list">
-                <li>Strategy research throughput increased by 6.8x.</li>
-                <li>Added statistical validation layers for multiple testing, factor crowding, lookahead bias, survivorship bias, unstable correlations, data-snooping, and backtest overfitting.</li>
-                <li>Research review became more inspectable because diagnostics and validation were generated consistently.</li>
+                <li>Reproducible research throughput increased by 8.4x.</li>
+                <li>Produced 18 reviewed research memos and 11 reproducible project repositories.</li>
+                <li>Built portfolio-optimization modules for mean-variance, risk parity, rank-weighted, volatility-targeted, and drawdown-aware portfolios.</li>
+              </ul>
+            </article>
+
+            <article class="content-card">
+              <p class="card-kicker">Failure Modes / Reliability Checks</p>
+              <h3>The platform was designed to catch beautiful but false backtests.</h3>
+              <ul class="bullet-list">
+                <li>Checked lookahead bias, survivorship bias, delayed feature availability, multiple testing, unstable correlations, factor decay, turnover constraints, transaction costs, and regime sensitivity.</li>
+              </ul>
+            </article>
+
+            <article class="content-card">
+              <p class="card-kicker">Why It Matters for Research</p>
+              <h3>Quantitative research is a laboratory for reproducible empirical inference.</h3>
+              <ul class="bullet-list">
+                <li>The work sharpened a research habit: hypothesis formation, falsification, peer review, replication, and model-risk documentation should be supported by the system itself.</li>
               </ul>
             </article>
           </div>

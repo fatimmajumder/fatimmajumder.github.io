@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Case study for Fatim Majumder's robust Kalman filtering project, a modular state-space simulation environment for vehicle localization under sensor dropout, delayed observations, outliers, and misspecification."
+    >
+    <meta name="author" content="Fatim Majumder">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#10213d">
+    <title>Robust Kalman Filtering | Fatim Majumder</title>
+    <link rel="canonical" href="https://fatimmajumder.github.io/case-studies/robust-kalman-filtering.html">
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+    <meta property="og:site_name" content="Fatim Majumder">
+    <meta property="og:title" content="Robust Kalman Filtering | Fatim Majumder">
+    <meta
+      property="og:description"
+      content="Robust state-space estimation under dropout, delayed observations, outliers, correlated process noise, and measurement misspecification."
+    >
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://fatimmajumder.github.io/case-studies/robust-kalman-filtering.html">
+    <meta property="og:image" content="https://fatimmajumder.github.io/assets/social-preview.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Robust Kalman Filtering | Fatim Majumder">
+    <meta name="twitter:description" content="Robust state-space estimation for vehicle localization.">
+    <meta name="twitter:image" content="https://fatimmajumder.github.io/assets/social-preview.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&amp;family=Inter:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body class="case-page case-project">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <div class="site-shell case-shell">
+      <header class="site-header">
+        <div class="site-header-inner">
+          <a class="brand-lockup" href="../index.html" aria-label="Fatim Majumder home">
+            <span class="brand-mark" aria-hidden="true">FM</span>
+            <span class="brand-copy">
+              <strong>Fatim Majumder</strong>
+              <span>Project detail</span>
+            </span>
+          </a>
+          <nav class="site-nav" aria-label="Primary navigation">
+            <a class="nav-link" data-nav="about" href="../index.html#about">About</a>
+            <a class="nav-link" data-nav="research" href="../research.html">Research</a>
+            <a class="nav-link is-active" data-nav="projects" href="../projects.html" aria-current="page">Projects</a>
+            <a class="nav-link" data-nav="notes" href="../notes.html">Notes</a>
+            <a class="nav-link" data-nav="cv" href="../cv.html">CV</a>
+            <a class="nav-link" data-nav="contact" href="../contact.html">Contact</a>
+          </nav>
+          <div class="header-actions">
+            <a class="button button-secondary" href="mailto:fatim.majumder@emory.edu">Email Fatim</a>
+            <a class="button button-primary" href="../assets/Fatim-Majumder-Academic-CV.pdf" download>CV PDF</a>
+          </div>
+        </div>
+      </header>
+
+      <main id="main-content">
+        <section class="section page-hero">
+          <div class="page-hero-main">
+            <a class="back-link" href="../projects.html">Back to projects</a>
+            <p class="eyebrow">Independent / Scientific Computing Project</p>
+            <p class="page-meta">Python | NumPy | SciPy | MATLAB | C++ | stochastic simulation | state-space models</p>
+            <h1>Robust Kalman filtering for vehicle localization under misspecification.</h1>
+            <p class="page-hero-summary">
+              This project built a modular state-space simulation environment
+              to compare standard Kalman filtering with robust variants under
+              sensor dropout, delayed observations, outlier regimes,
+              correlated process noise, measurement misspecification, and
+              asynchronous updates.
+            </p>
+            <div class="page-actions">
+              <a class="button button-primary" href="../projects.html#kalman-filtering">See project summary</a>
+              <a
+                class="button button-secondary"
+                href="https://github.com/fatimmajumder/robust-kalman-localization"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Open GitHub repository
+              </a>
+            </div>
+          </div>
+          <aside class="page-hero-rail" aria-label="Case study quick read">
+            <article class="page-rail-card">
+              <p class="detail-label">Quick read</p>
+              <div class="page-rail-list">
+                <div>
+                  <span>Simulation</span>
+                  <p>Configurable dynamics, observation models, dropout, delayed observations, outliers, and correlated process noise.</p>
+                </div>
+                <div>
+                  <span>Robust variants</span>
+                  <p>Innovation gating, covariance inflation, adaptive noise, Huberized updates, Student-t observations, and residual clipping.</p>
+                </div>
+                <div>
+                  <span>Outcome</span>
+                  <p>Median localization error reduced by 49% and 95th-percentile error reduced by 44% with a 100 Hz C++ loop.</p>
+                </div>
+              </div>
+            </article>
+          </aside>
+        </section>
+
+        <section class="section" aria-labelledby="metrics-title">
+          <div class="section-heading section-heading-compact">
+            <p class="eyebrow">Key Outcomes</p>
+            <h2 id="metrics-title">Robust filtering improved tail behavior under noisy regimes.</h2>
+          </div>
+          <div class="metric-grid">
+            <article class="metric-card">
+              <p class="detail-label">Median Error</p>
+              <p class="metric-value">-49%</p>
+              <p>relative to a standard Kalman filter</p>
+            </article>
+            <article class="metric-card">
+              <p class="detail-label">95th Percentile</p>
+              <p class="metric-value">-44%</p>
+              <p>tail error under mixed dropout/outlier regimes</p>
+            </article>
+            <article class="metric-card">
+              <p class="detail-label">Runtime</p>
+              <p class="metric-value">100 Hz</p>
+              <p>near-real-time C++ localization loop</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="story-title">
+          <div class="section-heading section-heading-compact">
+            <p class="eyebrow">Project Breakdown</p>
+            <h2 id="story-title">Problem, method, system, validation, results, reliability, and research value.</h2>
+          </div>
+          <div class="story-grid story-grid-case">
+            <article class="content-card">
+              <p class="card-kicker">Problem</p>
+              <h3>Linear-Gaussian assumptions can fail sharply in vehicle localization.</h3>
+              <ul class="bullet-list">
+                <li>Dropout, delayed observations, outliers, correlated process noise, and measurement misspecification can destabilize recursive estimates.</li>
+                <li>The project needed a controlled simulation environment to separate algorithmic robustness from scenario luck.</li>
+              </ul>
+            </article>
+            <article class="content-card">
+              <p class="card-kicker">Method</p>
+              <h3>Robust recursive estimators were compared against a standard Kalman filter.</h3>
+              <ul class="bullet-list">
+                <li>Implemented innovation chi-square gating, covariance inflation, adaptive noise estimation, Huberized updates, Student-t observation models, residual clipping, and outlier rejection.</li>
+                <li>Derived the linear-Gaussian filter and motivated robust M-estimation variants in a technical note.</li>
+              </ul>
+            </article>
+            <article class="content-card">
+              <p class="card-kicker">System / Stack</p>
+              <h3>The simulation was modular enough to vary dynamics and sensor behavior.</h3>
+              <ul class="bullet-list">
+                <li>Used Python, NumPy, SciPy, MATLAB, C++, stochastic simulation, state-space models, recursive Bayesian estimation, and robust statistics.</li>
+                <li>Included configurable dynamics, observation models, sensor dropout, delayed observations, outlier regimes, correlated process noise, measurement misspecification, and asynchronous update schedules.</li>
+              </ul>
+            </article>
+            <article class="content-card">
+              <p class="card-kicker">Validation Methodology</p>
+              <h3>Robustness was measured under controlled failure regimes.</h3>
+              <ul class="bullet-list">
+                <li>Compared standard and robust filters under mixed dropout/outlier regimes, misspecified covariance, biased sensors, and delayed observations.</li>
+                <li>Measured median error, 95th-percentile error, update stability, and real-time feasibility.</li>
+              </ul>
+            </article>
+            <article class="content-card">
+              <p class="card-kicker">Results</p>
+              <h3>Robust variants improved both central and tail error.</h3>
+              <ul class="bullet-list">
+                <li>Reduced median localization error by 49% and 95th-percentile error by 44% relative to a standard Kalman filter.</li>
+                <li>Preserved near-real-time execution at 100 Hz in a C++ loop.</li>
+              </ul>
+            </article>
+            <article class="content-card">
+              <p class="card-kicker">Failure Modes / Reliability Checks</p>
+              <h3>The analysis documented where the filters break.</h3>
+              <ul class="bullet-list">
+                <li>Analyzed covariance misspecification, high-leverage measurements, biased sensors, delayed observations, loss of observability, and ill-conditioned covariance updates.</li>
+              </ul>
+            </article>
+            <article class="content-card">
+              <p class="card-kicker">Why It Matters for Research</p>
+              <h3>State-space estimation is a concrete bridge between theory and reliable systems.</h3>
+              <ul class="bullet-list">
+                <li>The project connects derivation, numerical stability, stochastic simulation, and real-time constraints in a falsifiable experimental setup.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="../script.js" defer></script>
+  </body>
+</html>

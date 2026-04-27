@@ -28,11 +28,11 @@ This repo is designed to deploy directly from the default branch on GitHub Pages
 - `index.html` is the academic homepage / about page
 - `research.html` contains the research interests, research statement preview, and current questions
 - `projects.html` reframes selected engineering work as computational research systems
-- `notes.html` contains placeholders for technical notes and writing
+- `notes.html` contains technical notes and writing
 - `cv.html` is the academic CV page and links to the CV PDF
 - `contact.html` contains research-oriented contact links
-- `case-studies/` preserves deeper public-safe project detail pages
-- `assets/` contains the favicon, social preview, resume PDF, and academic CV PDF
+- `case-studies/` preserves deeper public-safe project detail pages for experience systems and selected computational projects
+- `assets/` contains the favicon, social preview, academic CV PDF, and note PDFs
 - `sitemap.xml` and `robots.txt` support crawlability
 
 ## Site structure

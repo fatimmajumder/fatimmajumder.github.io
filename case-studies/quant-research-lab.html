@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Case study for Fatim Majumder's Quant Research Lab, a public-facing factor research and backtesting demo with point-in-time ingestion, transaction-cost modeling, attribution, and reproducible tearsheets."
+    >
+    <meta name="author" content="Fatim Majumder">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#10213d">
+    <title>Quant Research Lab | Fatim Majumder</title>
+    <link rel="canonical" href="https://fatimmajumder.github.io/case-studies/quant-research-lab.html">
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+    <meta property="og:site_name" content="Fatim Majumder">
+    <meta property="og:title" content="Quant Research Lab | Fatim Majumder">
+    <meta
+      property="og:description"
+      content="A public-facing factor research and backtesting demo with reproducible tearsheets, transaction-cost stress tests, deflated Sharpe diagnostics, and falsification checks."
+    >
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://fatimmajumder.github.io/case-studies/quant-research-lab.html">
+    <meta property="og:image" content="https://fatimmajumder.github.io/assets/social-preview.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Quant Research Lab | Fatim Majumder">
+    <meta name="twitter:description" content="Public-facing factor research and backtesting demo.">
+    <meta name="twitter:image" content="https://fatimmajumder.github.io/assets/social-preview.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&amp;family=Inter:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body class="case-page case-project">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <div class="site-shell case-shell">
+      <header class="site-header">
+        <div class="site-header-inner">
+          <a class="brand-lockup" href="../index.html" aria-label="Fatim Majumder home">
+            <span class="brand-mark" aria-hidden="true">FM</span>
+            <span class="brand-copy">
+              <strong>Fatim Majumder</strong>
+              <span>Project detail</span>
+            </span>
+          </a>
+          <nav class="site-nav" aria-label="Primary navigation">
+            <a class="nav-link" data-nav="about" href="../index.html#about">About</a>
+            <a class="nav-link" data-nav="research" href="../research.html">Research</a>
+            <a class="nav-link is-active" data-nav="projects" href="../projects.html" aria-current="page">Projects</a>
+            <a class="nav-link" data-nav="notes" href="../notes.html">Notes</a>
+            <a class="nav-link" data-nav="cv" href="../cv.html">CV</a>
+            <a class="nav-link" data-nav="contact" href="../contact.html">Contact</a>
+          </nav>
+          <div class="header-actions">
+            <a class="button button-secondary" href="mailto:fatim.majumder@emory.edu">Email Fatim</a>
+            <a class="button button-primary" href="../assets/Fatim-Majumder-Academic-CV.pdf" download>CV PDF</a>
+          </div>
+        </div>
+      </header>
+
+      <main id="main-content">
+        <section class="section page-hero">
+          <div class="page-hero-main">
+            <a class="back-link" href="../projects.html">Back to projects</a>
+            <p class="eyebrow">Independent / Research Infrastructure Project</p>
+            <p class="page-meta">Python | FastAPI | pandas | NumPy | SciPy | cvxpy | SQL | Docker | Streamlit | GitHub Actions</p>
+            <h1>Quant Research Lab: point-in-time factor research and reproducible backtesting.</h1>
+            <p class="page-hero-summary">
+              Quant Research Lab is a public-facing factor research and
+              backtesting demo covering point-in-time ingestion, signal
+              construction, portfolio formation, evaluation, transaction-cost
+              modeling, benchmark comparison, and attribution.
+            </p>
+            <div class="page-actions">
+              <a class="button button-primary" href="../projects.html#quant-research">See project summary</a>
+              <a
+                class="button button-secondary"
+                href="https://github.com/fatimmajumder/quant-research-lab"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Open GitHub repository
+              </a>
+            </div>
+          </div>
+          <aside class="page-hero-rail" aria-label="Case study quick read">
+            <article class="page-rail-card">
+              <p class="detail-label">Quick read</p>
+              <div class="page-rail-list">
+                <div>
+                  <span>Factor library</span>
+                  <p>Momentum, value, quality, volatility, liquidity, seasonality, residualization, and cross-sectional normalization.</p>
+                </div>
+                <div>
+                  <span>Validation</span>
+                  <p>Rank ICs, factor returns, turnover, drawdown, exposure decomposition, covariance sensitivity, deflated Sharpe, transaction-cost stress tests, and regime breakdowns.</p>
+                </div>
+                <div>
+                  <span>Design</span>
+                  <p>A teaching artifact where charts link to assumptions, data windows, transformations, validation constraints, commits, and falsification checks.</p>
+                </div>
+              </div>
+            </article>
+          </aside>
+        </section>
+
+        <section class="section" aria-labelledby="metrics-title">
+          <div class="section-heading section-heading-compact">
+            <p class="eyebrow">Key Outcomes</p>
+            <h2 id="metrics-title">A public demo for empirical research discipline.</h2>
+          </div>
+          <div class="metric-grid">
+            <article class="metric-card">
+              <p class="detail-label">Research Flow</p>
+              <p class="metric-value">PIT</p>
+              <p>point-in-time ingestion and availability windows</p>
+            </article>
+            <article class="metric-card">
+              <p class="detail-label">Validation</p>
+              <p class="metric-value">IC</p>
+              <p>rank information coefficients and factor returns</p>
+            </article>
+            <article class="metric-card">
+              <p class="detail-label">Risk</p>
+              <p class="metric-value">Stress</p>
+              <p>transaction-cost, covariance, exposure, and regime checks</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="story-title">
+          <div class="section-heading section-heading-compact">
+            <p class="eyebrow">Project Breakdown</p>
+            <h2 id="story-title">Problem, method, system, validation, results, reliability, and research value.</h2>
+          </div>
+          <div class="story-grid story-grid-case">
+            <article class="content-card">
+              <p class="card-kicker">Problem</p>
+              <h3>Backtests can be persuasive while hiding invalid assumptions.</h3>
+              <ul class="bullet-list">
+                <li>Lookahead variables, survivorship effects, unstable universes, future price references, and transaction-cost fragility can turn a backtest into a false claim.</li>
+                <li>The project needed to make assumptions, availability windows, and validation constraints visible.</li>
+              </ul>
+            </article>
+            <article class="content-card">
+              <p class="card-kicker">Method</p>
+              <h3>The demo follows the full empirical finance research loop.</h3>
+              <ul class="bullet-list">
+                <li>Covered point-in-time ingestion, signal construction, portfolio formation, evaluation, transaction-cost modeling, benchmark comparison, and attribution.</li>
+                <li>Implemented factors for momentum, value, quality, volatility, liquidity, seasonality, residualization, and cross-sectional normalization.</li>
+              </ul>
+            </article>
+            <article class="content-card">
+              <p class="card-kicker">System / Stack</p>
+              <h3>The stack supports reproducible research artifacts.</h3>
+              <ul class="bullet-list">
+                <li>Used Python, FastAPI, pandas, NumPy, SciPy, cvxpy, SQL, Docker, GitHub Actions, Streamlit, experiment manifests, and backtesting workflows.</li>
+                <li>Organized each module around explicit assumptions and availability windows.</li>
+              </ul>
+            </article>
+            <article class="content-card">
+              <p class="card-kicker">Validation Methodology</p>
+              <h3>Tearsheets were designed for falsification, not decoration.</h3>
+              <ul class="bullet-list">
+                <li>Generated rank ICs, factor returns, turnover, drawdown, exposure decomposition, covariance sensitivity, deflated Sharpe diagnostics, transaction-cost stress tests, and regime breakdowns.</li>
+                <li>Compared strategies against benchmarks and attribution surfaces under transaction-cost and regime assumptions.</li>
+              </ul>
+            </article>
+            <article class="content-card">
+              <p class="card-kicker">Results</p>
+              <h3>The project became a teaching artifact for reproducible quant research.</h3>
+              <ul class="bullet-list">
+                <li>Built a public-facing factor research and backtesting demo with point-in-time data, signal construction, portfolio formation, evaluation, transaction-cost modeling, benchmark comparison, and attribution.</li>
+                <li>Made charts traceable to assumptions, data windows, transformations, validation constraints, code commits, and falsification checks.</li>
+              </ul>
+            </article>
+            <article class="content-card">
+              <p class="card-kicker">Failure Modes / Reliability Checks</p>
+              <h3>The checks target the common ways empirical finance overclaims.</h3>
+              <ul class="bullet-list">
+                <li>Tracked lookahead variables, survivorship effects, future price references, unstable universe definitions, duplicate securities, time-window alignment errors, transaction costs, covariance sensitivity, and regime instability.</li>
+              </ul>
+            </article>
+            <article class="content-card">
+              <p class="card-kicker">Why It Matters for Research</p>
+              <h3>It makes model comparison legible under changing assumptions.</h3>
+              <ul class="bullet-list">
+                <li>The project mirrors broader research practice: assumptions, data availability, validation constraints, uncertainty, and failure checks should be part of the artifact, not left in memory.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="../script.js" defer></script>
+  </body>
+</html>

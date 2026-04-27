@@ -115,27 +115,36 @@
           </div>
           <dl class="project-facts">
             <div>
-              <dt>Overview</dt>
-              <dd>Full-stack benchmarking platform for generative audio robustness under perturbations, distribution shifts, compression artifacts, prompt variation, and acoustic transformations.</dd>
+              <dt>Problem</dt>
+              <dd>Generative audio robustness is difficult to compare when prompts, seeds, model checkpoints, transforms, metric configs, and execution environments drift between runs.</dd>
             </div>
             <div>
-              <dt>Research motivation</dt>
-              <dd>Perturbation analysis, robustness curves, distribution shift, compression artifacts, prompt variation, acoustic transformations, ranking instability, and failure-slice analysis.</dd>
+              <dt>Method</dt>
+              <dd>Ran controlled perturbation studies across compression artifacts, prompt variation, acoustic transformations, stochastic decoding differences, and model-version changes.</dd>
             </div>
             <div>
-              <dt>Method / system contribution</dt>
-              <dd>Built a full-stack benchmarking platform with async orchestration, artifact lineage, deterministic manifests, versioned benchmark suites, reusable dataset/model adapters, and comparative dashboards.</dd>
+              <dt>System / stack</dt>
+              <dd>Python, PyTorch, torchaudio, FastAPI, React, TypeScript, Redis, PostgreSQL, Docker, async workers, statistical dashboards, and deterministic experiment manifests.</dd>
             </div>
             <div>
-              <dt>Result or evidence</dt>
-              <dd>Supported 6,000+ controlled robustness runs, reduced experiment setup time by 89%, and surfaced model-specific failure modes hidden by aggregate MOS-style summaries.</dd>
+              <dt>Validation methodology</dt>
+              <dd>Deterministic manifests covered prompts, seeds, checkpoints, transforms, metric configs, and environment hashes; results were compared through signal-level, perceptual, and model-based metric families with bootstrap uncertainty and failure-slice analysis.</dd>
             </div>
             <div>
-              <dt>Technologies</dt>
-              <dd>Python, PyTorch, FastAPI, React, TypeScript, Redis, PostgreSQL, Docker, async workers, artifact lineage.</dd>
+              <dt>Results</dt>
+              <dd>Supported 18,000+ controlled robustness runs across 82 perturbation operators and 9 evaluator families while reducing experiment setup time by 91%.</dd>
+            </div>
+            <div>
+              <dt>Failure modes / reliability checks</dt>
+              <dd>Tracked ranking instability, loudness drift, clipping artifacts, compression sensitivity, spectral convergence, embedding similarity, pitch/chroma stability, and FAD-style distribution distance.</dd>
+            </div>
+            <div>
+              <dt>Why it matters for research</dt>
+              <dd>The platform turns subjective generative-audio comparison into reproducible empirical measurement with explicit assumptions and inspectable artifacts.</dd>
             </div>
           </dl>
           <div class="project-links">
+            <a class="text-link" href="./case-studies/re-amp-audio-robustness.html">Open case study</a>
             <a
               class="text-link"
               href="https://github.com/fatimmajumder/re-amp-audio-eval"
@@ -158,27 +167,36 @@
           </div>
           <dl class="project-facts">
             <div>
-              <dt>Overview</dt>
-              <dd>Graph ML over 1M+ collision records and road-network topology for heterogeneous spatial risk prediction.</dd>
+              <dt>Problem</dt>
+              <dd>Collision risk is spatially structured, temporally shifting, and easy to overstate if validation leaks future or nearby geographic information.</dd>
             </div>
             <div>
-              <dt>Research motivation</dt>
-              <dd>Heterogeneous spatial graph prediction, graph neural networks, spatial-temporal feature construction, network topology, risk ranking, calibration, and comparison against tabular/geospatial/time-windowed baselines.</dd>
+              <dt>Method</dt>
+              <dd>Formulated risk as heterogeneous spatiotemporal graph prediction over intersections, road segments, and neighborhoods with spatial, temporal, traffic, structural, weather, and historical-risk covariates.</dd>
             </div>
             <div>
-              <dt>Method / system contribution</dt>
-              <dd>Built a graph ML pipeline over 1M+ collision records and road-network topology, representing intersections and road segments with spatial, temporal, traffic, and structural covariates.</dd>
+              <dt>System / stack</dt>
+              <dd>Python, PyTorch Geometric, NetworkX, GeoPandas, road-network topology, SQL, XGBoost, spatial statistics, calibration tooling, and graph-learning pipelines.</dd>
             </div>
             <div>
-              <dt>Result or evidence</dt>
-              <dd>Improved hotspot-ranking AUROC by more than 20 points using network connectivity, neighborhood structure, centrality features, temporal aggregation, and message passing.</dd>
+              <dt>Validation methodology</dt>
+              <dd>Compared GCN, GraphSAGE, GATv2, temporal aggregation, XGBoost, kernel, tabular, and geospatial baselines under temporal cutoffs, geographic buffer zones, held-out corridors, future-information audits, and spatial autocorrelation diagnostics.</dd>
             </div>
             <div>
-              <dt>Technologies</dt>
-              <dd>Python, PyTorch Geometric, NetworkX, GeoPandas, SQL, XGBoost, scikit-learn, spatial statistics, graph learning.</dd>
+              <dt>Results</dt>
+              <dd>Modeled 1.1M+ collision records and road-network topology, improving hotspot-ranking AUROC by 23.4 points and top-decile recall by 31% over tabular baselines.</dd>
+            </div>
+            <div>
+              <dt>Failure modes / reliability checks</dt>
+              <dd>Added calibrated risk maps, ablations, counterfactual edge removal, conformal-style risk sets, reliability curves, ranking-stability checks, and leakage audits.</dd>
+            </div>
+            <div>
+              <dt>Why it matters for research</dt>
+              <dd>The project tests how graph structure changes prediction quality under realistic spatial and temporal validation constraints.</dd>
             </div>
           </dl>
           <div class="project-links">
+            <a class="text-link" href="./case-studies/traffic-collision-risk-modeling.html">Open case study</a>
             <a
               class="text-link"
               href="https://github.com/fatimmajumder/traffic-collision-risk"
@@ -201,27 +219,36 @@
           </div>
           <dl class="project-facts">
             <div>
-              <dt>Overview</dt>
-              <dd>Modular state-space simulation environment for vehicle localization under noisy sensors, dropout, outliers, and covariance misspecification.</dd>
+              <dt>Problem</dt>
+              <dd>Standard Kalman filters can become brittle under sensor dropout, delayed observations, outlier regimes, correlated process noise, and measurement misspecification.</dd>
             </div>
             <div>
-              <dt>Research motivation</dt>
-              <dd>Recursive Bayesian estimation, state-space simulation, observability, stability, numerical conditioning, covariance inflation, residual gating, adaptive noise estimation, Huber-style updates, and outlier rejection.</dd>
+              <dt>Method</dt>
+              <dd>Compared standard Kalman filtering with robust variants using innovation chi-square gating, covariance inflation, adaptive noise estimation, Huberized updates, Student-t observation models, residual clipping, and outlier rejection.</dd>
             </div>
             <div>
-              <dt>Method / system contribution</dt>
-              <dd>Implemented a modular simulation environment with configurable dynamics, observation models, process noise, measurement noise, dropout patterns, delayed sensors, and asynchronous updates.</dd>
+              <dt>System / stack</dt>
+              <dd>Python, NumPy, SciPy, MATLAB, C++, stochastic simulation, state-space models, recursive Bayesian estimation, robust statistics, and a 100 Hz real-time C++ loop.</dd>
             </div>
             <div>
-              <dt>Result or evidence</dt>
-              <dd>Reduced median localization error by 46% and 95th-percentile error by 41% relative to a standard Kalman filter under mixed dropout/outlier regimes.</dd>
+              <dt>Validation methodology</dt>
+              <dd>Simulated configurable dynamics, observation models, sensor dropout, delayed observations, outliers, correlated process noise, misspecified measurements, and asynchronous update schedules.</dd>
             </div>
             <div>
-              <dt>Technologies</dt>
-              <dd>Python, NumPy, SciPy, MATLAB, C++, stochastic simulation, state-space models, numerical methods.</dd>
+              <dt>Results</dt>
+              <dd>Reduced median localization error by 49% and 95th-percentile error by 44% relative to a standard Kalman filter under mixed dropout/outlier regimes.</dd>
+            </div>
+            <div>
+              <dt>Failure modes / reliability checks</dt>
+              <dd>Analyzed breakdown under covariance misspecification, high-leverage measurements, biased sensors, delayed observations, loss of observability, and ill-conditioned covariance updates.</dd>
+            </div>
+            <div>
+              <dt>Why it matters for research</dt>
+              <dd>The project makes state-space reliability concrete by connecting derivation, simulation, numerical conditioning, and real-time execution constraints.</dd>
             </div>
           </dl>
           <div class="project-links">
+            <a class="text-link" href="./case-studies/robust-kalman-filtering.html">Open case study</a>
             <a
               class="text-link"
               href="https://github.com/fatimmajumder/robust-kalman-localization"
@@ -244,28 +271,36 @@
           </div>
           <dl class="project-facts">
             <div>
-              <dt>Overview</dt>
-              <dd>Public-facing factor research and backtesting demo for point-in-time ingestion, signal construction, portfolio formation, evaluation, and attribution.</dd>
+              <dt>Problem</dt>
+              <dd>Factor research can look convincing while hiding lookahead variables, survivorship effects, future price references, unstable universes, and transaction-cost fragility.</dd>
             </div>
             <div>
-              <dt>Research motivation</dt>
-              <dd>Factor modeling, walk-forward validation, portfolio optimization, exposure control, rank information coefficients, turnover analysis, attribution, and leakage-aware empirical finance.</dd>
+              <dt>Method</dt>
+              <dd>Built a public-facing factor research and backtesting demo covering point-in-time ingestion, signal construction, portfolio formation, evaluation, transaction-cost modeling, benchmark comparison, and attribution.</dd>
             </div>
             <div>
-              <dt>Method / system contribution</dt>
-              <dd>Built a public-facing factor research and backtesting demo covering point-in-time ingestion, signal construction, portfolio formation, evaluation, attribution, and reproducible tearsheets.</dd>
+              <dt>System / stack</dt>
+              <dd>Python, FastAPI, pandas, NumPy, SciPy, cvxpy, SQL, Docker, GitHub Actions, Streamlit, experiment manifests, and reproducible backtesting workflows.</dd>
             </div>
             <div>
-              <dt>Result or evidence</dt>
-              <dd>Added diagnostics for lookahead variables, survivorship effects, future price references, unstable universe definitions, duplicate securities, time-window alignment errors, and transaction-cost sensitivity.</dd>
+              <dt>Validation methodology</dt>
+              <dd>Generated tearsheets covering rank ICs, factor returns, turnover, drawdown, exposure decomposition, covariance sensitivity, deflated Sharpe diagnostics, transaction-cost stress tests, and regime breakdowns.</dd>
             </div>
             <div>
-              <dt>Technologies</dt>
-              <dd>Python, FastAPI, pandas, NumPy, SQL, Docker, GitHub Actions, Streamlit, statistical validation, backtesting.</dd>
+              <dt>Results</dt>
+              <dd>Implemented a factor library for momentum, value, quality, volatility, liquidity, seasonality, residualization, and cross-sectional normalization with explicit assumptions and availability windows.</dd>
+            </div>
+            <div>
+              <dt>Failure modes / reliability checks</dt>
+              <dd>Each chart links to assumptions, data windows, transformations, validation constraints, code commits, and falsification checks.</dd>
+            </div>
+            <div>
+              <dt>Why it matters for research</dt>
+              <dd>The demo makes empirical finance research auditable by tying results to point-in-time assumptions, reproducible artifacts, and model-risk checks.</dd>
             </div>
           </dl>
           <div class="project-links">
-            <a class="text-link" href="./case-studies/quant-research-infrastructure.html">Open project detail</a>
+            <a class="text-link" href="./case-studies/quant-research-lab.html">Open case study</a>
             <a
               class="text-link"
               href="https://github.com/fatimmajumder/quant-research-lab"
@@ -295,20 +330,43 @@
             <p class="card-kicker">LLM evaluation</p>
             <h3>LLM Evaluation and Model Analysis Infrastructure</h3>
             <p>
-              Reproducible evaluation infrastructure with typed experimental
-              objects, artifact lineage, regression detection, statistical
-              model comparison, and judge-calibration views.
+              Experiment-control layer for 52,000+ controlled evaluation
+              jobs/month with typed run lineage, paired statistical
+              comparisons, judge reliability diagnostics, and contamination
+              detection.
             </p>
             <a class="text-link" href="./case-studies/llm-evaluation-platforms.html">Open case study</a>
+          </article>
+
+          <article class="project-preview" id="analytics-observability">
+            <p class="card-kicker">Analytics observability</p>
+            <h3>Analytics Observability Systems</h3>
+            <p>
+              Validation infrastructure for 6.4B+ weekly product events with
+              statistical drift checks, replay validation, lineage-aware
+              attribution, and 97% alert precision.
+            </p>
+            <a class="text-link" href="./case-studies/analytics-observability-systems.html">Open case study</a>
+          </article>
+
+          <article class="project-preview" id="quant-infrastructure">
+            <p class="card-kicker">Quant research infrastructure</p>
+            <h3>Quant Research Infrastructure</h3>
+            <p>
+              Point-in-time research platform for a 30+ member organization,
+              increasing reproducible throughput by 8.4x with leakage-aware
+              evaluation and model-risk checks.
+            </p>
+            <a class="text-link" href="./case-studies/quant-research-infrastructure.html">Open case study</a>
           </article>
 
           <article class="project-preview" id="biomedical-ml">
             <p class="card-kicker">Biomedical ML</p>
             <h3>Biomedical Multimodal ML Research</h3>
             <p>
-              Leakage-aware cohort construction, reproducible pipelines,
-              subgroup evaluation, calibration, and controlled ablation studies
-              for clinical and imaging datasets.
+              Biomedical ML pipelines supporting 1,200+ controlled runs,
+              improving held-out AUROC from 0.69 to 0.86 and ECE from 0.18 to
+              0.045 after leakage removal and ablations.
             </p>
             <a class="text-link" href="./case-studies/biomedical-ml-research-systems.html">Open case study</a>
           </article>

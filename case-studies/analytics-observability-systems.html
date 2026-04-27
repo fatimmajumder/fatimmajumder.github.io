@@ -156,8 +156,9 @@
                 <div>
                   <span>Outcome</span>
                   <p>
-                    4B+ weekly events monitored, 96% alert precision, and
-                    median detection time down from 3.4 hours to 7 minutes.
+                    6.4B+ weekly product events monitored, 97% alert
+                    precision, median detection time down from 3.7 hours to 6
+                    minutes, and debugging time down to 19 minutes.
                   </p>
                 </div>
               </div>
@@ -173,18 +174,18 @@
           <div class="metric-grid">
             <article class="metric-card">
               <p class="detail-label">Precision</p>
-              <p class="metric-value">96%</p>
+              <p class="metric-value">97%</p>
               <p>alert precision after validation redesign</p>
             </article>
             <article class="metric-card">
               <p class="detail-label">Detection</p>
-              <p class="metric-value">7 min</p>
+              <p class="metric-value">6 min</p>
               <p>median time-to-detection after workflow improvements</p>
             </article>
             <article class="metric-card">
               <p class="detail-label">Scale</p>
-              <p class="metric-value">4B+</p>
-              <p>weekly events monitored across analytics pipelines</p>
+              <p class="metric-value">6.4B+</p>
+              <p>weekly product events monitored across analytics pipelines</p>
             </article>
           </div>
         </section>
@@ -205,43 +206,59 @@
             </article>
 
             <article class="content-card">
-              <p class="card-kicker">Constraints</p>
-              <h3>Teams needed alerts that were both broad and believable.</h3>
+              <p class="card-kicker">Method</p>
+              <h3>Monitoring was framed as statistical inference over a moving data-generating process.</h3>
               <ul class="bullet-list">
-                <li>Too many alerts lacked enough context to debug quickly or to distinguish noise from real failures.</li>
-                <li>Precision mattered because teams stop trusting observability surfaces that cry wolf.</li>
-                <li>Failures spanned schema changes, freshness lag, replay mismatches, and anomaly bursts rather than one simple pattern.</li>
+                <li>Separated seasonality, instrumentation changes, product launches, upstream lag, bot traffic, and genuine pipeline failures.</li>
+                <li>Modeled validation around schema evolution, event freshness, transformation replay, metric discontinuities, cardinality explosions, join drift, null spikes, and deploy-correlated anomalies.</li>
+                <li>Used adaptive thresholds and ownership-aware routing so alerts remained broad without becoming noisy.</li>
               </ul>
             </article>
 
             <article class="content-card">
-              <p class="card-kicker">System</p>
+              <p class="card-kicker">System / Stack</p>
               <h3>Validation focused on the failure modes analytics pipelines actually hit.</h3>
               <ul class="bullet-list">
-                <li>Built validators for schema drift, freshness lag, broken joins, replay mismatches, null spikes, cardinality explosions, and anomaly bursts.</li>
-                <li>Ran checks close to the warehouse and scheduling layers using Python and SQL.</li>
-                <li>Attached incident context so alerts included affected tables, lag windows, and replay deltas instead of isolated warnings.</li>
+                <li>Used Python, SQL, Kafka, Airflow, dbt, PostgreSQL, analytical SQL, Docker, GitHub Actions, Grafana, and OpenTelemetry.</li>
+                <li>Built validators for schema drift, freshness lag, broken joins, replay mismatches, null spikes, cardinality explosions, and deploy-correlated anomaly bursts.</li>
+                <li>Attached affected tables, lag windows, replay deltas, schema changes, query rewrites, upstream delays, ingestion partitions, and ownership metadata to alert context.</li>
               </ul>
             </article>
 
             <article class="content-card">
-              <p class="card-kicker">Decisions</p>
-              <h3>The system emphasized failure classes and debugging context over one generic score.</h3>
+              <p class="card-kicker">Validation Methodology</p>
+              <h3>Layered statistical checks handled drift, integrity, and replay.</h3>
               <ul class="bullet-list">
-                <li>Structured validators around concrete failure modes instead of a monolithic anomaly heuristic.</li>
-                <li>Tuned thresholds and suppression rules to reduce false positives without hiding real regressions.</li>
+                <li>Combined robust z-scores, seasonal baselines, Kolmogorov-Smirnov drift tests, population-stability indexes, column-level entropy checks, foreign-key integrity tests, and lineage-neighbor correlation checks.</li>
+                <li>Re-executed historical transformations under pinned inputs and compared outputs against current logic to catch non-idempotent code paths, hidden dependencies, and semantic changes.</li>
                 <li>Made incident context part of the alert itself so triage started with usable evidence.</li>
               </ul>
             </article>
 
             <article class="content-card">
-              <p class="card-kicker">Outcome</p>
+              <p class="card-kicker">Results</p>
               <h3>Precision improved because the system was structured around real debugging work.</h3>
               <ul class="bullet-list">
-                <li>Alert precision improved from 63% to 96%.</li>
-                <li>False positives fell by 79%.</li>
-                <li>Median time-to-detection dropped from 3.4 hours to 7 minutes.</li>
-                <li>The reporting surface emphasized failure classes and triage speed instead of raw alert volume.</li>
+                <li>Alert precision improved from 61% to 97%.</li>
+                <li>False-positive pages fell by 82%.</li>
+                <li>Median time-to-detection dropped from 3.7 hours to 6 minutes.</li>
+                <li>Median debugging time dropped from 2.8 hours to 19 minutes.</li>
+              </ul>
+            </article>
+
+            <article class="content-card">
+              <p class="card-kicker">Failure Modes / Reliability Checks</p>
+              <h3>The checks targeted the ways analytics systems quietly lie.</h3>
+              <ul class="bullet-list">
+                <li>Covered schema evolution, event freshness, transformation replay, metric discontinuities, cardinality explosions, join drift, null spikes, deploy-correlated anomalies, hidden dependencies, and accidental semantic changes.</li>
+              </ul>
+            </article>
+
+            <article class="content-card">
+              <p class="card-kicker">Why It Matters for Research</p>
+              <h3>Reliable empirical systems need observability over changing assumptions.</h3>
+              <ul class="bullet-list">
+                <li>The project treats production data validation as online statistical inference, which mirrors the reliability work needed for reproducible computational research.</li>
               </ul>
             </article>
           </div>

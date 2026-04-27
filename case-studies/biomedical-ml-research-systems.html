@@ -112,7 +112,7 @@
         <section class="section page-hero">
           <div class="page-hero-main">
             <a class="back-link" href="../projects.html">Back to projects</a>
-            <p class="eyebrow">Georgia Tech / Emory University | 2022 to 2023</p>
+            <p class="eyebrow">Georgia Tech / Emory University | Sept. 2022 to Jan. 2024</p>
             <p class="page-meta">
               Python | PyTorch | scikit-learn | SQL | Streamlit
             </p>
@@ -156,8 +156,9 @@
                 <div>
                   <span>Outcome</span>
                   <p>
-                    1,000+ controlled runs supported and held-out AUROC
-                    improved from 0.71 to 0.88 after cohort fixes.
+                    1,200+ controlled runs supported, held-out AUROC improved
+                    from 0.69 to 0.86, and expected calibration error improved
+                    from 0.18 to 0.045 after cohort fixes.
                   </p>
                 </div>
               </div>
@@ -173,18 +174,18 @@
           <div class="metric-grid">
             <article class="metric-card">
               <p class="detail-label">Held-out AUROC</p>
-              <p class="metric-value">0.88</p>
-              <p>after cohort and methodology fixes, up from 0.71</p>
+              <p class="metric-value">0.86</p>
+              <p>after cohort and methodology fixes, up from 0.69</p>
             </article>
             <article class="metric-card">
               <p class="detail-label">Experimentation</p>
-              <p class="metric-value">1,000+</p>
+              <p class="metric-value">1,200+</p>
               <p>controlled runs across preprocessing, fusion, and evaluation settings</p>
             </article>
             <article class="metric-card">
-              <p class="detail-label">Baseline</p>
-              <p class="metric-value">0.71</p>
-              <p>earlier held-out AUROC before leakage and contamination fixes</p>
+              <p class="detail-label">Calibration</p>
+              <p class="metric-value">0.045</p>
+              <p>expected calibration error after fixes, down from 0.18</p>
             </article>
           </div>
         </section>
@@ -205,42 +206,58 @@
             </article>
 
             <article class="content-card">
-              <p class="card-kicker">Constraints</p>
-              <h3>There were many ways leakage and contamination could creep in.</h3>
+              <p class="card-kicker">Method</p>
+              <h3>Cohort construction was rebuilt around clinical validity.</h3>
               <ul class="bullet-list">
-                <li>Multimodal experiments combined clinical variables, imaging features, and fusion logic across many settings.</li>
-                <li>Patient overlap, temporal contamination, and feature leakage could quietly inflate performance.</li>
+                <li>Supported cohort definitions, preprocessing variants, imaging features, clinical covariates, fusion strategies, calibration procedures, subgroup analyses, and decision thresholds.</li>
+                <li>Rebuilt splits around patient-level independence, temporal separation, site-aware validation, feature availability, and label-proxy audits.</li>
                 <li>Collaborators needed repeatable ways to compare runs without rebuilding the pipeline each time.</li>
               </ul>
             </article>
 
             <article class="content-card">
-              <p class="card-kicker">System</p>
+              <p class="card-kicker">System / Stack</p>
               <h3>Leakage prevention and reproducibility became part of the workflow itself.</h3>
               <ul class="bullet-list">
+                <li>Used Python, PyTorch, scikit-learn, NumPy, pandas, SQL, Streamlit, MATLAB, medical-imaging preprocessing, calibration analysis, and nested cross-validation.</li>
                 <li>Tracked preprocessing variants, feature sets, fusion strategies, calibration, thresholds, and evaluation outputs.</li>
-                <li>Standardized subgroup evaluation and threshold analysis instead of treating them as last-mile extras.</li>
                 <li>Built interfaces that made metrics and artifacts easier to inspect without re-running everything manually.</li>
               </ul>
             </article>
 
             <article class="content-card">
-              <p class="card-kicker">Decisions</p>
-              <h3>Most of the gain came from better science, not a different model class.</h3>
+              <p class="card-kicker">Validation Methodology</p>
+              <h3>Evaluation reports included uncertainty, calibration, and subgroup structure.</h3>
               <ul class="bullet-list">
-                <li>Made cohort construction and split hygiene explicit rather than buried inside experiment code.</li>
+                <li>Implemented bootstrap confidence intervals, DeLong-style AUROC comparisons, AUPRC, sensitivity/specificity at policy thresholds, decision-curve analysis, subgroup calibration, missingness analysis, and error taxonomy.</li>
                 <li>Treated subgroup evaluation, calibration, and threshold analysis as standard outputs.</li>
                 <li>Turned leakage prevention into infrastructure instead of a one-time cleanup exercise.</li>
               </ul>
             </article>
 
             <article class="content-card">
-              <p class="card-kicker">Outcome</p>
+              <p class="card-kicker">Results</p>
               <h3>Better science produced the largest gains.</h3>
               <ul class="bullet-list">
-                <li>Held-out AUROC improved from 0.71 to 0.88 after fixing cohort construction and evaluation methodology.</li>
-                <li>More than 1,000 controlled runs were supported across preprocessing, fusion, calibration, and threshold settings.</li>
-                <li>Leakage prevention became infrastructure rather than a one-time cleanup step.</li>
+                <li>Held-out AUROC improved from 0.69 to 0.86 after fixing cohort construction and evaluation methodology.</li>
+                <li>Expected calibration error improved from 0.18 to 0.045.</li>
+                <li>More than 1,200 controlled runs were supported across preprocessing, fusion, calibration, and threshold settings.</li>
+              </ul>
+            </article>
+
+            <article class="content-card">
+              <p class="card-kicker">Failure Modes / Reliability Checks</p>
+              <h3>Ablations distinguished signal from shortcuts.</h3>
+              <ul class="bullet-list">
+                <li>Designed ablations to separate genuine predictive signal from scanner/site artifacts, missingness shortcuts, preprocessing artifacts, distributional confounding, and label-derived proxies.</li>
+              </ul>
+            </article>
+
+            <article class="content-card">
+              <p class="card-kicker">Why It Matters for Research</p>
+              <h3>Biomedical ML needs methodology as much as model capacity.</h3>
+              <ul class="bullet-list">
+                <li>The work shows how reproducible pipelines, leakage audits, and calibrated uncertainty can turn retrospective modeling into a more credible scientific instrument.</li>
               </ul>
             </article>
           </div>
