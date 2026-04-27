@@ -50,7 +50,7 @@ flowchart TD
 ## Content rules
 
 - Do not invent papers, advisors, lab affiliations, acceptances, publications, or Columbia details.
-- Use Columbia wording carefully: incoming M.S. in Applied Mathematics, expected start Fall 2026.
+- Use Columbia wording carefully: incoming M.S. in Applied Mathematics, Fall 2026.
 - Keep the engineering background framed as evidence of computational research maturity, not the main identity.
 - Prefer precise academic language over startup, recruiting, or product marketing language.
 - Keep proof static in the HTML. Core credibility should not depend on JavaScript.
